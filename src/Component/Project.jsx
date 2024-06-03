@@ -1,166 +1,457 @@
-import React from 'react';
-import { useEffect, useState } from 'react';
-import axios from 'axios';
-import { Link } from 'react-router-dom'
+import React from "react";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import { Link } from "react-router-dom";
 
 const Project = () => {
-    const [aboutData, setAllabout] = useState([]);
+  const [blogData, setAllblog] = useState([]);
 
-    useEffect(() => {
-      axios
-        .get("http://localhost:4225/api/about")
-        .then((res) => {
-          setAllabout(res.data.data);
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    }, []);
+  useEffect(() => {
+    axios
+      .get("https://pour-tech.onrender.com/api/getBlogs")
+      .then((res) => {
+        setAllblog(res.data.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
 
   return (
     <>
-        <div className="bg-white p-0">
-         {/* <!-- Navbar & Hero Start --> */}
-        <div className="position-relative p-0">
-            <div className="py-5 bg-warning hero-header">
-                <div className="container my-5 py-5 px-lg-5">
-                    <div className="row g-5 py-5">
-                        <div className="col-12 text-center">
-                            <h1 className="text-white animated slideInDown">Project</h1>
-                            <hr className="bg-white mx-auto mt-0" style={{width: "90px"}}/>
-                            <nav aria-label="breadcrumb">
-                                <ol className="breadcrumb justify-content-center">
-                                    <li className="breadcrumb-item"><a className="text-white" href="#">Home</a></li>
-                                    <li className="breadcrumb-item"><a className="text-white" href="#">Pages</a></li>
-                                    <li className="breadcrumb-item text-white active" aria-current="page">Project</li>
-                                </ol>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
+      {/* <!-- Navbar --> */}
+      <nav className="navbar navbar-expand-lg navbar-light gtco-main-nav">
+        <div className="container">
+          <Link className="navbar-brand" to="/" style={{ paddingRight: "10%" }}>
+            <img src="./assats/images/logo-6.png" width={180} alt="weblogo" />
+          </Link>
+          <button
+            className="navbar-toggler"
+            data-target="#my-nav"
+            data-toggle="collapse"
+          >
+            <span className="bar1"></span> <span className="bar2"></span>
+            <span className="bar3"></span>
+          </button>
+          <div
+            id="my-nav"
+            className="collapse navbar-collapse"
+            style={{ paddingLeft: "20%", paddingRight: "10%" }}
+          >
+            <ul className="navbar-nav mr-auto">
+              <li className="nav-item">
+                <Link className="nav-link" to="/">
+                  Home
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link link-active" to="/service">
+                  Services
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/about">
+                  About
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/career">
+                  Carrier
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link active" to="/blog">
+                  Blog
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/contact">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      {/* <!-- Banner --> */}
+      <div className="container-fluid gtco-banner-area">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-5">
+              <h1>
+                Insights and <span>Inspiration</span> from the Tech Realm
+              </h1>
+              <p>
+                Stay Ahead of the Curve with Our Expert Blogs to Insights and
+                Updates from the World of Technology
+              </p>
             </div>
-        </div>
-        {/* <!-- Navbar & Hero End --> */}
-
-
-        {/* <!-- Projects Start --> */}
-        <div className="py-5">
-            <div className="container py-5 px-lg-5">
-                <div className="wow fadeInUp" data-wow-delay="0.1s">
-                    <p className="section-title text-secondary justify-content-center"><span></span>Our Projects<span></span></p>
-                    <h1 className="text-center mb-5">Recently Completed Projects</h1>
-                </div>
-                <div className="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
-                    <div className="col-12 text-center">
-                        <ul className="list-inline mb-5" id="portfolio-flters">
-                            <li className="mx-2 active" data-filter="*">All</li>
-                            <li className="mx-2" data-filter=".first">Web Design</li>
-                            <li className="mx-2" data-filter=".second">Graphic Design</li>
-                        </ul>
-                    </div>
-                </div>
-                <div className="row g-4 portfolio-container">
-                    <div className="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
-                        <div className="rounded overflow-hidden">
-                            <div className="position-relative overflow-hidden">
-                                <img className="img-fluid w-100" src="assats/img/portfolio-1.jpg" alt="work-img"/>
-                                <div className="portfolio-overlay">
-                                    <a className="btn btn-square btn-outline-light mx-1" href="assats/img/portfolio-1.jpg" data-lightbox="portfolio"><i className="fa fa-eye"></i></a>
-                                    <Link to={"/single"} className="btn btn-square btn-outline-light mx-1"><i className="fa fa-link"></i></Link>
-                                </div>
-                            </div>
-                            <div className="bg-light p-4">
-                                <p className="text-primary fw-medium mb-2">UI / UX Design</p>
-                                <h5 className="lh-base mb-0">Digital Agency Website Design And Development</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
-                        <div className="rounded overflow-hidden">
-                            <div className="position-relative overflow-hidden">
-                                <img className="img-fluid w-100" src="assats/img/portfolio-2.jpg" alt="work-img"/>
-                                <div className="portfolio-overlay">
-                                    <a className="btn btn-square btn-outline-light mx-1" href="assats/img/portfolio-2.jpg" data-lightbox="portfolio"><i className="fa fa-eye"></i></a>
-                                    <a className="btn btn-square btn-outline-light mx-1" href=""><i className="fa fa-link"></i></a>
-                                </div>
-                            </div>
-                            <div className="bg-light p-4">
-                                <p className="text-primary fw-medium mb-2">UI / UX Design</p>
-                                <h5 className="lh-base mb-0">Digital Agency Website Design And Development</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
-                        <div className="rounded overflow-hidden">
-                            <div className="position-relative overflow-hidden">
-                                <img className="img-fluid w-100" src="assats/img/portfolio-3.jpg" alt="work-img"/>
-                                <div className="portfolio-overlay">
-                                    <a className="btn btn-square btn-outline-light mx-1" href="assats/img/portfolio-3.jpg" data-lightbox="portfolio"><i className="fa fa-eye"></i></a>
-                                    <a className="btn btn-square btn-outline-light mx-1" href=""><i className="fa fa-link"></i></a>
-                                </div>
-                            </div>
-                            <div className="bg-light p-4">
-                                <p className="text-primary fw-medium mb-2">UI / UX Design</p>
-                                <h5 className="lh-base mb-0">Digital Agency Website Design And Development</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
-                        <div className="rounded overflow-hidden">
-                            <div className="position-relative overflow-hidden">
-                                <img className="img-fluid w-100" src="assats/img/portfolio-4.jpg" alt="work-img"/>
-                                <div className="portfolio-overlay">
-                                    <a className="btn btn-square btn-outline-light mx-1" href="assats/img/portfolio-4.jpg" data-lightbox="portfolio"><i className="fa fa-eye"></i></a>
-                                    <a className="btn btn-square btn-outline-light mx-1" href=""><i className="fa fa-link"></i></a>
-                                </div>
-                            </div>
-                            <div className="bg-light p-4">
-                                <p className="text-primary fw-medium mb-2">UI / UX Design</p>
-                                <h5 className="lh-base mb-0">Digital Agency Website Design And Development</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
-                        <div className="rounded overflow-hidden">
-                            <div className="position-relative overflow-hidden">
-                                <img className="img-fluid w-100" src="assats/img/portfolio-5.jpg" alt="work-img"/>
-                                <div className="portfolio-overlay">
-                                    <a className="btn btn-square btn-outline-light mx-1" href="assats/img/portfolio-5.jpg" data-lightbox="portfolio"><i className="fa fa-eye"></i></a>
-                                    <a className="btn btn-square btn-outline-light mx-1" href=""><i className="fa fa-link"></i></a>
-                                </div>
-                            </div>
-                            <div className="bg-light p-4">
-                                <p className="text-primary fw-medium mb-2">UI / UX Design</p>
-                                <h5 className="lh-base mb-0">Digital Agency Website Design And Development</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
-                        <div className="rounded overflow-hidden">
-                            <div className="position-relative overflow-hidden">
-                                <img className="img-fluid w-100" src="assats/img/portfolio-6.jpg" alt="work-img"/>
-                                <div className="portfolio-overlay">
-                                    <a className="btn btn-square btn-outline-light mx-1" href="assats/img/portfolio-6.jpg" data-lightbox="portfolio"><i className="fa fa-eye"></i></a>
-                                    <a className="btn btn-square btn-outline-light mx-1" href=""><i className="fa fa-link"></i></a>
-                                </div>
-                            </div>
-                            <div className="bg-light p-4">
-                                <p className="text-primary fw-medium mb-2">UI / UX Design</p>
-                                <h5 className="lh-base mb-0">Digital Agency Website Design And Development</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div className="col-md-7">
+              <div className="card">
+                <img
+                  className="card-img-top img-fluid"
+                  src="./assats/images/blog-banner.png "
+                  alt="bannerphoto"
+                />
+              </div>
             </div>
+          </div>
         </div>
-        {/* <!-- Projects End --> */}
-
-
-        {/* <!-- Back to Top --> */}
-        <a href="#" className="btn btn-lg btn-secondary btn-lg-square back-to-top"><i className="bi bi-arrow-up"></i></a>
+      </div>
+      {/* <!--Start Blog --> */}
+      <div className="blog-wrap">
+        {blogData.map((blog) => (
+          <div className="blog-post" key={blog._id}>
+            <div className="feat-img">
+              <img
+                className="blog-img"
+                src={`https://pour-tech.onrender.com/${blog.blog_image}`}
+                alt="blog-img"
+              />
+            </div>
+            <article className="blog-article">
+              <header className="blog-header">
+                <ul className="blog-cat">
+                  <li className="blog-li">
+                    <a className="blog-a" href="#">
+                      Articles
+                    </a>
+                  </li>
+                  <li className="blog-li">
+                    <a className="blog-a" href="#">
+                      News
+                    </a>
+                  </li>
+                  <li className="blog-li">
+                    <a className="blog-a" href="#">
+                      Breaking
+                    </a>
+                  </li>
+                </ul>
+                <h2 className="blog-h">
+                  <a className="blog-a" href="#">
+                    {blog.blog_title}
+                  </a>
+                </h2>
+              </header>
+              <p>{blog.blog_subheading}</p>
+              <footer>
+                <Link to={`/oneblog/${blog._id}`} className="more-link blog-a">
+                  Read More
+                </Link>
+              </footer>
+            </article>
+          </div>
+        ))}
+        {/* <div className="blog-post">
+          <div className="feat-img">
+            <img
+              className="blog-img"
+              src="https://images.unsplash.com/photo-1505330622279-bf7d7fc918f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fGJsb2d8ZW58MHx8MHx8fDA%3D"
+              alt="blog-img"
+            />
+          </div>
+          <article className="blog-article">
+            <header className="blog-header">
+              <ul className="blog-cat">
+                <li className="blog-li">
+                  <a className="blog-a" href="#">
+                    Articles
+                  </a>
+                </li>
+                <li className="blog-li">
+                  <a className="blog-a" href="#">
+                    News
+                  </a>
+                </li>
+                <li className="blog-li">
+                  <a className="blog-a" href="#">
+                    Breaking
+                  </a>
+                </li>
+              </ul>
+              <h2 className="blog-h">
+                <a className="blog-a" href="#">
+                  Best of Our Blog in 2013
+                </a>
+              </h2>
+            </header>
+            <p>
+              Pellentesque habitant morbi tristique senectus et netus et
+              malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat
+              vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+              amet quam egestas semper. Aenean ultricies mi vitae est. Mauris
+              placerat eleifend leo.
+            </p>
+            <footer>
+              <a href="#" className="more-link blog-a">
+                Read More
+              </a>
+            </footer>
+          </article>
         </div>
+
+        <div className="blog-post">
+          <div className="feat-img">
+            <img
+              className="blog-img"
+              src="https://images.unsplash.com/photo-1505330622279-bf7d7fc918f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fGJsb2d8ZW58MHx8MHx8fDA%3D"
+              alt="blog-img"
+            />
+          </div>
+          <article className="blog-article">
+            <header className="blog-header">
+              <ul className="blog-cat">
+                <li className="blog-li">
+                  <a className="blog-a" href="#">
+                    Articles
+                  </a>
+                </li>
+                <li className="blog-li">
+                  <a className="blog-a" href="#">
+                    News
+                  </a>
+                </li>
+                <li className="blog-li">
+                  <a className="blog-a" href="#">
+                    Breaking
+                  </a>
+                </li>
+              </ul>
+              <h2 className="blog-h">
+                <a className="blog-a" href="#">
+                  Best of Our Blog in 2013
+                </a>
+              </h2>
+            </header>
+            <p>
+              Pellentesque habitant morbi tristique senectus et netus et
+              malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat
+              vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+              amet quam egestas semper. Aenean ultricies mi vitae est. Mauris
+              placerat eleifend leo.
+            </p>
+            <footer>
+              <a href="#" className="more-link blog-a">
+                Read More
+              </a>
+            </footer>
+          </article>
+        </div>
+
+        <div className="blog-post">
+          <div className="feat-img">
+            <img
+              className="blog-img"
+              src="https://images.unsplash.com/photo-1505330622279-bf7d7fc918f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fGJsb2d8ZW58MHx8MHx8fDA%3D"
+              alt="blog-img"
+            />
+          </div>
+          <article className="blog-article">
+            <header className="blog-header">
+              <ul className="blog-cat">
+                <li className="blog-li">
+                  <a className="blog-a" href="#">
+                    Articles
+                  </a>
+                </li>
+                <li className="blog-li">
+                  <a className="blog-a" href="#">
+                    News
+                  </a>
+                </li>
+                <li className="blog-li">
+                  <a className="blog-a" href="#">
+                    Breaking
+                  </a>
+                </li>
+              </ul>
+              <h2 className="blog-h">
+                <a className="blog-a" href="#">
+                  Best of Our Blog in 2013
+                </a>
+              </h2>
+            </header>
+            <p>
+              Pellentesque habitant morbi tristique senectus et netus et
+              malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat
+              vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+              amet quam egestas semper. Aenean ultricies mi vitae est. Mauris
+              placerat eleifend leo.
+            </p>
+            <footer>
+              <a href="#" className="more-link blog-a">
+                Read More
+              </a>
+            </footer>
+          </article>
+        </div> */}
+      </div>
+      {/* <!-- Footer --> */}
+      <footer className="container-fluid gtco-footer">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="row">
+                <div className="col-6">
+                  <h4>Company</h4>
+                  <ul className="nav flex-column company-nav">
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/">
+                        Home
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/service">
+                        Services
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/about">
+                        About
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/privecy">
+                        Privecy Policy
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/terms">
+                        Terms & Conditions
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/contact">
+                        Contact
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-6">
+                  <h4>Services</h4>
+                  <ul className="nav flex-column services-nav">
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/service">
+                        Web Design
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/service">
+                        Graphics Design
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/service">
+                        App Design
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/service">
+                        SEO
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/service">
+                        Marketing
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/service">
+                        Analytic
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-12"></div>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className="row">
+                <div className="col-6">
+                  <h4>Support</h4>
+                  <ul className="nav flex-column company-nav">
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/">
+                        Home
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/service">
+                        Services
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/about">
+                        About
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/privecy">
+                        Privecy Policy
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/terms">
+                        Terms & Conditions
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/contact">
+                        Contact
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-6">
+                  <img
+                    src="./assats/images/logo-4.png"
+                    width={170}
+                    alt="weblogo"
+                  />
+                  <p style={{ color: "white" }}>Kolkata, Dumdum</p>
+
+                  <h4 className="mt-5">Fllow Us</h4>
+                  <ul className="nav follow-us-nav">
+                    <li className="nav-item">
+                      <Link className="nav-link pl-0" to="#">
+                        <i className="fa fa-facebook" aria-hidden="true"></i>
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="#">
+                        <i className="fa fa-twitter" aria-hidden="true"></i>
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="#">
+                        <i className="fa fa-google" aria-hidden="true"></i>
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="#">
+                        <i className="fa fa-linkedin" aria-hidden="true"></i>
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-12">
+                  <p style={{ marginLeft: "-50%" }}>
+                    &copy; 2024. All Rights Reserved . Design by Pour
+                    Technologies .
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      {/* <!-- Back to Top --> */}
+      <a href="#" className="btn btn-lg btn-lg-square back-to-top">
+        <i className="fa fa-angle-up"></i>
+      </a>
     </>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;

@@ -1,188 +1,422 @@
-import React from 'react';
-import { useEffect, useState } from 'react';
-import axios from 'axios';
+import React from "react";
+import { useEffect, useState } from "react";
+import Carousel from "react-bootstrap/Carousel";
+import axios from "axios";
+import { Link } from "react-router-dom";
 
 const Service = () => {
+  const [serviceData, setAllservice] = useState([]);
 
-    const [aboutData, setAllabout] = useState([]);
-
-    useEffect(() => {
-      axios
-        .get("http://localhost:4225/api/about")
-        .then((res) => {
-          setAllabout(res.data.data);
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    }, []);
+  useEffect(() => {
+    axios
+      .get("https://pour-tech.onrender.com/api/getService")
+      .then((res) => {
+        setAllservice(res.data.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
 
   return (
     <>
-    <div className="bg-white p-0">
-        {/* <!-- Navbar & Hero Start --> */}
-        <div className="position-relative p-0">
-            <div className="py-5 bg-warning hero-header">
-                <div className="container my-5 py-5 px-lg-5">
-                    <div className="row g-5 py-5">
-                        <div className="col-12 text-center">
-                            <h1 className="text-white animated slideInDown">Service</h1>
-                            <hr className="bg-white mx-auto mt-0" style={{width: "90px"}}/>
-                            <nav aria-label="breadcrumb">
-                                <ol className="breadcrumb justify-content-center">
-                                    <li className="breadcrumb-item"><a className="text-white" href="#">Home</a></li>
-                                    <li className="breadcrumb-item"><a className="text-white" href="#">Pages</a></li>
-                                    <li className="breadcrumb-item text-white active" aria-current="page">Service</li>
-                                </ol>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      {/* <!-- Navbar --> */}
+      <nav className="navbar navbar-expand-lg navbar-light gtco-main-nav">
+        <div className="container">
+          <Link className="navbar-brand" to="/" style={{ paddingRight: "10%" }}>
+            <img src="./assats/images/logo-6.png" width={180} alt="weblogo" />
+          </Link>
+          <button
+            className="navbar-toggler"
+            data-target="#my-nav"
+            data-toggle="collapse"
+          >
+            <span className="bar1"></span> <span className="bar2"></span>
+            <span className="bar3"></span>
+          </button>
+          <div
+            id="my-nav"
+            className="collapse navbar-collapse"
+            style={{ paddingLeft: "20%", paddingRight: "10%" }}
+          >
+            <ul className="navbar-nav mr-auto">
+              <li className="nav-item">
+                <Link className="nav-link" to="/">
+                  Home
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link active" to="/service">
+                  Services
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/about">
+                  About
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/career">
+                  Carrier
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/blog">
+                  Blog
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/contact">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
-        {/* <!-- Navbar & Hero End --> */}
-
-
-        {/* <!-- Service Start --> */}
-        <div className="py-5">
-            <div className="container py-5 px-lg-5">
-                <div className="wow fadeInUp" data-wow-delay="0.1s">
-                    <p className="section-title text-secondary justify-content-center"><span></span>Our Services<span></span></p>
-                    <h1 className="text-center mb-5">What Solutions We Provide</h1>
-                </div>
-                <div className="row g-4">
-                    <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div className="service-item d-flex flex-column text-center rounded">
-                            <div className="service-icon flex-shrink-0">
-                                <i className="fa fa-search fa-2x"></i>
-                            </div>
-                            <h5 className="mb-3">SEO Optimization</h5>
-                            <p className="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a className="btn btn-square" href=""><i className="fa fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div className="service-item d-flex flex-column text-center rounded">
-                            <div className="service-icon flex-shrink-0">
-                                <i className="fa fa-laptop-code fa-2x"></i>
-                            </div>
-                            <h5 className="mb-3">Web Design</h5>
-                            <p className="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a className="btn btn-square" href=""><i className="fa fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div className="service-item d-flex flex-column text-center rounded">
-                            <div className="service-icon flex-shrink-0">
-                                <i className="fab fa-facebook-f fa-2x"></i>
-                            </div>
-                            <h5 className="mb-3">Social Media Marketing</h5>
-                            <p className="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a className="btn btn-square" href=""><i className="fa fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div className="service-item d-flex flex-column text-center rounded">
-                            <div className="service-icon flex-shrink-0">
-                                <i className="fa fa-mail-bulk fa-2x"></i>
-                            </div>
-                            <h5 className="mb-3">Email Marketing</h5>
-                            <p className="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a className="btn btn-square" href=""><i className="fa fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div className="service-item d-flex flex-column text-center rounded">
-                            <div className="service-icon flex-shrink-0">
-                                <i className="fa fa-thumbs-up fa-2x"></i>
-                            </div>
-                            <h5 className="mb-3">PPC Advertising</h5>
-                            <p className="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a className="btn btn-square" href=""><i className="fa fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div className="service-item d-flex flex-column text-center rounded">
-                            <div className="service-icon flex-shrink-0">
-                                <i className="fab fa-android fa-2x"></i>
-                            </div>
-                            <h5 className="mb-3">App Development</h5>
-                            <p className="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a className="btn btn-square" href=""><i className="fa fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
+      </nav>
+      {/* <!-- Banner --> */}
+      <div className="container-fluid gtco-banner-area">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <h1>
+                Tailored <span>Solutions</span> for Your Digital Transformation
+              </h1>
+              <p>
+                Comprehensive Solutions for Your Digital Needs that propel your
+                business forward.
+              </p>
             </div>
-        </div>
-        {/* <!-- Service End --> */}
-
-
-        {/* <!-- Newsletter Start --> */}
-        <div className="bg-warning newsletter py-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div className="py-5 px-lg-5">
-                <div className="row justify-content-center">
-                    <div className="col-lg-7 text-center">
-                        <p className="section-title text-white justify-content-center"><span></span>Newsletter<span></span></p>
-                        <h1 className="text-center text-white mb-4">Stay Always In Touch</h1>
-                        <p className="text-white mb-4">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit sed stet lorem sit clita duo justo</p>
-                        <div className="position-relative w-100 mt-3">
-                            <input className="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Enter Your Email" style={{height: "48px"}}/>
-                            <button type="button" className="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i className="fa fa-paper-plane text-warning fs-4"></i></button>
-                        </div>
-                    </div>
-                </div>
+            <br />
+            <div className="gtco-from">
+              <div className="contact">
+                <h3 style={{ marginTop: "2%" }}>Consult With Our Team</h3>
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Full Name"
+                  name="Name"
+                />
+                <input
+                  type="email"
+                  className="form-control"
+                  placeholder="Email Address"
+                  name="Email"
+                />
+                <input
+                  type="phone"
+                  className="form-control"
+                  placeholder="Phone Number"
+                  name="Phone"
+                />
+                <textarea
+                  className="form-control"
+                  placeholder="Message"
+                  name="Message"
+                ></textarea>
+                <a href="#" className="submit-button">
+                  Submit{" "}
+                  <i className="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+              </div>
             </div>
+          </div>
         </div>
-        {/* <!-- Newsletter End --> */}
-
-
-        {/* <!-- Testimonial Start --> */}
-        <div className="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div className="container py-5 px-lg-5">
-                <p className="section-title text-secondary justify-content-center"><span></span>Testimonial<span></span></p>
-                <h1 className="text-center mb-5">What Say Our Clients!</h1>
-                <div className="owl-carousel testimonial-carousel">
-                    <div className="testimonial-item bg-light rounded my-4">
-                        <p className="fs-5"><i className="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit sed stet lorem sit clita duo justo.</p>
-                        <div className="d-flex align-items-center">
-                            <img className="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style={{width: "65px", height: "65px"}} alt='clint-img'/>
-                            <div className="ps-4">
-                                <h5 className="mb-1">Client Name</h5>
-                                <span>Profession</span>
-                            </div>
-                        </div>
+      </div>
+      {/* <!-- Service --> */}
+      <div className="container-fluid gtco-testimonials">
+        <div className="container">
+          <h2>Explore Our Services We Offer For You</h2>
+          <div className="row">
+            {serviceData.map((service)=>(
+            <div className="col-lg-4 col-md-6 col-sm-6 col-12" key={service._id}>
+              <Link to={`/singleservice/${service._id}`}>
+                <div className="e-card playing">
+                  <div className="image"></div>
+                  <div className="wave"></div>
+                  <div className="wave"></div>
+                  <div className="wave"></div>
+                  <div className="infotop">
+                    <img src={`https://pour-tech.onrender.com/${service.service_icon}`} alt="service image" width={150}/>
+                    <br />
+                    {service.title}
+                    <br />
+                    <div className="name">
+                      {service.service_desc}
                     </div>
-                    <div className="testimonial-item bg-light rounded my-4">
-                        <p className="fs-5"><i className="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit sed stet lorem sit clita duo justo.</p>
-                        <div className="d-flex align-items-center">
-                            <img className="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" style={{width: "65px", height: "65px"}} alt='clint-img'/>
-                            <div className="ps-4">
-                                <h5 className="mb-1">Client Name</h5>
-                                <span>Profession</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="testimonial-item bg-light rounded my-4">
-                        <p className="fs-5"><i className="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit sed stet lorem sit clita duo justo.</p>
-                        <div className="d-flex align-items-center">
-                            <img className="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style={{width: "65px", height: "65px"}} alt='clint-img'/>
-                            <div className="ps-4">
-                                <h5 className="mb-1">Client Name</h5>
-                                <span>Profession</span>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
+              </Link>
             </div>
+            ))}
+          </div>
         </div>
-        {/* <!-- Testimonial End --> */}
+      </div>
+      {/* <!-- Feature --> */}
+      <div className="container-fluid gtco-features-list">
+        <h2 style={{ textAlign: "center", marginBottom: "5%" }}>
+          Our Work Process.
+        </h2>
+        <div className="container">
+          <div className="row">
+            <div className="media col-md-6 col-lg-4">
+              <div className="oval mr-4">
+                <img
+                  className="align-self-start"
+                  src="./assats/images/quality-results.png"
+                  alt="featurephoto"
+                />
+              </div>
+              <div className="media-body">
+                <h5 className="mb-0">Quality Results</h5>
+                We pride ourselves on our ability to turn your vision into
+                reality, delivering high-quality results that drive your
+                business forward.
+              </div>
+            </div>
+            <div className="media col-md-6 col-lg-4">
+              <div className="oval mr-4">
+                <img
+                  className="align-self-start"
+                  src="./assats/images/analytics.png"
+                  alt="featurephoto"
+                />
+              </div>
+              <div className="media-body">
+                <h5 className="mb-0">Analytics</h5>
+                We understand that every business is different, which is why we
+                offer analytics solutions that align with your objectives and
+                drive growth.
+              </div>
+            </div>
+            <div className="media col-md-6 col-lg-4">
+              <div className="oval mr-4">
+                <img
+                  className="align-self-start"
+                  src="./assats/images/affordable-pricing.png"
+                  alt="featurephoto"
+                />
+              </div>
+              <div className="media-body">
+                <h5 className="mb-0">Affordable Pricing</h5>
+                We offer market-leading prices that make our products and
+                services accessible to businesses and ensuring you get the best
+                value for your investment.
+              </div>
+            </div>
+            <div className="media col-md-6 col-lg-4">
+              <div className="oval mr-4">
+                <img
+                  className="align-self-start"
+                  src="./assats/images/easy-to-use.png"
+                  alt="featurephoto"
+                />
+              </div>
+              <div className="media-body">
+                <h5 className="mb-0">Easy To Use</h5>
+                we are dedicated to creating intuitive and user-friendly
+                solutions that simplify your everyday tasks with a user-first
+                approach, making them easy to understand and operate.
+              </div>
+            </div>
+            <div className="media col-md-6 col-lg-4">
+              <div className="oval mr-4">
+                <img
+                  className="align-self-start"
+                  src="./assats/images/free-support.png"
+                  alt="featurephoto"
+                />
+              </div>
+              <div className="media-body">
+                <h5 className="mb-0">Free Support</h5>
+                Our mission is to provide comprehensive, reliable support
+                solutions that help businesses and individuals overcome their
+                technical challenges with ease and confidence.
+              </div>
+            </div>
+            <div className="media col-md-6 col-lg-4">
+              <div className="oval mr-4">
+                <img
+                  className="align-self-start"
+                  src="./assats/images/effectively-increase.png"
+                  alt="featurephoto"
+                />
+              </div>
+              <div className="media-body">
+                <h5 className="mb-0">Effectively Increase</h5>
+                We take pride in transforming your vision into reality,
+                delivering high-quality results that propel your business
+                forward.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* <!-- Footer --> */}
+      <footer className="container-fluid gtco-footer">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="row">
+                <div className="col-6">
+                  <h4>Company</h4>
+                  <ul className="nav flex-column company-nav">
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/">
+                        Home
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/service">
+                        Services
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/about">
+                        About
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/privecy">
+                        Privecy Policy
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/terms">
+                        Terms & Conditions
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/contact">
+                        Contact
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-6">
+                  <h4>Services</h4>
+                  <ul className="nav flex-column services-nav">
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/service">
+                        Web Design
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/service">
+                        Graphics Design
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/service">
+                        App Design
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/service">
+                        SEO
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/service">
+                        Marketing
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/service">
+                        Analytic
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-12"></div>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className="row">
+                <div className="col-6">
+                  <h4>Support</h4>
+                  <ul className="nav flex-column company-nav">
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/">
+                        Home
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/service">
+                        Services
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/about">
+                        About
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/privecy">
+                        Privecy Policy
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/terms">
+                        Terms & Conditions
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/contact">
+                        Contact
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-6">
+                  <img
+                    src="./assats/images/logo-4.png"
+                    width={170}
+                    alt="weblogo"
+                  />
+                  <p style={{ color: "white" }}>Kolkata, Dumdum</p>
 
-
-        {/* <!-- Back to Top --> */}
-        <a href="#" className="btn btn-lg btn-secondary btn-lg-square back-to-top"><i className="bi bi-arrow-up"></i></a>
-    </div>
+                  <h4 className="mt-5">Fllow Us</h4>
+                  <ul className="nav follow-us-nav">
+                    <li className="nav-item">
+                      <Link className="nav-link pl-0" to="#">
+                        <i className="fa fa-facebook" aria-hidden="true"></i>
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="#">
+                        <i className="fa fa-twitter" aria-hidden="true"></i>
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="#">
+                        <i className="fa fa-google" aria-hidden="true"></i>
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="#">
+                        <i className="fa fa-linkedin" aria-hidden="true"></i>
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-12">
+                  <p style={{ marginLeft: "-50%" }}>
+                    &copy; 2024. All Rights Reserved . Design by Pour
+                    Technologies .
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      {/* <!-- Back to Top --> */}
+      <a href="#" className="btn btn-lg btn-lg-square back-to-top">
+        <i className="fa fa-angle-up"></i>
+      </a>
     </>
-  )
-}
+  );
+};
 
-export default Service
+export default Service;

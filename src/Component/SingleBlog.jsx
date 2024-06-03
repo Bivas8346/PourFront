@@ -1,10 +1,9 @@
-import React from 'react';
-import { useEffect, useState } from 'react';
-import axios from 'axios';
-import "./Blog.css"
+import React from "react";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import { Link } from "react-router-dom";
 
 const SingleBlog = () => {
-
   const [aboutData, setAllabout] = useState([]);
 
   useEffect(() => {
@@ -20,68 +19,362 @@ const SingleBlog = () => {
 
   return (
     <>
-    <div className="drybn-blog">
-        <div className="drybn-blog__overlay">
-          <div className="blog-header-image">
+      {/* <!-- Navbar --> */}
+      <nav className="navbar navbar-expand-lg navbar-light gtco-main-nav">
+        <div className="container">
+          <Link className="navbar-brand" to="/" style={{ paddingRight: "10%" }}>
+            <img src="../assats/images/logo-6.png" width={180} alt="weblogo" />
+          </Link>
+          <button
+            className="navbar-toggler"
+            data-target="#my-nav"
+            data-toggle="collapse"
+          >
+            <span className="bar1"></span> <span className="bar2"></span>
+            <span className="bar3"></span>
+          </button>
+          <div
+            id="my-nav"
+            className="collapse navbar-collapse"
+            style={{ paddingLeft: "20%", paddingRight: "10%" }}
+          >
+            <ul className="navbar-nav mr-auto">
+              <li className="nav-item">
+                <Link className="nav-link" to="/">
+                  Home
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link link-active" to="/service">
+                  Services
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/about">
+                  About
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/career">
+                  Carrier
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link active" to="/blog">
+                  Blog
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/contact">
+                  Contact
+                </Link>
+              </li>
+            </ul>
           </div>
-          <div className="drybn-blog__content">
-            <div className="blog-header">
-              {/* <p className="date">September 28, 2020</p> */}
-              <h2 className="title">2020 Live COVID-19 Update: White House confirms first case of COVID-19 was transmitted via alien outbreak in Area-51.</h2>
-            </div>
-            <div className="blog-body">
-      
-              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est                                              Lorem ipsum dolor sit amet.</p>
-            <picture className="featured-image featured-image--right">
-              <img src="https://assets.codepen.io/4265809/burriscustom.jpg" alt='for plan'/>
-            </picture>        
-              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est                                              Lorem ipsum dolor</p>
-              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est                                              Lorem ipsum dolor sit amet.</p>
-            <picture className="featured-image featured-image--left">
-              <img src="https://assets.codepen.io/4265809/burriscustom.jpg" alt='for plan'/>
-            </picture>  
-              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est                                              Lorem ipsum dolor
-              </p>
-              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est                                              Lorem ipsum dolor sit amet.</p>
-              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est                                              Lorem ipsum dolor sit amet.</p>
-            </div>
-            
-            {/* <div className="drybn-social-list">
-              <div className="drybn-social-list__overlay">
-                <div className="drybn-social-list__content">
-                  <h3>Share this Story</h3>
-                  <div className="social-list">
-                    
-                    <a href="#" className="social-icon tw">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
-                    </a>
-                    
-                    <a href="#" className="social-icon fb">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
-                    </a>
-                    
-                    <a href="#" className="social-icon in">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                    </a>
-                    
-                    <a href="#" className="social-icon ln">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                    </a>
-                    
-                    <a href="#" className="social-icon lk">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6.188 8.719c.439-.439.926-.801 1.444-1.087 2.887-1.591 6.589-.745 8.445 2.069l-2.246 2.245c-.644-1.469-2.243-2.305-3.834-1.949-.599.134-1.168.433-1.633.898l-4.304 4.306c-1.307 1.307-1.307 3.433 0 4.74 1.307 1.307 3.433 1.307 4.74 0l1.327-1.327c1.207.479 2.501.67 3.779.575l-2.929 2.929c-2.511 2.511-6.582 2.511-9.093 0s-2.511-6.582 0-9.093l4.304-4.306zm6.836-6.836l-2.929 2.929c1.277-.096 2.572.096 3.779.574l1.326-1.326c1.307-1.307 3.433-1.307 4.74 0 1.307 1.307 1.307 3.433 0 4.74l-4.305 4.305c-1.311 1.311-3.44 1.3-4.74 0-.303-.303-.564-.68-.727-1.051l-2.246 2.245c.236.358.481.667.796.982.812.812 1.846 1.417 3.036 1.704 1.542.371 3.194.166 4.613-.617.518-.286 1.005-.648 1.444-1.087l4.304-4.305c2.512-2.511 2.512-6.582.001-9.093-2.511-2.51-6.581-2.51-9.092 0z"/></svg>
-                    </a>
-                    
-                  </div>
-                </div>
-              </div>
-            </div> */}
-            
+        </div>
+      </nav>
+      {/* <!-- Every Single page for blog --> */}
+      <div className="" style={{marginTop:"10%"}}>
+        <div className="col-md-8 mx-auto">
+          <h1 style={{ fontWeight: "600" }}>
+            The Best Activewear from the Nordstrom Anniversary Sale
+          </h1>
+          <div className="py-3 text-dark flex items-center justify-center">
+            <small className="mr-3 flex flex-row items-center">
+              <svg
+                fill="currentColor"
+                height="13px"
+                width="13px"
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 512 512"
+                style={{ enableBackground: "new 0 0 512 512" }}
+                xmlSpace="preserve"
+              >
+                <g>
+                  <g>
+                    <path
+                      d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256
+                 c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128
+                 c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <span className="ml-1">6 mins ago</span>
+            </small>
+            <small>
+              <a href="#" className="flex flex-row items-center text-dark mr-3">
+                <svg
+                  className="text-indigo-600"
+                  fill="currentColor"
+                  height="16px"
+                  aria-hidden="true"
+                  role="img"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                  ></path>
+                  <path d="M0 0h24v24H0z" fill="none"></path>
+                </svg>
+                <span className="ml-1">AliSher Azimi</span>
+              </a>
+            </small>
+            <small>
+              <a href="#" className="flex flex-row items-center text-dark">
+                <svg
+                  className="text-indigo-600"
+                  fill="currentColor"
+                  height="16px"
+                  aria-hidden="true"
+                  role="img"
+                  focusable="false"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 18 18"
+                >
+                  <path
+                    fill=""
+                    d="M15.4496399,8.42490555 L8.66109799,1.63636364 L1.63636364,1.63636364 L1.63636364,8.66081885 L8.42522727,15.44178 C8.57869221,15.5954158 8.78693789,15.6817418 9.00409091,15.6817418 C9.22124393,15.6817418 9.42948961,15.5954158 9.58327627,15.4414581 L15.4486339,9.57610048 C15.7651495,9.25692435 15.7649133,8.74206554 15.4496399,8.42490555 Z M16.6084423,10.7304545 L10.7406818,16.59822 C10.280287,17.0591273 9.65554997,17.3181054 9.00409091,17.3181054 C8.35263185,17.3181054 7.72789481,17.0591273 7.26815877,16.5988788 L0.239976954,9.57887876 C0.0863319284,9.4254126 0,9.21716044 0,9 L0,0.818181818 C0,0.366312477 0.366312477,0 0.818181818,0 L9,0 C9.21699531,0 9.42510306,0.0862010512 9.57854191,0.239639906 L16.6084423,7.26954545 C17.5601275,8.22691012 17.5601275,9.77308988 16.6084423,10.7304545 Z M5,6 C4.44771525,6 4,5.55228475 4,5 C4,4.44771525 4.44771525,4 5,4 C5.55228475,4 6,4.44771525 6,5 C6,5.55228475 5.55228475,6 5,6 Z"
+                  ></path>
+                </svg>
+                <span className="ml-1">activewear</span>
+              </a>
+            </small>
+          </div>
+        </div>
+
+        <div
+          className="col-md-8 mx-auto"
+          style={{
+            height: "400px",
+            backgroundImage:
+              "url(https://images.pexels.com/photos/5120892/pexels-photo-5120892.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=625.0&sharp=10&w=1500)",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        ></div>
+
+        <div className="col-lg-8 p-2 p-sm-4 mx-auto">
+          <div className="text-secondary">
+            <p className="my-2" style={{ lineHeight: "2" }}>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </p>
+            <br />
+            <br />
+            <h3 className="font-weight-bold text-dark">
+              #1. What is Lorem Ipsum?
+            </h3>
+            <p className="my-2" style={{ lineHeight: "2" }}>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </p>
+            <br />
+            <p className="my-2" style={{ lineHeight: "2" }}>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </p>
           </div>
         </div>
       </div>
-    </>
-  )
-}
 
-export default SingleBlog
+      {/* <!-- Footer --> */}
+      <footer className="container-fluid gtco-footer">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="row">
+                <div className="col-6">
+                  <h4>Company</h4>
+                  <ul className="nav flex-column company-nav">
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/">
+                        Home
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/service">
+                        Services
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/about">
+                        About
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/privecy">
+                        Privecy Policy
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/terms">
+                        Terms & Conditions
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/contact">
+                        Contact
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-6">
+                  <h4>Services</h4>
+                  <ul className="nav flex-column services-nav">
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/service">
+                        Web Design
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/service">
+                        Graphics Design
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/service">
+                        App Design
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/service">
+                        SEO
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/service">
+                        Marketing
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/service">
+                        Analytic
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-12"></div>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className="row">
+                <div className="col-6">
+                  <h4>Support</h4>
+                  <ul className="nav flex-column company-nav">
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/">
+                        Home
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/service">
+                        Services
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/about">
+                        About
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/privecy">
+                        Privecy Policy
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/terms">
+                        Terms & Conditions
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/contact">
+                        Contact
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-6">
+                  <img
+                    src="./assats/images/logo-4.png"
+                    width={170}
+                    alt="weblogo"
+                  />
+                  <p style={{ color: "white" }}>Kolkata, Dumdum</p>
+
+                  <h4 className="mt-5">Fllow Us</h4>
+                  <ul className="nav follow-us-nav">
+                    <li className="nav-item">
+                      <Link className="nav-link pl-0" to="#">
+                        <i className="fa fa-facebook" aria-hidden="true"></i>
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="#">
+                        <i className="fa fa-twitter" aria-hidden="true"></i>
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="#">
+                        <i className="fa fa-google" aria-hidden="true"></i>
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="#">
+                        <i className="fa fa-linkedin" aria-hidden="true"></i>
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-12">
+                  <p style={{ marginLeft: "-50%" }}>
+                    &copy; 2024. All Rights Reserved . Design by Pour
+                    Technologies .
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      {/* <!-- Back to Top --> */}
+      <a href="#" className="btn btn-lg btn-lg-square back-to-top">
+        <i className="fa fa-angle-up"></i>
+      </a>
+    </>
+  );
+};
+
+export default SingleBlog;

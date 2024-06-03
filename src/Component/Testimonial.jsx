@@ -22,7 +22,7 @@ const Testimonial = () => {
       <div className="bg-white p-0">
         {/* <!-- Navbar & Hero Start --> */}
         <div className="position-relative p-0">
-          <div className="py-5 bg-warning hero-header">
+          <div className="py-5 bg-info hero-header">
             <div className="container my-5 py-5 px-lg-5">
               <div className="row g-5 py-5">
                 <div className="col-12 text-center">

@@ -3,8 +3,8 @@ import { Route } from "react-router-dom";
 import { Routes } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 // import Home from "./Component/Home";
-import Navber from "./Common/Navber";
-import Footer from "./Common/Footer";
+// import Navber from "./Common/Navber";
+// import Footer from "./Common/Footer";
 // import About from "./Component/About";
 // import Service from "./Component/Service";
 // import Project from "./Component/Project";
@@ -12,14 +12,18 @@ import Footer from "./Common/Footer";
 import NotFound from "./Common/NotFound";
 // import Career from "./Component/Career";
 import Testimonial from "./Component/Testimonial";
-import Plannning from "./Component/Plannning";
+// import Plannning from "./Component/Plannning";
 // import ApplyForm from "./Component/ApplyForm";
 // import SingleBlog from "./Component/SingleBlog";
 import { Suspense } from "react";
+import Thanks from "./Component/Thanks";
+import Privecy from "./Component/Privecy";
+import Terms from "./Component/Terms";
+import SingleService from "./Component/SingleService";
 
 let Home = React.lazy(() => {
   return new Promise((resolve) => {
-    setTimeout(() => resolve(import("./Component/Home")), 3000);
+    setTimeout(() => resolve(import("./Component/Home")), 2000);
   });
 });
 
@@ -53,13 +57,13 @@ let Career = React.lazy(() => {
   });
 });
 
-let ApplyForm  = React.lazy(() => {
+let ApplyForm = React.lazy(() => {
   return new Promise((resolve) => {
     setTimeout(() => resolve(import("./Component/ApplyForm")), 1000);
   });
 });
 
-let SingleBlog  = React.lazy(() => {
+let SingleBlog = React.lazy(() => {
   return new Promise((resolve) => {
     setTimeout(() => resolve(import("./Component/SingleBlog")), 1000);
   });
@@ -68,14 +72,10 @@ let SingleBlog  = React.lazy(() => {
 const Routing = () => {
   return (
     <BrowserRouter>
-      <Navber />
       <Suspense
-      fallback={
-      <div id="spinner" className="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div className="spinner-grow text-danger" style={{width: "3rem", height: "3rem"}} role="status">
-          <span className="sr-only">Loading...</span>
-        </div>
-      </div>}
+        fallback={
+          <div className="loader"></div>
+        }
       >
         <Routes>
           <Route path="/" element={<Home />} />
@@ -83,16 +83,19 @@ const Routing = () => {
 
           <Route path="about" element={<About />} />
           <Route path="service" element={<Service />} />
-          <Route path="project" element={<Project />} />
+          <Route path="/singleservice/:id" element={<SingleService />} />
+          <Route path="blog" element={<Project />} />
           <Route path="contact" element={<Contact />} />
           <Route path="career" element={<Career />} />
           <Route path="review" element={<Testimonial />} />
-          <Route path="plan" element={<Plannning />} />
+          {/* <Route path="plan" element={<Plannning />} /> */}
           <Route path="form" element={<ApplyForm />} />
-          <Route path="single" element={<SingleBlog />} />
+          <Route path="/oneblog/:id" element={<SingleBlog />} />
+          <Route path="thank" element={<Thanks />} />
+          <Route path="privecy" element={<Privecy />} />
+          <Route path="terms" element={<Terms />} />
         </Routes>
       </Suspense>
-      <Footer />
     </BrowserRouter>
   );
 };

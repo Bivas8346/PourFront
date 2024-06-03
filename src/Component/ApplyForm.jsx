@@ -1,122 +1,459 @@
-import React from 'react';
-import { useEffect, useState } from 'react';
-import axios from 'axios';
+import React, { useRef } from "react";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const ApplyForm = () => {
+  const recaptchaRef = useRef(null);
+  const [cont, setCont] = useState({
+    Name: "",
+    Email: "",
+    Phonenumber: "",
+    Position: "",
+    Address: "",
+    Zip: "",
+    Experience: "",
+    Exyear: "",
+    CV: "",
+  });
+  const navigate = useNavigate();
+
+  const handleChange = (event) => {
+    const { name, value, type, files } = event.target;
+    if (type === "file") {
+      const file = files[0];
+      convertToBase64(file).then((base64) => {
+        setCont({ ...cont, [name]: base64 });
+      });
+    } else {
+      setCont({ ...cont, [name]: value });
+    }
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log("Submitted:", cont);
+    const add = {
+      Name: cont.Name,
+      Email: cont.Email,
+      Phonenumber: cont.Phonenumber,
+      Position: cont.Position,
+      Address: cont.Address,
+      Zip: cont.Zip,
+      Experience: cont.Experience,
+      Exyear: cont.Exyear,
+      CV: cont.CV,
+    };
+    axios
+      .post("https://pour-tech.onrender.com/api/postCV", add)
+      .then((res) => {
+        console.log(res);
+        navigate("/thank");
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+  const convertToBase64 = (file) => {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = (error) => reject(error);
+    });
+  };
+
+  const onChange = (value) => {
+    console.log("Captcha value:", value);
+  };
   return (
     <>
-        <div className="bg-white p-0">
-
-
-        {/* <!-- Navbar & Hero Start --> */}
-        <div className="position-relative">
-          <div className="bg-warning hero-header">
-            <div className="container px-lg-5">
-              <div className="row g-5 align-items-end">
-                <div className="col-lg-6 text-center text-lg-start">
-                  <h1 className="text-white mb-4 animated slideInDown">
-                    Apply For Your Dream Job To Boost Your Career For Feuture & Show Your Creativity 
-                  </h1>
+      {/* <!-- Navbar --> */}
+      <nav className="navbar navbar-expand-lg navbar-light gtco-main-nav">
+        <div className="container">
+          <Link className="navbar-brand" to="/" style={{ paddingRight: "10%" }}>
+            <img src="./assats/images/logo-6.png" width={180} alt="weblogo" />
+          </Link>
+          <button
+            className="navbar-toggler"
+            data-target="#my-nav"
+            data-toggle="collapse"
+          >
+            <span className="bar1"></span> <span className="bar2"></span>
+            <span className="bar3"></span>
+          </button>
+          <div
+            id="my-nav"
+            className="collapse navbar-collapse"
+            style={{ paddingLeft: "20%", paddingRight: "10%" }}
+          >
+            <ul className="navbar-nav mr-auto">
+              <li className="nav-item">
+                <Link className="nav-link" to="/">
+                  Home
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/service">
+                  Services
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/about">
+                  About
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link active" to="/career">
+                  Carrier
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/blog">
+                  Blog
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/contact">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      {/* <!-- Banner --> */}
+      <div className="container-fluid gtco-banner-area">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-8">
+              <h1>
+                Join Our <span>Team</span> be a part of our journey.
+              </h1>
+              <p>
+                Ready to take the next step in your career? Join Us and submit
+                your application. We look forward to learning more about you and
+                how you can contribute to our success.
+              </p>
+            </div>
+            <div className="col-md-4">
+              <div className="card">
+                <img
+                  className="card-img-top img-fluid"
+                  src="./assats/images/work-time.svg"
+                  alt="bannerphoto"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* <!-- Main Apply From --> */}
+      <div className="contact-us section" id="contact">
+        <div className="container">
+          <div className="contact-us-content">
+            <form className="contact-form" onSubmit={handleSubmit}>
+              <div className="row">
+                <div className="col-lg-12">
+                  <div className="section-heading">
+                    <h2>
+                      Apply & For Your Dream <span>Job</span>
+                    </h2>
+                  </div>
                 </div>
-                <div className="col-lg-6 text-center text-lg-start">
+                <div className="col-lg-6 col-sm-6 col-12">
+                  <fieldset>
+                    <input
+                      style={{ fontSize: "120%" }}
+                      type="text"
+                      name="Name"
+                      placeholder="Your Name..."
+                      onChange={handleChange}
+                      required
+                    />
+                  </fieldset>
+                </div>
+                <div className="col-lg-6 col-sm-6 col-12">
+                  <fieldset>
+                    <input
+                      style={{ fontSize: "120%" }}
+                      type="text"
+                      id="Email"
+                      name="Email"
+                      pattern="[^ @]*@[^ @]*"
+                      placeholder="Your E-mail..."
+                      onChange={handleChange}
+                      required
+                    />
+                  </fieldset>
+                </div>
+                <div className="col-lg-6 col-sm-6 col-12">
+                  <fieldset>
+                    <input
+                      style={{ fontSize: "120%" }}
+                      type="tel"
+                      name="PhoneNumber"
+                      placeholder="Your Phone Number..."
+                      onChange={handleChange}
+                      required
+                    />
+                  </fieldset>
+                </div>
+                <div className="col-lg-6 col-sm-6 col-12">
+                  <fieldset>
+                    <input
+                      style={{ fontSize: "120%" }}
+                      type="text"
+                      name="Position"
+                      placeholder="Apply..."
+                      onChange={handleChange}
+                    />
+                  </fieldset>
+                </div>
+                <div className="col-lg-12 col-sm-12 col-12">
+                  <fieldset>
+                    <input
+                      style={{ fontSize: "120%" }}
+                      type="text"
+                      name="Address"
+                      placeholder="Your Address..."
+                      onChange={handleChange}
+                      required
+                    />
+                  </fieldset>
+                </div>
+                <div className="col-lg-6 col-sm-6 col-12">
+                  <fieldset>
+                    <input
+                      style={{ fontSize: "120%" }}
+                      type="text"
+                      name="Zip"
+                      placeholder="Your Zip Code..."
+                      onChange={handleChange}
+                      required
+                    />
+                  </fieldset>
+                </div>
+                <div className="col-lg-6 col-sm-6 col-12">
+                  <fieldset>
+                    <input
+                      style={{ fontSize: "120%" }}
+                      type="text"
+                      name="Experience"
+                      placeholder="Have You Any Experience..."
+                      onChange={handleChange}
+                      required
+                    />
+                  </fieldset>
+                </div>
+                <div className="col-lg-6 col-sm-6 col-12">
+                  <fieldset>
+                    <input
+                      style={{ fontSize: "120%" }}
+                      type="number"
+                      name="Exyear"
+                      placeholder="How Many Year..."
+                      onChange={handleChange}
+                    />
+                  </fieldset>
+                </div>
+                <div className="col-lg-6 col-sm-6 col-12">
+                  <fieldset>
+                    <input
+                      style={{ fontSize: "120%" }}
+                      type="file"
+                      name="CV"
+                      onChange={handleChange}
+                      required
+                    />
+                  </fieldset>
+                </div>
+                <ReCAPTCHA
+                  ref={recaptchaRef}
+                  sitekey="YOUR_SITE_KEY"
+                  size="normal" // or "invisible"
+                  onChange={onChange}
+                />
+                <div className="col-lg-12 col-sm-12 col-12">
+                  <fieldset>
+                    <button
+                      type="submit"
+                      className="orange-button"
+                      style={{ fontSize: "120%" }}
+                    >
+                      Apply Now
+                    </button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      {/* <!-- Footer --> */}
+      <footer className="container-fluid gtco-footer">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="row">
+                <div className="col-6">
+                  <h4>Company</h4>
+                  <ul className="nav flex-column company-nav">
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/">
+                        Home
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/service">
+                        Services
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/about">
+                        About
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/privecy">
+                        Privecy Policy
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/terms">
+                        Terms & Conditions
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/contact">
+                        Contact
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-6">
+                  <h4>Services</h4>
+                  <ul className="nav flex-column services-nav">
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/service">
+                        Web Design
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/service">
+                        Graphics Design
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/service">
+                        App Design
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/service">
+                        SEO
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/service">
+                        Marketing
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/service">
+                        Analytic
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-12"></div>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className="row">
+                <div className="col-6">
+                  <h4>Support</h4>
+                  <ul className="nav flex-column company-nav">
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/">
+                        Home
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/service">
+                        Services
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/about">
+                        About
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/privecy">
+                        Privecy Policy
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/terms">
+                        Terms & Conditions
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/contact">
+                        Contact
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-6">
                   <img
-                    className="img-fluid animated zoomIn"
-                    src="assats/img/hero.png"
-                    alt="Banner-img"
+                    src="./assats/images/logo-4.png"
+                    width={170}
+                    alt="weblogo"
                   />
+                  <p style={{ color: "white" }}>Kolkata, Dumdum</p>
+
+                  <h4 className="mt-5">Fllow Us</h4>
+                  <ul className="nav follow-us-nav">
+                    <li className="nav-item">
+                      <Link className="nav-link pl-0" to="#">
+                        <i className="fa fa-facebook" aria-hidden="true"></i>
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="#">
+                        <i className="fa fa-twitter" aria-hidden="true"></i>
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="#">
+                        <i className="fa fa-google" aria-hidden="true"></i>
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="#">
+                        <i className="fa fa-linkedin" aria-hidden="true"></i>
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-12">
+                  <p style={{ marginLeft: "-50%" }}>
+                    &copy; 2024. All Rights Reserved . Design by Pour
+                    Technologies .
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        {/* <!-- Navbar & Hero End --> */}
-
-
-        
-        <div className="py-5">
-            <div className="container py-5 px-lg-5">
-                <div className="wow fadeInUp" data-wow-delay="0.1s">
-                    <p className="section-title text-secondary justify-content-center"><span></span>Apply Now<span></span></p>
-                </div>
-                <div className="row justify-content-center">
-                    {/* <!-- Contact Start --> */}
-                    <div className="col-lg-6">
-                        <div className="wow fadeInUp" data-wow-delay="0.3s">
-                            <form>
-                                <div className="row g-3">
-                                    <div className="col-md-6">
-                                        <div className="form-floating">
-                                            <input type="text" className="form-control" id="name" placeholder="Your Name"/>
-                                            <label htmlFor="name">Your Name</label>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-6">
-                                        <div className="form-floating">
-                                            <input type="email" className="form-control" id="email" placeholder="Your Email"/>
-                                            <label htmlFor="email">Your Email</label>
-                                        </div>
-                                    </div>
-                                    <div className="col-12">
-                                        <div className="form-floating">
-                                            <input type="text" className="form-control" id="subject" placeholder="Your Phone Number"/>
-                                            <label htmlFor="subject">Phone</label>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-6">
-                                        <div className="form-floating">
-                                            <input type="text" className="form-control" id="name" placeholder="Select Yor Role"/>
-                                            <label htmlFor="name">Apply For</label>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-6">
-                                        <div className="form-floating">
-                                            <input type="email" className="form-control" id="email" placeholder="Expriance"/>
-                                            <label htmlFor="email">Expriance(if you have)</label>
-                                        </div>
-                                    </div>
-                                    <div className="col-12">
-                                        <div className="form-floating">
-                                            <input type="text" className="form-control" id="subject" placeholder="Your Address"/>
-                                            <label htmlFor="subject">Address</label>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-6">
-                                        <div className="form-floating">
-                                            <input type="text" className="form-control" id="name" placeholder="Your State"/>
-                                            <label htmlFor="name">State</label>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-6">
-                                        <div className="form-floating">
-                                            <input type="email" className="form-control" id="email" placeholder="Your Pin Code"/>
-                                            <label htmlFor="email">Zip</label>
-                                        </div>
-                                    </div>
-                                    <div className="col-12">
-                                        <div className="form-floating">
-                                            <input type="file" className="form-control" id="email" placeholder="Uplode Your CV here"/>
-                                            <label htmlFor="message">Uplode Your CV</label>
-                                        </div>
-                                    </div>
-                                    <div className="col-12">
-                                        <button className="btn btn-warning w-100 py-3" type="submit">Apply</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    {/* <!-- Contact End --> */}
-                </div>
-            </div>
-        </div>
-       
-
-
-        {/* <!-- Back to Top --> */}
-        <a href="#" className="btn btn-lg btn-secondary btn-lg-square back-to-top"><i className="bi bi-arrow-up"></i></a>
-    </div>
+      </footer>
     </>
-  )
-}
+  );
+};
 
-export default ApplyForm
+export default ApplyForm;
