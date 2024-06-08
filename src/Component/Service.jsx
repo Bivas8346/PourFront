@@ -136,7 +136,7 @@ const Service = () => {
               </Link>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-              <Link to={`/singleservice`}>
+              <Link to={`/webservice`}>
                 <div className="e-card playing">
                   <div className="image"></div>
                   <div className="wave"></div>
@@ -155,7 +155,7 @@ const Service = () => {
               </Link>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-              <Link to={`/singleservice`}>
+              <Link to={`/Marketingservice`}>
                 <div className="e-card playing">
                   <div className="image"></div>
                   <div className="wave"></div>

@@ -20,6 +20,8 @@ import Thanks from "./Component/Thanks";
 import Privecy from "./Component/Privecy";
 import Terms from "./Component/Terms";
 import SingleService from "./Component/SingleService";
+import Webservice from "./Component/Webservice";
+import Marketinkservice from "./Component/Marketinkservice";
 
 let Home = React.lazy(() => {
   return new Promise((resolve) => {
@@ -83,14 +85,18 @@ const Routing = () => {
 
           <Route path="about" element={<About />} />
           <Route path="service" element={<Service />} />
+
           <Route path="/singleservice" element={<SingleService />} />
+          <Route path="/webservice" element={<Webservice/>}/>
+          <Route path="/Marketingservice" element={<Marketinkservice/>}/>
+
           <Route path="blog" element={<Project />} />
           <Route path="contact" element={<Contact />} />
           <Route path="career" element={<Career />} />
-          <Route path="review" element={<Testimonial />} />
-          {/* <Route path="plan" element={<Plannning />} /> */}
           <Route path="form" element={<ApplyForm />} />
+
           <Route path="/oneblog" element={<SingleBlog />} />
+
           <Route path="thank" element={<Thanks />} />
           <Route path="privecy" element={<Privecy />} />
           <Route path="terms" element={<Terms />} />
