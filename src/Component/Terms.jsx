@@ -5,7 +5,7 @@ const Terms = () => {
   return (
     <>
       {/* <!-- Navbar --> */}
-      <nav className="navbar navbar-expand-lg navbar-light bg-light bg-transparent gtco-main-nav">
+      <nav className="navbar navbar-expand-lg navbar-light gtco-main-nav">
         <div className="container">
           <Link className="navbar-brand" to="/" style={{ paddingRight: "10%" }}>
             <img src="./assats/images/logo-6.png" width={180} alt="weblogo" />

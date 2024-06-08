@@ -4,7 +4,6 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 const Project = () => {
-
   return (
     <>
       {/* <!-- Navbar --> */}
@@ -88,48 +87,48 @@ const Project = () => {
       </div>
       {/* <!--Start Blog --> */}
       <div className="blog-wrap">
-          <div className="blog-post">
-            <div className="feat-img">
-              <img
-                className="blog-img"
-                src="../assats/images/seo.png"
-                alt="blog-img"
-              />
-            </div>
-            <article className="blog-article">
-              <header className="blog-header">
-                <ul className="blog-cat">
-                  <li className="blog-li">
-                    <a className="blog-a" href="#">
-                      Articles
-                    </a>
-                  </li>
-                  <li className="blog-li">
-                    <a className="blog-a" href="#">
-                      News
-                    </a>
-                  </li>
-                  <li className="blog-li">
-                    <a className="blog-a" href="#">
-                      Breaking
-                    </a>
-                  </li>
-                </ul>
-                <h2 className="blog-h">
+        <div className="blog-post">
+          <div className="feat-img">
+            <img
+              className="blog-img"
+              src="../assats/images/seo.png"
+              alt="blog-img"
+            />
+          </div>
+          <article className="blog-article">
+            <header className="blog-header">
+              <ul className="blog-cat">
+                <li className="blog-li">
                   <a className="blog-a" href="#">
-                    Blog Title
+                    Articles
                   </a>
-                </h2>
-              </header>
-              <p>Blog Sub HEading</p>
-              <footer>
-                <Link to={`/oneblog`} className="more-link blog-a">
-                  Read More
+                </li>
+                <li className="blog-li">
+                  <a className="blog-a" href="#">
+                    News
+                  </a>
+                </li>
+                <li className="blog-li">
+                  <a className="blog-a" href="#">
+                    Breaking
+                  </a>
+                </li>
+              </ul>
+              <h2 className="blog-h">
+                <Link to={`/oneblog`} className="blog-a">
+                  Blog Title
                 </Link>
-              </footer>
-            </article>
-          </div>
-        {/* <div className="blog-post">
+              </h2>
+            </header>
+            <p>Blog Sub HEading</p>
+            <footer>
+              <Link to={`/oneblog`} className="more-link blog-a">
+                Read More
+              </Link>
+            </footer>
+          </article>
+        </div>
+        <div className="blog-post">
           <div className="feat-img">
             <img
               className="blog-img"
@@ -157,9 +156,9 @@ const Project = () => {
                 </li>
               </ul>
               <h2 className="blog-h">
-                <a className="blog-a" href="#">
-                  Best of Our Blog in 2013
-                </a>
+                <Link to={`/2ndblog`} className="blog-a">
+                  Blog Title
+                </Link>
               </h2>
             </header>
             <p>
@@ -170,9 +169,9 @@ const Project = () => {
               placerat eleifend leo.
             </p>
             <footer>
-              <a href="#" className="more-link blog-a">
+              <Link to={`/2ndblog`} className="more-link blog-a">
                 Read More
-              </a>
+              </Link>
             </footer>
           </article>
         </div>
@@ -205,9 +204,9 @@ const Project = () => {
                 </li>
               </ul>
               <h2 className="blog-h">
-                <a className="blog-a" href="#">
-                  Best of Our Blog in 2013
-                </a>
+                <Link to={`/3rdblog`} className="blog-a">
+                  Blog Title
+                </Link>
               </h2>
             </header>
             <p>
@@ -218,9 +217,9 @@ const Project = () => {
               placerat eleifend leo.
             </p>
             <footer>
-              <a href="#" className="more-link blog-a">
+              <Link to={`/3rdblog`} className="more-link blog-a">
                 Read More
-              </a>
+              </Link>
             </footer>
           </article>
         </div>
@@ -253,9 +252,9 @@ const Project = () => {
                 </li>
               </ul>
               <h2 className="blog-h">
-                <a className="blog-a" href="#">
-                  Best of Our Blog in 2013
-                </a>
+                <Link to={`/4thblog`} className="blog-a">
+                  Blog Title
+                </Link>
               </h2>
             </header>
             <p>
@@ -266,12 +265,12 @@ const Project = () => {
               placerat eleifend leo.
             </p>
             <footer>
-              <a href="#" className="more-link blog-a">
+              <Link to={`/4thblog`} className="more-link blog-a">
                 Read More
-              </a>
+              </Link>
             </footer>
           </article>
-        </div> */}
+        </div>
       </div>
       {/* <!-- Footer --> */}
       <footer className="container-fluid gtco-footer">

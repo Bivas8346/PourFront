@@ -4,19 +4,6 @@ import axios from 'axios';
 import Carousel from "react-bootstrap/Carousel";
 
 const Testimonial = () => {
-
-  const [aboutData, setAllabout] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get("http://localhost:4225/api/about")
-      .then((res) => {
-        setAllabout(res.data.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
   return (
     <>
       <div className="bg-white p-0">

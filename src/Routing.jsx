@@ -27,6 +27,10 @@ import Adservice from "./Component/Adservice";
 import Appservice from "./Component/Appservice";
 import Videservice from "./Component/Videservice";
 import Moreservice from "./Component/Moreservice";
+import Singlebol1 from "./Component/Singlebol1";
+import Singleblog2 from "./Component/Singleblog2";
+import Singleblog3 from "./Component/Singleblog3";
+import Singleblog4 from "./Component/Singleblog4";
 
 let Home = React.lazy(() => {
   return new Promise((resolve) => {
@@ -102,6 +106,10 @@ const Routing = () => {
           <Route path="form" element={<ApplyForm />} />
 
           <Route path="/oneblog" element={<SingleBlog />} />
+          <Route path="/2ndblog" element={<Singlebol1 />} />
+          <Route path="/3rdblog" element={<Singleblog2 />} />
+          <Route path="/4thblog" element={<Singleblog3 />} />
+          <Route path="/5rdblog" element={<Singleblog4 />} />
 
           <Route path="thank" element={<Thanks />} />
           <Route path="privecy" element={<Privecy />} />
