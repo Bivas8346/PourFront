@@ -276,7 +276,7 @@ const Home = () => {
                     <br />
                     Web Dev
                     <br />
-                    <div className="name">Web Dev</div>
+                    <div className="name">seo Dev</div>
                   </div>
                 </div>
               </Link>
