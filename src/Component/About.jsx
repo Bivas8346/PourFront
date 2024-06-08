@@ -103,11 +103,13 @@ const About = () => {
           <div className="row">
           
             <div className="col-md-6">
-              <h1>
-               About Title
+            <h1>
+                Unleash Your Digital Potential with <br />
+                <span>Pour Technologies</span>
               </h1>
               <p>
-                About description
+                We promise to bring the best solution for your business.
+                Innovative Software Solutions for Your Business Growth
               </p>
             </div>
         
