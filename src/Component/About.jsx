@@ -101,16 +101,16 @@ const About = () => {
       <div className="container-fluid gtco-banner-area">
         <div className="container">
           <div className="row">
-            {aboutData.map((about)=>(
-            <div className="col-md-6" key={about._id}>
+          
+            <div className="col-md-6">
               <h1>
-               {about.title}
+               About Title
               </h1>
               <p>
-                {about.about_desc}
+                About description
               </p>
             </div>
-            ))}
+        
             <div className="col-md-6">
               <div className="card">
                 <img

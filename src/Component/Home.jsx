@@ -8,21 +8,6 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 const Home = () => {
-  const [serviceData, setAllservice] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get("https://pour-tech.onrender.com/api/getService")
-      .then((res) => {
-        setAllservice(res.data.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
-
-
-
   const settings = {
     dots: true,
     infinite: true,
@@ -204,32 +189,144 @@ const Home = () => {
         <div className="container">
           <h2>Explore Our Services We Offer For You</h2>
           <div className="row">
-            {serviceData.slice(0, 6).map((service) => (
-              <div
-                className="col-lg-4 col-md-6 col-sm-6 col-12"
-                key={service._id}
-              >
-                <Link to="/service">
-                  <div className="e-card playing">
-                    <div className="image"></div>
-                    <div className="wave"></div>
-                    <div className="wave"></div>
-                    <div className="wave"></div>
-                    <div className="infotop">
-                      <img
-                        src={`https://pour-tech.onrender.com/${service.service_icon}`}
-                        alt="service image"
-                        width={150}
-                      />
-                      <br />
-                      {service.title}
-                      <br />
-                      <div className="name">{service.service_desc}</div>
-                    </div>
+            <div
+              className="col-lg-4 col-md-6 col-sm-6 col-12"
+            >
+              <Link to="/service">
+                <div className="e-card playing">
+                  <div className="image"></div>
+                  <div className="wave"></div>
+                  <div className="wave"></div>
+                  <div className="wave"></div>
+                  <div className="infotop">
+                    <img
+                      src="../assats/images/seo.png"
+                      alt="service image"
+                      width={150}
+                    />
+                    <br />
+                    Web Dev
+                    <br />
+                    <div className="name">Web Dev</div>
                   </div>
-                </Link>
-              </div>
-            ))}
+                </div>
+              </Link>
+            </div>
+            <div
+              className="col-lg-4 col-md-6 col-sm-6 col-12"
+            >
+              <Link to="/service">
+                <div className="e-card playing">
+                  <div className="image"></div>
+                  <div className="wave"></div>
+                  <div className="wave"></div>
+                  <div className="wave"></div>
+                  <div className="infotop">
+                    <img
+                      src="../assats/images/seo.png"
+                      alt="service image"
+                      width={150}
+                    />
+                    <br />
+                    Web Dev
+                    <br />
+                    <div className="name">Web Dev</div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+            <div
+              className="col-lg-4 col-md-6 col-sm-6 col-12"
+            >
+              <Link to="/service">
+                <div className="e-card playing">
+                  <div className="image"></div>
+                  <div className="wave"></div>
+                  <div className="wave"></div>
+                  <div className="wave"></div>
+                  <div className="infotop">
+                    <img
+                      src="../assats/images/seo.png"
+                      alt="service image"
+                      width={150}
+                    />
+                    <br />
+                    Web Dev
+                    <br />
+                    <div className="name">Web Dev</div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+            <div
+              className="col-lg-4 col-md-6 col-sm-6 col-12"
+            >
+              <Link to="/service">
+                <div className="e-card playing">
+                  <div className="image"></div>
+                  <div className="wave"></div>
+                  <div className="wave"></div>
+                  <div className="wave"></div>
+                  <div className="infotop">
+                    <img
+                      src="../assats/images/seo.png"
+                      alt="service image"
+                      width={150}
+                    />
+                    <br />
+                    Web Dev
+                    <br />
+                    <div className="name">Web Dev</div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+            <div
+              className="col-lg-4 col-md-6 col-sm-6 col-12"
+            >
+              <Link to="/service">
+                <div className="e-card playing">
+                  <div className="image"></div>
+                  <div className="wave"></div>
+                  <div className="wave"></div>
+                  <div className="wave"></div>
+                  <div className="infotop">
+                    <img
+                      src="../assats/images/seo.png"
+                      alt="service image"
+                      width={150}
+                    />
+                    <br />
+                    Web Dev
+                    <br />
+                    <div className="name">Web Dev</div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+            <div
+              className="col-lg-4 col-md-6 col-sm-6 col-12"
+            >
+              <Link to="/service">
+                <div className="e-card playing">
+                  <div className="image"></div>
+                  <div className="wave"></div>
+                  <div className="wave"></div>
+                  <div className="wave"></div>
+                  <div className="infotop">
+                    <img
+                      src="../assats/images/seo.png"
+                      alt="service image"
+                      width={150}
+                    />
+                    <br />
+                    Web Dev
+                    <br />
+                    <div className="name">Web Dev</div>
+                  </div>
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
@@ -338,8 +435,9 @@ const Home = () => {
                     <div className="card-body">
                       <h3 className="card-title">Web Design</h3>
                       <p className="card-text">
-                        Nullam quis libero in lorem accumsan sodales. Nam vel
-                        nisi eget.
+                        Web design is a dynamic and multifaceted field that
+                        plays a crucial role in the success of any online
+                        presence.
                       </p>
                     </div>
                   </div>
@@ -354,8 +452,8 @@ const Home = () => {
                     <div className="card-body">
                       <h3 className="card-title">Marketing</h3>
                       <p className="card-text">
-                        Nullam quis libero in lorem accumsan sodales. Nam vel
-                        nisi eget.
+                        Marketing is a multifaceted discipline that involves
+                        promoting and selling products or services to consumers.
                       </p>
                     </div>
                   </div>
@@ -372,8 +470,9 @@ const Home = () => {
                     <div className="card-body">
                       <h3 className="card-title">SEO</h3>
                       <p className="card-text">
-                        Nullam quis libero in lorem accumsan sodales. Nam vel
-                        nisi eget.
+                        SEO is a critical aspect of digital marketing that
+                        focuses on enhancing a website’s visibility in search
+                        engine results pages.
                       </p>
                     </div>
                   </div>
@@ -386,10 +485,11 @@ const Home = () => {
                       />
                     </div>
                     <div className="card-body">
-                      <h3 className="card-title">Graphics Design</h3>
+                      <h3 className="card-title">App Development</h3>
                       <p className="card-text">
-                        Nullam quis libero in lorem accumsan sodales. Nam vel
-                        nisi eget.
+                        The goal is to develop functional, user-friendly, and
+                        reliable applications that meet the needs of users and
+                        businesses.
                       </p>
                     </div>
                   </div>

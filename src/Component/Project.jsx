@@ -4,18 +4,6 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 const Project = () => {
-  const [blogData, setAllblog] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get("https://pour-tech.onrender.com/api/getBlogs")
-      .then((res) => {
-        setAllblog(res.data.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
 
   return (
     <>
@@ -100,12 +88,11 @@ const Project = () => {
       </div>
       {/* <!--Start Blog --> */}
       <div className="blog-wrap">
-        {blogData.map((blog) => (
-          <div className="blog-post" key={blog._id}>
+          <div className="blog-post">
             <div className="feat-img">
               <img
                 className="blog-img"
-                src={`https://pour-tech.onrender.com/${blog.blog_image}`}
+                src="../assats/images/seo.png"
                 alt="blog-img"
               />
             </div>
@@ -130,19 +117,18 @@ const Project = () => {
                 </ul>
                 <h2 className="blog-h">
                   <a className="blog-a" href="#">
-                    {blog.blog_title}
+                    Blog Title
                   </a>
                 </h2>
               </header>
-              <p>{blog.blog_subheading}</p>
+              <p>Blog Sub HEading</p>
               <footer>
-                <Link to={`/oneblog/${blog._id}`} className="more-link blog-a">
+                <Link to={`/oneblog`} className="more-link blog-a">
                   Read More
                 </Link>
               </footer>
             </article>
           </div>
-        ))}
         {/* <div className="blog-post">
           <div className="feat-img">
             <img

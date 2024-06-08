@@ -4,18 +4,6 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 const SingleBlog = () => {
-  const [aboutData, setAllabout] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get("http://localhost:4225/api/about")
-      .then((res) => {
-        setAllabout(res.data.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
 
   return (
     <>
@@ -328,7 +316,7 @@ const SingleBlog = () => {
                 </div>
                 <div className="col-6">
                   <img
-                    src="./assats/images/logo-4.png"
+                    src="../assats/images/logo-4.png"
                     width={170}
                     alt="weblogo"
                   />

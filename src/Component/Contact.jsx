@@ -6,56 +6,58 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
   const [contactData, setAllcontact] = useState([]);
+  const [serviceData, setAllservice] = useState([]);
+  const [formData, setFormData] = useState({
+    Date: "",
+    Name: "",
+    Email: "",
+    PhoneNumber: "",
+    Service: "",
+    Message: "",
+  });
+
   const recaptchaRef = useRef(null);
 
   const onChange = (value) => {
     console.log("Captcha value:", value);
   };
 
-  const [formData, setFormData] = useState({
-    Name: "",
-    Email: "",
-    Phone: "",
-    Service: "",
-    Message: "",
-  });
-
   const navigate = useNavigate();
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
+  useEffect(() => {
+    const today = new Date();
+    const date = today.toISOString().split("T")[0]; // Format as YYYY-MM-DD
+    setFormData((prevState) => ({ ...prevState, currentDate: date }));
+  }, []);
+
+  let handleChange = (event) => {
+    let { name, value } = event.target;
+    console.log(name, value);
+    setFormData(prevState => ({...prevState, [name]: value }));
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    const payload = {
+  let handleSubmit = (event) => {
+    event.preventDefault();
+    console.log("submited:", formData);
+    let add = {
+      Date: formData.Date,
       Name: formData.Name,
       Email: formData.Email,
-      Phone: formData.Phone,
+      PhoneNumber: formData.PhoneNumber,
       Service: formData.Service,
       Message: formData.Message,
     };
-
     axios
       .post(
-        "https://script.google.com/macros/s/AKfycbwZh_5t20YZch7A0eX04ZTR32IpSz4CdgncYC14nYYfGAPqk01EqIwsQAWdJzuvshrF/exec",
-        payload
+        "https://sheet.best/api/sheets/18776b41-0e71-4237-99fe-ce1589f0f212",
+        add
       )
-      .then((response) => {
-        if (response.data.result === "success") {
-          navigate("/thank");
-        } else {
-          alert("Error submitting application: " + response.data.error);
-        }
+      .then((res) => {
+        console.log(res);
+        navigate("/thank");
       })
-      .catch((error) => {
-        console.error("Error:", error);
-        alert("Error submitting application.");
+      .catch((err) => {
+        console.log(err);
       });
   };
 
@@ -64,6 +66,15 @@ const Contact = () => {
       .get("https://pour-tech.onrender.com/api/getContact")
       .then((res) => {
         setAllcontact(res.data.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+
+    axios
+      .get("https://pour-tech.onrender.com/api/getService")
+      .then((res) => {
+        setAllservice(res.data.data);
       })
       .catch((error) => {
         console.log(error);
@@ -172,6 +183,11 @@ const Contact = () => {
                           </div>
                         </div>
                         <div className="col-lg-6 col-sm-6 col-12">
+                          <input
+                            type="hidden"
+                            name="Date"
+                            value={formData.Date}
+                          />
                           <fieldset>
                             <input
                               style={{ fontSize: "120%" }}
@@ -204,10 +220,10 @@ const Contact = () => {
                             <input
                               style={{ fontSize: "120%" }}
                               type="text"
-                              name="Phone"
+                              name="PhoneNumber"
                               placeholder="Your Phone Number..."
                               autoComplete="on"
-                              value={formData.Phone}
+                              value={formData.PhoneNumber}
                               onChange={handleChange}
                               required
                             />
@@ -215,15 +231,19 @@ const Contact = () => {
                         </div>
                         <div className="col-lg-6 col-sm-6 col-12">
                           <fieldset>
-                            <input
-                              style={{ fontSize: "120%" }}
-                              type="text"
-                              name="Service"
+                            <select
                               placeholder="Service..."
+                              name="Service"
                               autoComplete="on"
+                              style={{ fontSize: "120%" }}
                               value={formData.Service}
                               onChange={handleChange}
-                            />
+                            >
+                              <option selected>service</option>
+                              {serviceData.map((serv) => (
+                                <option>{serv.title}</option>
+                              ))}
+                            </select>
                           </fieldset>
                         </div>
                         <div className="col-lg-12 col-sm12 col-12">

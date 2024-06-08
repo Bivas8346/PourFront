@@ -4,18 +4,6 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 const Career = () => {
-  const [careerData, setAllcareer] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get("https://pour-tech.onrender.com/api/getCareer")
-      .then((res) => {
-        setAllcareer(res.data.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
 
   return (
     <>
@@ -103,25 +91,23 @@ const Career = () => {
         <div className="container">
           <h1 className="text-center mb-5">Recently Posted job</h1>
           <div className="carrier-carousel">
-            {careerData.map((carrer) => (
               <div
                 className="Carrier-item bg-light rounded my-4"
-                key={carrer._id}
               >
                 <br />
                 <div className="d-flex align-items-center job-cont">
                   <img
                     className="flex-shrink-0 rounded-circle"
-                    src={`https://pour-tech.onrender.com/${carrer.job_image}`}
+                    src="../assats/images/seo.png"
                     style={{ width: "65px", height: "65px", margin: "20px" }}
                     alt="job-img"
                   />
                   <div className="ps-4">
-                    <h5 className="mb-1">{carrer.jobRole}</h5>
+                    <h5 className="mb-1">SEO</h5>
                     <p>
                       <i className="fa fa-map-marker me-3"></i>{" "}
-                      {carrer.location} |<i className="fa fa-clock-o me-3"></i>{" "}
-                      {carrer.job_type}
+                      KOLKATA |<i className="fa fa-clock-o me-3"></i>{" "}
+                      FULL TIME
                     </p>
                   </div>
                   <div className="ps-4 applybtn">
@@ -141,7 +127,6 @@ const Career = () => {
                   </div>
                 </div>
               </div>
-            ))}
           </div>
         </div>
       </div>

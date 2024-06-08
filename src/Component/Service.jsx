@@ -5,19 +5,6 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 const Service = () => {
-  const [serviceData, setAllservice] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get("https://pour-tech.onrender.com/api/getService")
-      .then((res) => {
-        setAllservice(res.data.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
-
   return (
     <>
       {/* <!-- Navbar --> */}
@@ -128,27 +115,140 @@ const Service = () => {
         <div className="container">
           <h2>Explore Our Services We Offer For You</h2>
           <div className="row">
-            {serviceData.map((service)=>(
-            <div className="col-lg-4 col-md-6 col-sm-6 col-12" key={service._id}>
-              <Link to={`/singleservice/${service._id}`}>
+           
+            <div className="col-lg-4 col-md-6 col-sm-6 col-12">
+              <Link to={`/singleservice`}>
                 <div className="e-card playing">
                   <div className="image"></div>
                   <div className="wave"></div>
                   <div className="wave"></div>
                   <div className="wave"></div>
                   <div className="infotop">
-                    <img src={`https://pour-tech.onrender.com/${service.service_icon}`} alt="service image" width={150}/>
+                    <img src="../assats/images/seo.svg" alt="service image" width={150}/>
                     <br />
-                    {service.title}
+                    webdev
                     <br />
                     <div className="name">
-                      {service.service_desc}
+                      webdev
                     </div>
                   </div>
                 </div>
               </Link>
             </div>
-            ))}
+            <div className="col-lg-4 col-md-6 col-sm-6 col-12">
+              <Link to={`/singleservice`}>
+                <div className="e-card playing">
+                  <div className="image"></div>
+                  <div className="wave"></div>
+                  <div className="wave"></div>
+                  <div className="wave"></div>
+                  <div className="infotop">
+                    <img src="../assats/images/seo.svg" alt="service image" width={150}/>
+                    <br />
+                    webdev
+                    <br />
+                    <div className="name">
+                      webdev
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-6 col-12">
+              <Link to={`/singleservice`}>
+                <div className="e-card playing">
+                  <div className="image"></div>
+                  <div className="wave"></div>
+                  <div className="wave"></div>
+                  <div className="wave"></div>
+                  <div className="infotop">
+                    <img src="../assats/images/seo.svg" alt="service image" width={150}/>
+                    <br />
+                    webdev
+                    <br />
+                    <div className="name">
+                      webdev
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-6 col-12">
+              <Link to={`/singleservice`}>
+                <div className="e-card playing">
+                  <div className="image"></div>
+                  <div className="wave"></div>
+                  <div className="wave"></div>
+                  <div className="wave"></div>
+                  <div className="infotop">
+                    <img src="../assats/images/seo.svg" alt="service image" width={150}/>
+                    <br />
+                    webdev
+                    <br />
+                    <div className="name">
+                      webdev
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-6 col-12">
+              <Link to={`/singleservice`}>
+                <div className="e-card playing">
+                  <div className="image"></div>
+                  <div className="wave"></div>
+                  <div className="wave"></div>
+                  <div className="wave"></div>
+                  <div className="infotop">
+                    <img src="../assats/images/seo.svg" alt="service image" width={150}/>
+                    <br />
+                    webdev
+                    <br />
+                    <div className="name">
+                      webdev
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-6 col-12">
+              <Link to={`/singleservice`}>
+                <div className="e-card playing">
+                  <div className="image"></div>
+                  <div className="wave"></div>
+                  <div className="wave"></div>
+                  <div className="wave"></div>
+                  <div className="infotop">
+                    <img src="../assats/images/seo.svg" alt="service image" width={150}/>
+                    <br />
+                    webdev
+                    <br />
+                    <div className="name">
+                      webdev
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-6 col-12">
+              <Link to={`/singleservice`}>
+                <div className="e-card playing">
+                  <div className="image"></div>
+                  <div className="wave"></div>
+                  <div className="wave"></div>
+                  <div className="wave"></div>
+                  <div className="infotop">
+                    <img src="../assats/images/seo.svg" alt="service image" width={150}/>
+                    <br />
+                    webdev
+                    <br />
+                    <div className="name">
+                      webdev
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

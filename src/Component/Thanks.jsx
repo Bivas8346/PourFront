@@ -22,8 +22,8 @@ const Thanks = () => {
                 <defs>
                   <mask
                     className="squiggle-mask"
-                    maskunits="userSpaceOnUse"
-                    maskcontentunits="userSpaceOnUse"
+                    maskUnits="userSpaceOnUse"
+                    maskContentUnits="userSpaceOnUse"
                   >
                     <path
                       className="cls-5 mask squiggle-mask-path"
@@ -34,8 +34,8 @@ const Thanks = () => {
 
                   <mask
                     className="left-line-mask"
-                    maskunits="userSpaceOnUse"
-                    maskcontentunits="userSpaceOnUse"
+                    maskUnits="userSpaceOnUse"
+                    maskContentUnits="userSpaceOnUse"
                   >
                     <path
                       className="left-line-mask-path cls-6 mask"
@@ -46,8 +46,8 @@ const Thanks = () => {
 
                   <mask
                     className="right-line-mask"
-                    maskunits="userSpaceOnUse"
-                    maskcontentunits="userSpaceOnUse"
+                    maskUnits="userSpaceOnUse"
+                    maskContentUnits="userSpaceOnUse"
                   >
                     <path
                       className="cls-6 mask right-line-mask-path"
