@@ -115,7 +115,6 @@ const Service = () => {
         <div className="container">
           <h2>Explore Our Services We Offer For You</h2>
           <div className="row">
-           
             <div className="col-lg-4 col-md-6 col-sm-6 col-12">
               <Link to={`/singleservice`}>
                 <div className="e-card playing">
@@ -124,13 +123,15 @@ const Service = () => {
                   <div className="wave"></div>
                   <div className="wave"></div>
                   <div className="infotop">
-                    <img src="../assats/images/seo.svg" alt="service image" width={150}/>
+                    <img
+                      src="../assats/images/seo.svg"
+                      alt="service image"
+                      width={150}
+                    />
                     <br />
                     webdev
                     <br />
-                    <div className="name">
-                      webdev
-                    </div>
+                    <div className="name">webdev</div>
                   </div>
                 </div>
               </Link>
@@ -143,108 +144,120 @@ const Service = () => {
                   <div className="wave"></div>
                   <div className="wave"></div>
                   <div className="infotop">
-                    <img src="../assats/images/seo.svg" alt="service image" width={150}/>
+                    <img
+                      src="../assats/images/seo.svg"
+                      alt="service image"
+                      width={150}
+                    />
                     <br />
                     webdev
                     <br />
-                    <div className="name">
-                      webdev
-                    </div>
+                    <div className="name">webdev</div>
                   </div>
                 </div>
               </Link>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-              <Link to={`/Marketingservice`}>
+              <Link to={`/marketingservice`}>
                 <div className="e-card playing">
                   <div className="image"></div>
                   <div className="wave"></div>
                   <div className="wave"></div>
                   <div className="wave"></div>
                   <div className="infotop">
-                    <img src="../assats/images/seo.svg" alt="service image" width={150}/>
+                    <img
+                      src="../assats/images/seo.svg"
+                      alt="service image"
+                      width={150}
+                    />
                     <br />
                     webdev
                     <br />
-                    <div className="name">
-                      webdev
-                    </div>
+                    <div className="name">webdev</div>
                   </div>
                 </div>
               </Link>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-              <Link to={`/singleservice`}>
+              <Link to={`/appservice`}>
                 <div className="e-card playing">
                   <div className="image"></div>
                   <div className="wave"></div>
                   <div className="wave"></div>
                   <div className="wave"></div>
                   <div className="infotop">
-                    <img src="../assats/images/seo.svg" alt="service image" width={150}/>
+                    <img
+                      src="../assats/images/seo.svg"
+                      alt="service image"
+                      width={150}
+                    />
                     <br />
                     webdev
                     <br />
-                    <div className="name">
-                      webdev
-                    </div>
+                    <div className="name">webdev</div>
                   </div>
                 </div>
               </Link>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-              <Link to={`/singleservice`}>
+              <Link to={`/seoservice`}>
                 <div className="e-card playing">
                   <div className="image"></div>
                   <div className="wave"></div>
                   <div className="wave"></div>
                   <div className="wave"></div>
                   <div className="infotop">
-                    <img src="../assats/images/seo.svg" alt="service image" width={150}/>
+                    <img
+                      src="../assats/images/seo.svg"
+                      alt="service image"
+                      width={150}
+                    />
                     <br />
                     webdev
                     <br />
-                    <div className="name">
-                      webdev
-                    </div>
+                    <div className="name">webdev</div>
                   </div>
                 </div>
               </Link>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-              <Link to={`/singleservice`}>
+              <Link to={`/adservice`}>
                 <div className="e-card playing">
                   <div className="image"></div>
                   <div className="wave"></div>
                   <div className="wave"></div>
                   <div className="wave"></div>
                   <div className="infotop">
-                    <img src="../assats/images/seo.svg" alt="service image" width={150}/>
+                    <img
+                      src="../assats/images/seo.svg"
+                      alt="service image"
+                      width={150}
+                    />
                     <br />
                     webdev
                     <br />
-                    <div className="name">
-                      webdev
-                    </div>
+                    <div className="name">webdev</div>
                   </div>
                 </div>
               </Link>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-              <Link to={`/singleservice`}>
+              <Link to={`/videoservice`}>
                 <div className="e-card playing">
                   <div className="image"></div>
                   <div className="wave"></div>
                   <div className="wave"></div>
                   <div className="wave"></div>
                   <div className="infotop">
-                    <img src="../assats/images/seo.svg" alt="service image" width={150}/>
+                    <img
+                      src="../assats/images/seo.svg"
+                      alt="service image"
+                      width={150}
+                    />
                     <br />
                     webdev
                     <br />
-                    <div className="name">
-                      webdev
-                    </div>
+                    <div className="name">webdev</div>
                   </div>
                 </div>
               </Link>

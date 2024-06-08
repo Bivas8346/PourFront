@@ -2,7 +2,7 @@ import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import { Link, useParams } from "react-router-dom";
 
-const Webservice = () => {
+const Seoservice = () => {
   return (
     <>
       {/* <!-- Navbar --> */}
@@ -905,4 +905,4 @@ const Webservice = () => {
   );
 };
 
-export default Webservice;
+export default Seoservice;

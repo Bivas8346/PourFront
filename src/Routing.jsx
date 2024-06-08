@@ -22,6 +22,11 @@ import Terms from "./Component/Terms";
 import SingleService from "./Component/SingleService";
 import Webservice from "./Component/Webservice";
 import Marketinkservice from "./Component/Marketinkservice";
+import Seoservice from "./Component/Seoservice";
+import Adservice from "./Component/Adservice";
+import Appservice from "./Component/Appservice";
+import Videservice from "./Component/Videservice";
+import Moreservice from "./Component/Moreservice";
 
 let Home = React.lazy(() => {
   return new Promise((resolve) => {
@@ -74,11 +79,7 @@ let SingleBlog = React.lazy(() => {
 const Routing = () => {
   return (
     <BrowserRouter>
-      <Suspense
-        fallback={
-          <div className="loader"></div>
-        }
-      >
+      <Suspense fallback={<div className="loader"></div>}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="*" element={<NotFound />} />
@@ -87,8 +88,13 @@ const Routing = () => {
           <Route path="service" element={<Service />} />
 
           <Route path="/singleservice" element={<SingleService />} />
-          <Route path="/webservice" element={<Webservice/>}/>
-          <Route path="/Marketingservice" element={<Marketinkservice/>}/>
+          <Route path="/webservice" element={<Webservice />} />
+          <Route path="/marketingservice" element={<Marketinkservice />} />
+          <Route path="/seoservice" element={<Seoservice />} />
+          <Route path="/adservice" element={<Adservice />} />
+          <Route path="/appservice" element={<Appservice />} />
+          <Route path="/videoservice" element={<Videservice />} />
+          <Route path="/moreservice" element={<Moreservice />} />
 
           <Route path="blog" element={<Project />} />
           <Route path="contact" element={<Contact />} />

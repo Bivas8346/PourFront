@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 import Carousel from "react-bootstrap/Carousel";
 import { Link, useParams } from "react-router-dom";
 
-const Webservice = () => {
+const Videservice = () => {
   return (
     <>
       {/* <!-- Navbar --> */}
@@ -902,7 +902,7 @@ const Webservice = () => {
         <i className="fa fa-angle-up"></i>
       </a>
     </>
-  );
-};
+  )
+}
 
-export default Webservice;
+export default Videservice
