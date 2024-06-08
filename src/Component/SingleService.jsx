@@ -5,21 +5,6 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 const SingleService = () => {
-  const [sServiceData, setAllsservice] = useState([]);
-  let { id } = useParams();
-  console.log("Recived from url in subitem", id);
-  useEffect(() => {
-    axios
-      .get(`https://pour-tech.onrender.com/api/single-service-details/${id}`)
-      .then((res) => {
-        setAllsservice(res.data.data);
-        console.log(res.data.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
-
   return (
     <>
       {/* <!-- Navbar --> */}
@@ -127,8 +112,7 @@ const SingleService = () => {
         </div>
       </div>
       {/* <!-- Tech For Service--> */}
-      {sServiceData.map((Singles) => (
-        <div className="container-fluid" style={{ marginTop: "5%" }} key={Singles._id}>
+        <div className="container-fluid" style={{ marginTop: "5%" }}>
           <div className="container">
             <div className="row">
               <div className="col-lg-8 gtco-feature">
@@ -137,12 +121,12 @@ const SingleService = () => {
                   <br />
                 </h2>
                 <ul style={{fontWeight:"bolder", fontSize:"20px"}}>
-                  <li>{Singles.technology1}</li>
-                  <li>{Singles.technology2}</li>
-                  <li>{Singles.technology3}</li>
-                  <li>{Singles.technology4}</li>
-                  <li>{Singles.technology5}</li>
-                  <li>{Singles.technology6}</li>
+                  <li>TECHNOLOGY 1</li>
+                  <li>TECHNOLOGY 1</li>
+                  <li>TECHNOLOGY 1</li>
+                  <li>TECHNOLOGY 1</li>
+                  <li>TECHNOLOGY 1</li>
+                  <li>TECHNOLOGY 1</li>
                 </ul>
               </div>
               <div className="col-lg-4">
@@ -150,21 +134,21 @@ const SingleService = () => {
                   <Carousel.Item>
                     <img
                       className="d-block w-100"
-                      src={`https://pour-tech.onrender.com/${Singles.image.length > 0}`}
+                      src="../assats/images/seo.png"
                       alt="First slide"
                     />
                   </Carousel.Item>
                   <Carousel.Item>
                     <img
                       className="d-block w-100"
-                      src={`https://pour-tech.onrender.com/${Singles.image.length > 1}`}
+                      src="../assats/images/seo.png"
                       alt="Second slide"
                     />
                   </Carousel.Item>
                   <Carousel.Item>
                     <img
                       className="d-block w-100"
-                      src={`https://pour-tech.onrender.com/${Singles.image.length > 2}`}
+                      src="../assats/images/seo.png"
                       alt="Third slide"
                     />
                   </Carousel.Item>
@@ -173,17 +157,15 @@ const SingleService = () => {
             </div>
           </div>
         </div>
-      ))}
       {/* <!-- About Service --> */}
-      {sServiceData.map((Singledes) => (
-      <div className="container-fluid gtco-feature" key={Singledes._id}>
+      <div className="container-fluid gtco-feature">
         <div className="container">
           <div className="row">
             <div className="col-md-5">
-              <h2>{Singledes.title}</h2>
-              <p>{Singledes.subtitle}</p>
+              <h2>Single Service Title</h2>
+              <p>Single Srvice Sub Title</p>
               <p>
-                <small>{Singledes.about}</small>
+                <small>Single Service About</small>
               </p>
             </div>
             <div className="col-md-7">
@@ -203,7 +185,6 @@ const SingleService = () => {
           </div>
         </div>
       </div>
-      ))}
       {/* <!-- How we work --> */}
       <div className="container-fluid gtco-feature">
         <div className="container">
