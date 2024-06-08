@@ -33,7 +33,7 @@ const Contact = () => {
   let handleChange = (event) => {
     let { name, value } = event.target;
     console.log(name, value);
-    setFormData(prevState => ({...prevState, [name]: value }));
+    setFormData((prevState) => ({ ...prevState, [name]: value }));
   };
 
   let handleSubmit = (event) => {
@@ -239,10 +239,14 @@ const Contact = () => {
                               value={formData.Service}
                               onChange={handleChange}
                             >
-                              <option selected>service</option>
-                              {serviceData.map((serv) => (
-                                <option>{serv.title}</option>
-                              ))}
+                              <option value>service</option>
+                              <option>Web Devlopment</option>
+                              <option>App Devlopment</option>
+                              <option>Degital marketing</option>
+                              <option>SEO Service</option>
+                              <option>Hybride App Devlopment</option>
+                              <option>Ad Service</option>
+                              <option>Vide Ad-service</option>
                             </select>
                           </fieldset>
                         </div>
@@ -257,12 +261,16 @@ const Contact = () => {
                             ></textarea>
                           </fieldset>
                         </div>
-                        <ReCAPTCHA
-                          ref={recaptchaRef}
-                          sitekey="YOUR_SITE_KEY"
-                          size="normal"
-                          onChange={onChange}
-                        />
+                        <div className="col-lg-12 col-sm-12 col-12">
+                          <ReCAPTCHA
+                            ref={recaptchaRef}
+                            sitekey="YOUR_SITE_KEY"
+                            size="normal"
+                            style={{ marginLeft: "30%" }}
+                            onChange={onChange}
+                          />
+                          <br />
+                        </div>
                         <div className="col-lg-12 col-sm-12 col-12">
                           <fieldset>
                             <button
@@ -278,34 +286,32 @@ const Contact = () => {
                       </div>
                     </form>
                     <div className="more-info" style={{ marginTop: "3%" }}>
-                      {contactData.map((contact) => (
-                        <div className="row" key={contact._id}>
-                          <div className="col-lg-4">
-                            <div className="info-item">
-                              <i className="fa fa-phone"></i>
-                              <h4>
-                                <Link to="#">{contact.phoneNumber}</Link>
-                              </h4>
-                            </div>
-                          </div>
-                          <div className="col-lg-4">
-                            <div className="info-item">
-                              <i className="fa fa-envelope"></i>
-                              <h4>
-                                <Link to="#">{contact.email}</Link>
-                              </h4>
-                            </div>
-                          </div>
-                          <div className="col-lg-4">
-                            <div className="info-item">
-                              <i className="fa fa-map-marker"></i>
-                              <h4>
-                                <Link to="#">{contact.address}</Link>
-                              </h4>
-                            </div>
+                      <div className="row">
+                        <div className="col-lg-4">
+                          <div className="info-item">
+                            <i className="fa fa-phone"></i>
+                            <h4>
+                              <Link to=" ">+91 98744 33669</Link>
+                            </h4>
                           </div>
                         </div>
-                      ))}
+                        <div className="col-lg-4">
+                          <div className="info-item">
+                            <i className="fa fa-envelope"></i>
+                            <h4>
+                              <Link to=" ">info@pourtechnologies.com</Link>
+                            </h4>
+                          </div>
+                        </div>
+                        <div className="col-lg-4">
+                          <div className="info-item">
+                            <i className="fa fa-map-marker"></i>
+                            <h4>
+                              <Link to=" ">Motijeel, Dumdum, Kolkata-74</Link>
+                            </h4>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -319,20 +325,18 @@ const Contact = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="row">
-              {contactData.map((cmap) => (
-                <div className="col-lg-12" key={cmap._id}>
-                  <div id="map">
-                    <iframe
-                      src={cmap.mapLink}
-                      width="100%"
-                      height="370px"
-                      frameBorder="0"
-                      style={{ border: "0", borderRadius: "23px" }}
-                      allowFullScreen=""
-                    ></iframe>
-                  </div>
+              <div className="col-lg-12">
+                <div id="map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d230.18113307385264!2d88.410151!3d22.620279!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjLCsDM3JzEyLjkiTiA4OMKwMjQnMzYuNyJF!5e0!3m2!1sen!2sin!4v1717841374105!5m2!1sen!2sin"
+                    width="100%"
+                    height="370px"
+                    frameBorder="0"
+                    style={{ border: "0", borderRadius: "23px" }}
+                    allowFullScreen=""
+                  ></iframe>
                 </div>
-              ))}
+              </div>
             </div>
           </div>
         </div>

@@ -11,14 +11,14 @@ import { BrowserRouter } from "react-router-dom";
 // import Contact from "./Component/Contact";
 import NotFound from "./Common/NotFound";
 // import Career from "./Component/Career";
-import Testimonial from "./Component/Testimonial";
+// import Testimonial from "./Component/Testimonial";
 // import Plannning from "./Component/Plannning";
 // import ApplyForm from "./Component/ApplyForm";
 // import SingleBlog from "./Component/SingleBlog";
 import { Suspense } from "react";
 import Thanks from "./Component/Thanks";
-import Privecy from "./Component/Privecy";
-import Terms from "./Component/Terms";
+// import Privecy from "./Component/Privecy";
+// import Terms from "./Component/Terms";
 import SingleService from "./Component/SingleService";
 import Webservice from "./Component/Webservice";
 import Marketinkservice from "./Component/Marketinkservice";
@@ -79,6 +79,19 @@ let SingleBlog = React.lazy(() => {
     setTimeout(() => resolve(import("./Component/SingleBlog")), 1000);
   });
 });
+
+let Privecy = React.lazy(() => {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(import("./Component/Privecy")), 1000);
+  });
+});
+
+let Terms = React.lazy(() => {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(import("./Component/Terms")), 1000);
+  });
+});
+
 
 const Routing = () => {
   return (
