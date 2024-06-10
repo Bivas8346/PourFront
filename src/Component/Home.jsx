@@ -924,47 +924,7 @@ const Home = () => {
         </div>
       </div>
       {/* <!-- Work With --> */}
-      <div className="container-fluid gtco-logo-area">
-        <div className="container">
-          <div className="row">
-            <div className="col">
-              <img
-                src="./assats/images/logo1.png"
-                className="img-fluid"
-                alt="company"
-              />
-            </div>
-            <div className="col">
-              <img
-                src="./assats/images/logo2.png"
-                className="img-fluid"
-                alt="company"
-              />
-            </div>
-            <div className="col">
-              <img
-                src="./assats/images/logo3.png"
-                className="img-fluid"
-                alt="company"
-              />
-            </div>
-            <div className="col">
-              <img
-                src="./assats/images/logo4.png"
-                className="img-fluid"
-                alt="company"
-              />
-            </div>
-            <div className="col">
-              <img
-                src="./assats/images/logo5.png"
-                className="img-fluid"
-                alt="company"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+
       {/* <!-- Footer --> */}
       <footer className="container-fluid gtco-footer">
         <div className="container">
