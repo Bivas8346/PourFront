@@ -242,13 +242,15 @@ const Contact = () => {
                             ></textarea>
                           </fieldset>
                         </div>
-                        <ReCAPTCHA
-                          ref={recaptchaRef}
-                          sitekey="6LcVV_UpAAAAAMcDR_FpYS1HmUwIPd_1Ijd4j3zm"
-                          size="normal"
-                          onChange={onChange}
-                        />
-                        <br />
+                        <div className="col-lg-6 col-sm-6 col-12">
+                          <ReCAPTCHA
+                            ref={recaptchaRef}
+                            sitekey="6LcVV_UpAAAAAMcDR_FpYS1HmUwIPd_1Ijd4j3zm"
+                            size="normal"
+                            onChange={onChange}
+                          />
+                          <br />
+                        </div>
                         <div className="col-lg-12 col-sm-12 col-12">
                           <fieldset>
                             <button

@@ -932,7 +932,7 @@ const Home = () => {
             <div className="col-lg-6">
               <div className="row">
                 <div className="col-6">
-                  <h4>Company</h4>
+                  <h4>Support</h4>
                   <ul className="nav flex-column company-nav">
                     <li className="nav-item">
                       <Link className="nav-link" to="/">
