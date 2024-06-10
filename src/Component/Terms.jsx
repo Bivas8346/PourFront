@@ -84,57 +84,66 @@ const Terms = () => {
       </div>
       {/* <!-- Terms Start --> */}
       <div className="container-xxl py-5">
-        <div className="py-5 px-lg-5 container">
-          <div className="row g-5 align-items-center">
-            <div className="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
-              <p className="section-title text-dark">
-                Terms :<span></span>
-              </p>
-              <p className="mb-4">
-                Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos
-                labore. Clita erat ipsum et lorem et sit, sed stet no labore
-                lorem sit clita duo justo eirmod magna dolore erat amet
-              </p>
-              <br />
-              <p className="section-title text-dark">
-                Terms :<span></span>
-              </p>
-              <p className="mb-4">
-                Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos
-                labore. Clita erat ipsum et lorem et sit, sed stet no labore
-                lorem sit clita duo justo eirmod magna dolore erat amet
-              </p>
-              <br />
-              <p className="section-title text-dark">
-                Terms :<span></span>
-              </p>
-              <p className="mb-4">
-                Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos
-                labore. Clita erat ipsum et lorem et sit, sed stet no labore
-                lorem sit clita duo justo eirmod magna dolore erat amet
-              </p>
-              <br />
-              <p className="section-title text-dark">
-                Terms :<span></span>
-              </p>
-              <p className="mb-4">
-                Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos
-                labore. Clita erat ipsum et lorem et sit, sed stet no labore
-                lorem sit clita duo justo eirmod magna dolore erat amet
-              </p>
-              <br />
-              <p className="section-title text-dark">
-                Terms :<span></span>
-              </p>
-              <p className="mb-4">
-                Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos
-                labore. Clita erat ipsum et lorem et sit, sed stet no labore
-                lorem sit clita duo justo eirmod magna dolore erat amet
-              </p>
-            </div>
-          </div>
-        </div>
+  <div className="py-5 px-lg-5 container">
+    <div className="row g-5 align-items-center">
+      <div className="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
+        <h5 className="section-title text-dark">Terms and Conditions</h5>
+        <p className="mb-4">
+          Welcome to Pour Technologies! These Terms and Conditions outline the rules and regulations for the use of our website and services. By accessing or using our website, you agree to be bound by these Terms and Conditions. Please read them carefully.
+        </p>
+        <h5 className="section-title text-dark">Acceptance of Terms</h5>
+        <p className="mb-4">
+          By using our website or services, you acknowledge that you have read, understood, and agreed to be bound by these Terms and Conditions, as well as our Privacy Policy. If you do not agree with any part of these terms, you must not use our website or services.
+        </p>
+        <h5 className="section-title text-dark">Use of Website and Services</h5>
+        <p className="mb-4">
+          Our website and services are provided for lawful purposes only. You agree not to use our website or services for any unlawful or prohibited purposes, including but not limited to:
+        </p>
+        <ul className="mb-4">
+          <li>Engaging in any illegal activities or violating any applicable laws or regulations</li>
+          <li>Transmitting or distributing any harmful, abusive, defamatory, or obscene content</li>
+          <li>Infringing on intellectual property rights, including copyrights, trademarks, and patents</li>
+          <li>Attempting to gain unauthorized access to our systems or interfering with their proper operation</li>
+        </ul>
+        <h5 className="section-title text-dark">Intellectual Property</h5>
+        <p className="mb-4">
+          The content and materials on our website, including but not limited to text, graphics, logos, images, and software, are the property of Pour Technologies or its licensors and are protected by intellectual property laws. You may not use, reproduce, distribute, modify, or create derivative works from our content without our prior written consent.
+        </p>
+        <h5 className="section-title text-dark">User Accounts and Responsibilities</h5>
+        <p className="mb-4">
+          To access certain features or services, you may be required to create an account. You are responsible for maintaining the confidentiality of your account information and for all activities that occur under your account. You agree to provide accurate and complete information when creating an account and to keep your account information up-to-date.
+        </p>
+        <h5 className="section-title text-dark">Third-Party Links and Services</h5>
+        <p className="mb-4">
+          Our website may contain links to third-party websites or services that are not owned or controlled by Pour Technologies. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party websites or services.
+        </p>
+        <h5 className="section-title text-dark">Limitation of Liability</h5>
+        <p className="mb-4">
+          In no event shall Pour Technologies, its affiliates, or its employees be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or in connection with the use of our website or services.
+        </p>
+        <h5 className="section-title text-dark">Indemnification</h5>
+        <p className="mb-4">
+          You agree to indemnify, defend, and hold harmless Pour Technologies and its affiliates, officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, and expenses arising out of your use of our website or services, your violation of these Terms and Conditions, or your breach of any rights of third parties.
+        </p>
+        <h5 className="section-title text-dark">Termination</h5>
+        <p className="mb-4">
+          We reserve the right to terminate or suspend your access to our website or services at any time, without prior notice or liability, for any reason whatsoever, including but not limited to a breach of these Terms and Conditions.
+        </p>
+        <h5 className="section-title text-dark">Governing Law and Jurisdiction</h5>
+        <p className="mb-4">
+          These Terms and Conditions shall be governed by and construed in accordance with the laws of [insert jurisdiction]. Any disputes arising out of or relating to these Terms and Conditions shall be subject to the exclusive jurisdiction of the courts in [insert jurisdiction].
+        </p>
+        <h5 className="section-title text-dark">Changes to Terms and Conditions</h5>
+        <p className="mb-4">
+          We reserve the right to modify or update these Terms and Conditions at any time. Any changes will be effective immediately upon posting the revised Terms and Conditions on our website. Your continued use of our website or services after any changes constitutes your acceptance of the new Terms and Conditions.
+        </p>
+
+        If you have any questions or concerns regarding these Terms and Conditions, please contact us at <a href="mailto:info@pourtechnologies.com">info@pourtechnologies.com</a>.
       </div>
+    </div>
+  </div>
+</div>
+
       {/* <!-- Footer --> */}
       <footer className="container-fluid gtco-footer">
         <div className="container">
