@@ -65,12 +65,13 @@ const Marketinkservice = () => {
           <div className="row">
             <div className="col-md-6">
               <h1>
-                We promise to bring the best <span>solution</span> for your
-                business.
+                Digital Marketing:{" "}
+                <span>A Holistic Digital Marketing Approach</span>
               </h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                rhoncus turpis nisl.
+                Data-driven strategies for SEO, PPC, social media, and content
+                marketing to boost online visibility and drive conversions.
+                Engaging target audiences and amplifying brand reach.
               </p>
             </div>
             <br />
@@ -119,12 +120,12 @@ const Marketinkservice = () => {
                 <br />
               </h2>
               <ul style={{ fontWeight: "bolder", fontSize: "20px" }}>
-                <li>TECHNOLOGY 1</li>
-                <li>TECHNOLOGY 1</li>
-                <li>TECHNOLOGY 1</li>
-                <li>TECHNOLOGY 1</li>
-                <li>TECHNOLOGY 1</li>
-                <li>TECHNOLOGY 1</li>
+                <li>Google Analytics</li>
+                <li>Search Engine Optimization (SEO) </li>
+                <li>Content Management Systems</li>
+                <li>Google Ads</li>
+                <li>Facebook Ads</li>
+                <li>Youtube Ads</li>
               </ul>
             </div>
             <div className="col-lg-4">
@@ -160,11 +161,17 @@ const Marketinkservice = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-5">
-              <h2>Single Service Title</h2>
-              <p>Single Srvice Sub Title</p>
+              <h2>About The Service We Provide</h2>
               <p>
-                <small>Single Service About</small>
+                Elevate your online presence with our comprehensive digital
+                marketing services, developing data-driven strategies for search
+                engine optimization (SEO), pay-per-click (PPC) advertising,
+                social media marketing, and content creation to boost brand
+                visibility, engage your target audience, and drive conversions.
               </p>
+              {/* <p>
+                <small>Single Service About</small>
+              </p> */}
             </div>
             <div className="col-md-7">
               <div className="cover">

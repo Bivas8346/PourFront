@@ -65,12 +65,15 @@ const Appservice = () => {
           <div className="row">
             <div className="col-md-6">
               <h1>
-                We promise to bring the best <span>solution</span> for your
-                business.
+                Web App Development:{" "}
+                <span>
+                  Unleashing Operational Efficiency through Innovative Web
+                  Applications
+                </span>
               </h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                rhoncus turpis nisl.
+                Feature-rich, intuitive web applications tailored to business
+                needs, ensuring seamless user experiences across devices.
               </p>
             </div>
             <br />
@@ -119,12 +122,13 @@ const Appservice = () => {
                 <br />
               </h2>
               <ul style={{ fontWeight: "bolder", fontSize: "20px" }}>
-                <li>TECHNOLOGY 1</li>
-                <li>TECHNOLOGY 1</li>
-                <li>TECHNOLOGY 1</li>
-                <li>TECHNOLOGY 1</li>
-                <li>TECHNOLOGY 1</li>
-                <li>TECHNOLOGY 1</li>
+              <li>REACT</li>
+                <li>LARAVEL</li>
+                <li>NODE</li>
+                <li>EXPRESS JS</li>
+                <li>MONGODB</li>
+                <li>PHP</li>
+                <li>MYSQL</li>
               </ul>
             </div>
             <div className="col-lg-4">
@@ -160,11 +164,17 @@ const Appservice = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-5">
-              <h2>Single Service Title</h2>
-              <p>Single Srvice Sub Title</p>
+              <h2>About The Service We Provide</h2>
               <p>
-                <small>Single Service About</small>
+                Unlock the power of web applications with our expert web app
+                development solutions. Our team specializes in creating
+                feature-rich, intuitive, and high-performance web applications
+                tailored to your unique business requirements, ensuring seamless
+                user experiences across devices.
               </p>
+              {/* <p>
+                <small>Single Service About</small>
+              </p> */}
             </div>
             <div className="col-md-7">
               <div className="cover">

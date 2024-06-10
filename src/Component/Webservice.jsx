@@ -64,13 +64,12 @@ const Webservice = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <h1>
-                We promise to bring the best <span>solution</span> for your
-                business.
-              </h1>
+              <h1>Web Development: <br />
+             <span>Your Gateway to Online Success</span></h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                rhoncus turpis nisl.
+                Visually stunning, user-friendly websites optimized for search
+                and business growth with cutting-edge development expertise.
+                Building responsive, secure, and scalable solutions.
               </p>
             </div>
             <br />
@@ -119,12 +118,13 @@ const Webservice = () => {
                 <br />
               </h2>
               <ul style={{ fontWeight: "bolder", fontSize: "20px" }}>
-                <li>TECHNOLOGY 1</li>
-                <li>TECHNOLOGY 1</li>
-                <li>TECHNOLOGY 1</li>
-                <li>TECHNOLOGY 1</li>
-                <li>TECHNOLOGY 1</li>
-                <li>TECHNOLOGY 1</li>
+                <li>REACT</li>
+                <li>LARAVEL</li>
+                <li>NODE</li>
+                <li>EXPRESS JS</li>
+                <li>MONGODB</li>
+                <li>PHP</li>
+                <li>MYSQL</li>
               </ul>
             </div>
             <div className="col-lg-4">
@@ -160,10 +160,14 @@ const Webservice = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-5">
-              <h2>Single Service Title</h2>
-              <p>Single Srvice Sub Title</p>
+              <h2>About The Service We Provide</h2>
               <p>
-                <small>Single Service About</small>
+                Pour Technologies offers cutting-edge web development services
+                to create custom websites that are visually stunning,
+                user-friendly, and optimized for search engines. Our team of
+                skilled developers leverages the latest technologies to build
+                responsive, secure, and scalable websites that drive business
+                growth.
               </p>
             </div>
             <div className="col-md-7">

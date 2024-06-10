@@ -65,12 +65,15 @@ const Seoservice = () => {
           <div className="row">
             <div className="col-md-6">
               <h1>
-                We promise to bring the best <span>solution</span> for your
-                business.
+                Application Development: <br />
+                <span>
+                  Tailored Software Solutions to Drive Operational Excellence
+                </span>
               </h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                rhoncus turpis nisl.
+                Our talented developers design and build robust, scalable, and
+                user-friendly applications tailored to your unique business
+                requirements.
               </p>
             </div>
             <br />
@@ -160,11 +163,17 @@ const Seoservice = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-5">
-              <h2>Single Service Title</h2>
-              <p>Single Srvice Sub Title</p>
+              <h2>About The Service We Provide</h2>
               <p>
-                <small>Single Service About</small>
+                Harness the full potential of custom software applications with
+                our expert application development services. Our talented
+                developers design and build robust, scalable, and user-friendly
+                applications to streamline your operations, enhance
+                productivity, and provide a competitive edge.
               </p>
+              {/* <p>
+                <small>Single Service About</small>
+              </p> */}
             </div>
             <div className="col-md-7">
               <div className="cover">

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import { Link, useParams } from "react-router-dom";
 
@@ -65,12 +65,10 @@ const Videservice = () => {
           <div className="row">
             <div className="col-md-6">
               <h1>
-                We promise to bring the best <span>solution</span> for your
-                business.
+                Video Advertisement: <span>Captivating Visuals, Compelling Stories: Elevating Your Brand's Impact</span>
               </h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                rhoncus turpis nisl.
+              Captivating video content that communicates brand messaging, showcases offerings, and fosters emotional connections with the audience. Telling compelling stories through visual storytelling.
               </p>
             </div>
             <br />
@@ -119,12 +117,12 @@ const Videservice = () => {
                 <br />
               </h2>
               <ul style={{ fontWeight: "bolder", fontSize: "20px" }}>
-                <li>TECHNOLOGY 1</li>
-                <li>TECHNOLOGY 1</li>
-                <li>TECHNOLOGY 1</li>
-                <li>TECHNOLOGY 1</li>
-                <li>TECHNOLOGY 1</li>
-                <li>TECHNOLOGY 1</li>
+                <li>Google Ads</li>
+                <li>YouTube Ads</li>
+                <li>Facebook Ads</li>
+                <li>Instagram Ads</li>
+                <li>Video Search Engine Optimization (SEO)</li>
+                {/* <li>TECHNOLOGY 1</li> */}
               </ul>
             </div>
             <div className="col-lg-4">
@@ -160,11 +158,17 @@ const Videservice = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-5">
-              <h2>Single Service Title</h2>
-              <p>Single Srvice Sub Title</p>
+              <h2>About The Service We Provide</h2>
               <p>
-                <small>Single Service About</small>
+                Captivate your audience with our compelling video advertisement
+                solutions. Our creative team crafts engaging video content that
+                effectively communicates your brand's message, showcases your
+                products or services, and drives emotional connections with your
+                target market.
               </p>
+              {/* <p>
+                <small>Single Service About</small>
+              </p> */}
             </div>
             <div className="col-md-7">
               <div className="cover">
@@ -902,7 +906,7 @@ const Videservice = () => {
         <i className="fa fa-angle-up"></i>
       </a>
     </>
-  )
-}
+  );
+};
 
-export default Videservice
+export default Videservice;
