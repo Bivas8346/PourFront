@@ -61,26 +61,6 @@ const Contact = () => {
       });
   };
 
-  useEffect(() => {
-    axios
-      .get("https://pour-tech.onrender.com/api/getContact")
-      .then((res) => {
-        setAllcontact(res.data.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-
-    axios
-      .get("https://pour-tech.onrender.com/api/getService")
-      .then((res) => {
-        setAllservice(res.data.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
-
   return (
     <>
       {/* <!-- Navbar --> */}

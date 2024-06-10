@@ -4,7 +4,6 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 const Career = () => {
-
   return (
     <>
       {/* <!-- Navbar --> */}
@@ -91,42 +90,249 @@ const Career = () => {
         <div className="container">
           <h1 className="text-center mb-5">Recently Posted job</h1>
           <div className="carrier-carousel">
-              <div
-                className="Carrier-item bg-light rounded my-4"
-              >
-                <br />
-                <div className="d-flex align-items-center job-cont">
-                  <img
-                    className="flex-shrink-0 rounded-circle"
-                    src="../assats/images/seo.png"
-                    style={{ width: "65px", height: "65px", margin: "20px" }}
-                    alt="job-img"
-                  />
-                  <div className="ps-4">
-                    <h5 className="mb-1">SEO</h5>
-                    <p>
-                      <i className="fa fa-map-marker me-3"></i>{" "}
-                      KOLKATA |<i className="fa fa-clock-o me-3"></i>{" "}
-                      FULL TIME
-                    </p>
-                  </div>
-                  <div className="ps-4 applybtn">
-                    <br />
-                    <Link
-                      to="/form"
-                      className="btn btn-warning rounded-pill py-2 px-4 ms-3"
-                    >
-                      Apply Now
-                    </Link>
-                    <br />
-                    <br />
-                    <p>
-                      <i className="fa fa-check me-3"></i> Publish At : 29, July
-                      2024
-                    </p>
-                  </div>
+            <div className="Carrier-item bg-light rounded my-4">
+              <br />
+              <div className="d-flex align-items-center job-cont">
+                <img
+                  className="flex-shrink-0 rounded-circle"
+                  src="../assats/images/Webdev-carrier.png"
+                  style={{ width: "75px", height: "75px", margin: "20px" }}
+                  alt="job-img"
+                />
+                <div className="ps-4">
+                  <h5 className="mb-1">Web Devloper</h5>
+                  <p>
+                    <i className="fa fa-map-marker me-3"></i> KOLKATA |
+                    <i className="fa fa-clock-o me-3"></i> FULL TIME
+                  </p>
+                </div>
+                <div className="ps-4 applybtn">
+                  <br />
+                  <Link
+                    to="/form"
+                    className="btn btn-warning rounded-pill py-2 px-4 ms-3"
+                  >
+                    Apply Now
+                  </Link>
+                  <br />
+                  <br />
+                  <p>
+                    <i className="fa fa-check me-3"></i> Publish At : 29, July
+                    2024
+                  </p>
                 </div>
               </div>
+            </div>
+          </div>
+          <div className="carrier-carousel">
+            <div className="Carrier-item bg-light rounded my-4">
+              <br />
+              <div className="d-flex align-items-center job-cont">
+                <img
+                  className="flex-shrink-0 rounded-circle"
+                  src="../assats/images/digimarketer-carrier.png"
+                  style={{ width: "75px", height: "75px", margin: "20px" }}
+                  alt="job-img"
+                />
+                <div className="ps-4">
+                  <h5 className="mb-1">Digital Marketer</h5>
+                  <p>
+                    <i className="fa fa-map-marker me-3"></i> KOLKATA |
+                    <i className="fa fa-clock-o me-3"></i> FULL TIME
+                  </p>
+                </div>
+                <div className="ps-4 applybtn">
+                  <br />
+                  <Link
+                    to="/form"
+                    className="btn btn-warning rounded-pill py-2 px-4 ms-3"
+                  >
+                    Apply Now
+                  </Link>
+                  <br />
+                  <br />
+                  <p>
+                    <i className="fa fa-check me-3"></i> Publish At : 29, July
+                    2024
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="carrier-carousel">
+            <div className="Carrier-item bg-light rounded my-4">
+              <br />
+              <div className="d-flex align-items-center job-cont">
+                <img
+                  className="flex-shrink-0 rounded-circle"
+                  src="../assats/images/seo-carrier.png"
+                  style={{ width: "75px", height: "75px", margin: "20px" }}
+                  alt="job-img"
+                />
+                <div className="ps-4">
+                  <h5 className="mb-1">SEO Executive</h5>
+                  <p>
+                    <i className="fa fa-map-marker me-3"></i> KOLKATA |
+                    <i className="fa fa-clock-o me-3"></i> FULL TIME
+                  </p>
+                </div>
+                <div className="ps-4 applybtn">
+                  <br />
+                  <Link
+                    to="/form"
+                    className="btn btn-warning rounded-pill py-2 px-4 ms-3"
+                  >
+                    Apply Now
+                  </Link>
+                  <br />
+                  <br />
+                  <p>
+                    <i className="fa fa-check me-3"></i> Publish At : 29, July
+                    2024
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="carrier-carousel">
+            <div className="Carrier-item bg-light rounded my-4">
+              <br />
+              <div className="d-flex align-items-center job-cont">
+                <img
+                  className="flex-shrink-0 rounded-circle"
+                  src="../assats/images/app-carrier.png"
+                  style={{ width: "75px", height: "75px", margin: "20px" }}
+                  alt="job-img"
+                />
+                <div className="ps-4">
+                  <h5 className="mb-1">Hybrid App Devloper</h5>
+                  <p>
+                    <i className="fa fa-map-marker me-3"></i> KOLKATA |
+                    <i className="fa fa-clock-o me-3"></i> FULL TIME
+                  </p>
+                </div>
+                <div className="ps-4 applybtn">
+                  <br />
+                  <Link
+                    to="/form"
+                    className="btn btn-warning rounded-pill py-2 px-4 ms-3"
+                  >
+                    Apply Now
+                  </Link>
+                  <br />
+                  <br />
+                  <p>
+                    <i className="fa fa-check me-3"></i> Publish At : 29, July
+                    2024
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="carrier-carousel">
+            <div className="Carrier-item bg-light rounded my-4">
+              <br />
+              <div className="d-flex align-items-center job-cont">
+                <img
+                  className="flex-shrink-0 rounded-circle"
+                  src="../assats/images/caller-carrier.png"
+                  style={{ width: "65px", height: "65px", margin: "20px" }}
+                  alt="job-img"
+                />
+                <div className="ps-4">
+                  <h5 className="mb-1">Tele Service Executive</h5>
+                  <p>
+                    <i className="fa fa-map-marker me-3"></i> KOLKATA |
+                    <i className="fa fa-clock-o me-3"></i> FULL TIME
+                  </p>
+                </div>
+                <div className="ps-4 applybtn">
+                  <br />
+                  <Link
+                    to="/form"
+                    className="btn btn-warning rounded-pill py-2 px-4 ms-3"
+                  >
+                    Apply Now
+                  </Link>
+                  <br />
+                  <br />
+                  <p>
+                    <i className="fa fa-check me-3"></i> Publish At : 29, July
+                    2024
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="carrier-carousel">
+            <div className="Carrier-item bg-light rounded my-4">
+              <br />
+              <div className="d-flex align-items-center job-cont">
+                <img
+                  className="flex-shrink-0 rounded-circle"
+                  src="../assats/images/caller-carrier.png"
+                  style={{ width: "75px", height: "75px", margin: "20px" }}
+                  alt="job-img"
+                />
+                <div className="ps-4">
+                  <h5 className="mb-1">Field Sales Executive</h5>
+                  <p>
+                    <i className="fa fa-map-marker me-3"></i> KOLKATA |
+                    <i className="fa fa-clock-o me-3"></i> FULL TIME
+                  </p>
+                </div>
+                <div className="ps-4 applybtn">
+                  <br />
+                  <Link
+                    to="/form"
+                    className="btn btn-warning rounded-pill py-2 px-4 ms-3"
+                  >
+                    Apply Now
+                  </Link>
+                  <br />
+                  <br />
+                  <p>
+                    <i className="fa fa-check me-3"></i> Publish At : 29, July
+                    2024
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="carrier-carousel">
+            <div className="Carrier-item bg-light rounded my-4">
+              <br />
+              <div className="d-flex align-items-center job-cont">
+                <img
+                  className="flex-shrink-0 rounded-circle"
+                  src="../assats/images/seo.png"
+                  style={{ width: "65px", height: "65px", margin: "20px" }}
+                  alt="job-img"
+                />
+                <div className="ps-4">
+                  <h5 className="mb-1">HR</h5>
+                  <p>
+                    <i className="fa fa-map-marker me-3"></i> KOLKATA |
+                    <i className="fa fa-clock-o me-3"></i> FULL TIME
+                  </p>
+                </div>
+                <div className="ps-4 applybtn">
+                  <br />
+                  <Link
+                    to="/form"
+                    className="btn btn-warning rounded-pill py-2 px-4 ms-3"
+                  >
+                    Apply Now
+                  </Link>
+                  <br />
+                  <br />
+                  <p>
+                    <i className="fa fa-check me-3"></i> Publish At : 29, July
+                    2024
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
