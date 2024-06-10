@@ -5,8 +5,11 @@ import { Link, useNavigate } from "react-router-dom";
 import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
-  const [contactData, setAllcontact] = useState([]);
-  const [serviceData, setAllservice] = useState([]);
+  const recaptchaRef = useRef(null);
+  const onChange = (value) => {
+    console.log("Captcha value:", value);
+  };
+
   const [formData, setFormData] = useState({
     Date: "",
     Name: "",
@@ -16,18 +19,12 @@ const Contact = () => {
     Message: "",
   });
 
-  const recaptchaRef = useRef(null);
-
-  const onChange = (value) => {
-    console.log("Captcha value:", value);
-  };
-
   const navigate = useNavigate();
 
   useEffect(() => {
     const today = new Date();
     const date = today.toISOString().split("T")[0]; // Format as YYYY-MM-DD
-    setFormData((prevState) => ({ ...prevState, currentDate: date }));
+    setFormData((prevState) => ({ ...prevState, Date: date }));
   }, []);
 
   let handleChange = (event) => {
@@ -49,7 +46,7 @@ const Contact = () => {
     };
     axios
       .post(
-        "https://sheet.best/api/sheets/18776b41-0e71-4237-99fe-ce1589f0f212",
+        "https://sheet.best/api/sheets/a8f6a41a-16f3-431c-9711-821664f35f7a",
         add
       )
       .then((res) => {
@@ -100,7 +97,7 @@ const Contact = () => {
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/career">
-                  Carrier
+                  Carrer
                 </Link>
               </li>
               <li className="nav-item">
@@ -244,7 +241,7 @@ const Contact = () => {
                         <div className="col-lg-12 col-sm-12 col-12">
                           <ReCAPTCHA
                             ref={recaptchaRef}
-                            sitekey="YOUR_SITE_KEY"
+                            sitekey="6LcVV_UpAAAAAMcDR_FpYS1HmUwIPd_1Ijd4j3zm"
                             size="normal"
                             style={{ marginLeft: "30%" }}
                             onChange={onChange}

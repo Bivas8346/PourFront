@@ -7,58 +7,56 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 const ApplyForm = () => {
   const recaptchaRef = useRef(null);
-  const [careerData, setAllcareer] = useState([]);
 
-  useEffect(() => {
-    axios
-      .get("https://pour-tech.onrender.com/api/getCareer")
-      .then((res) => {
-        setAllcareer(res.data.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
-
-  const [cont, setCont] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    job_role: "",
-    address: "",
-    zip: "",
-    experience: "",
-    cv: "",
+  const onChange = (value) => {
+    console.log("Captcha value:", value);
+  };
+  
+  const [formData, setFormData] = useState({
+    Date: "",
+    Name: "",
+    Email: "",
+    PhoneNumber: "",
+    Job_Role: "",
+    Address: "",
+    Zip: "",
+    Experience: "",
+    CV: "",
   });
+
   const navigate = useNavigate();
 
-  const handleChange = (event) => {
-    const { name, value, type, files } = event.target;
-    if (type === "file") {
-      const file = files[0];
-      convertToBase64(file).then((base64) => {
-        setCont({ ...cont, [name]: base64 });
-      });
-    } else {
-      setCont({ ...cont, [name]: value });
-    }
+  useEffect(() => {
+    const today = new Date();
+    const date = today.toISOString().split("T")[0]; // Format as YYYY-MM-DD
+    setFormData((prevState) => ({ ...prevState, Date: date }));
+  }, []);
+
+  let handleChange = (event) => {
+    let { name, value } = event.target;
+    console.log(name, value);
+    setFormData((prevState) => ({ ...prevState, [name]: value }));
   };
 
-  const handleSubmit = (event) => {
+  let handleSubmit = (event) => {
     event.preventDefault();
-    console.log("Submitted:", cont);
-    const add = {
-      name: cont.name,
-      email: cont.email,
-      phone: cont.phone,
-      job_role: cont.job_role,
-      address: cont.address,
-      zip: cont.zip,
-      experience: cont.experience,
-      cv: cont.cv,
+    console.log("submited:", formData);
+    let add = {
+      Date: formData.Date,
+      Name: formData.Name,
+      Email: formData.Email,
+      PhoneNumber: formData.PhoneNumber,
+      Job_Role: formData.Job_Role,
+      Address: formData.Address,
+      Zip: formData.Zip,
+      Experience: formData.Experience,
+      CV: formData.CV,
     };
     axios
-      .post("https://pour-tech.onrender.com/api/postCV", add)
+      .post(
+        "https://sheet.best/api/sheets/75ae80df-a940-4421-9b4f-9bd5553a22ee",
+        add
+      )
       .then((res) => {
         console.log(res);
         navigate("/thank");
@@ -68,18 +66,6 @@ const ApplyForm = () => {
       });
   };
 
-  const convertToBase64 = (file) => {
-    return new Promise((resolve, reject) => {
-      const reader = new FileReader();
-      reader.readAsDataURL(file);
-      reader.onload = () => resolve(reader.result);
-      reader.onerror = (error) => reject(error);
-    });
-  };
-
-  const onChange = (value) => {
-    console.log("Captcha value:", value);
-  };
   return (
     <>
       {/* <!-- Navbar --> */}
@@ -119,7 +105,7 @@ const ApplyForm = () => {
               </li>
               <li className="nav-item">
                 <Link className="nav-link active" to="/career">
-                  Carrier
+                  Carrer
                 </Link>
               </li>
               <li className="nav-item">
@@ -180,7 +166,7 @@ const ApplyForm = () => {
                     <input
                       style={{ fontSize: "120%" }}
                       type="text"
-                      name="name"
+                      name="Name"
                       placeholder="Your Name..."
                       onChange={handleChange}
                       required
@@ -193,7 +179,7 @@ const ApplyForm = () => {
                       style={{ fontSize: "120%" }}
                       type="text"
                       id="Email"
-                      name="email"
+                      name="Email"
                       pattern="[^ @]*@[^ @]*"
                       placeholder="Your E-mail..."
                       onChange={handleChange}
@@ -206,7 +192,7 @@ const ApplyForm = () => {
                     <input
                       style={{ fontSize: "120%" }}
                       type="tel"
-                      name="phone"
+                      name="PhoneNumber"
                       placeholder="Your Phone Number..."
                       onChange={handleChange}
                       required
@@ -215,23 +201,16 @@ const ApplyForm = () => {
                 </div>
                 <div className="col-lg-6 col-sm-6 col-12">
                   <fieldset>
-                    {/* <input
-                      style={{ fontSize: "120%" }}
-                      type="text"
-                      name="Position"
-                      placeholder="Apply..."
-                      onChange={handleChange}
-                    /> */}
                     <select
                       placeholder="Apply..."
-                      name="job_role"
+                      name="Job_Role"
                       style={{ fontSize: "120%" }}
                       onChange={handleChange}
                     >
-                      <option selected>Apply...</option>
-                      {careerData.map((serv) => (
-                        <option key={serv._id}>{serv.jobRole}</option>
-                      ))}
+                      <option value>Apply...</option>
+                      <option>Web Devloper</option>
+                      <option>Digital Marketer</option>
+                      <option>Hybrid App Devloper</option>
                     </select>
                   </fieldset>
                 </div>
@@ -240,7 +219,7 @@ const ApplyForm = () => {
                     <input
                       style={{ fontSize: "120%" }}
                       type="text"
-                      name="address"
+                      name="Address"
                       placeholder="Your Address..."
                       onChange={handleChange}
                       required
@@ -252,7 +231,7 @@ const ApplyForm = () => {
                     <input
                       style={{ fontSize: "120%" }}
                       type="text"
-                      name="zip"
+                      name="Zip"
                       placeholder="Your Zip Code..."
                       onChange={handleChange}
                       required
@@ -264,7 +243,7 @@ const ApplyForm = () => {
                     <input
                       style={{ fontSize: "120%" }}
                       type="number"
-                      name="experience"
+                      name="Experience"
                       placeholder="Have You Any Experience..."
                       onChange={handleChange}
                       required
@@ -287,18 +266,21 @@ const ApplyForm = () => {
                     <input
                       style={{ fontSize: "120%" }}
                       type="file"
-                      name="cv"
+                      name="CV"
                       onChange={handleChange}
                       // required
                     />
                   </fieldset>
                 </div>
-                <ReCAPTCHA
-                  ref={recaptchaRef}
-                  sitekey="YOUR_SITE_KEY"
-                  size="normal" // or "invisible"
-                  onChange={onChange}
-                />
+                <div className="col-lg-6 col-sm-6 col-12">
+                  <ReCAPTCHA
+                    ref={recaptchaRef}
+                    sitekey="YOUR_SITE_KEY"
+                    size="normal" // or "invisible"
+                    onChange={onChange}
+                  />
+                  <br />
+                </div>
                 <div className="col-lg-12 col-sm-12 col-12">
                   <fieldset>
                     <button

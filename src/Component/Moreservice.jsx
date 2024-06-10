@@ -42,7 +42,7 @@ const Moreservice = () => {
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/career">
-                  Carrier
+                  Carrer
                 </Link>
               </li>
               <li className="nav-item">
