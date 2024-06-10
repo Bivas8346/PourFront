@@ -128,7 +128,7 @@ const Marketinkservice = () => {
                 <li>Youtube Ads</li>
               </ul>
             </div>
-            <div className="col-lg-4" style={{ marginTop: "5%" }}>
+            <div className="col-lg-4" style={{marginTop: "5%", padding:"20px" }}>
               <Carousel fade>
                 <Carousel.Item>
                   <img

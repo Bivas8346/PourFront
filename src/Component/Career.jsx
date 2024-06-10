@@ -236,7 +236,7 @@ const Career = () => {
                 <img
                   className="flex-shrink-0 rounded-circle"
                   src="../assats/images/caller-carrier.png"
-                  style={{ width: "65px", height: "65px", margin: "20px" }}
+                  style={{ width: "75px", height: "75px", margin: "20px" }}
                   alt="job-img"
                 />
                 <div className="ps-4">
@@ -270,8 +270,8 @@ const Career = () => {
               <div className="d-flex align-items-center job-cont">
                 <img
                   className="flex-shrink-0 rounded-circle"
-                  src="../assats/images/caller-carrier.png"
-                  style={{ width: "75px", height: "75px", margin: "20px" }}
+                  src="../assats/images/sels-carrer.jpg"
+                  style={{ width: "80px", height: "80px", margin: "20px" }}
                   alt="job-img"
                 />
                 <div className="ps-4">
@@ -305,8 +305,8 @@ const Career = () => {
               <div className="d-flex align-items-center job-cont">
                 <img
                   className="flex-shrink-0 rounded-circle"
-                  src="../assats/images/seo.png"
-                  style={{ width: "65px", height: "65px", margin: "20px" }}
+                  src="../assats/images/HR-carrer.png"
+                  style={{ width: "75px", height: "75px", margin: "20px" }}
                   alt="job-img"
                 />
                 <div className="ps-4">
@@ -495,7 +495,7 @@ const Career = () => {
                 </div>
                 <div className="col-6">
                   <img
-                    src="./assats/images/logo-4.png"
+                    src="./assats/images/logo-6.png"
                     width={170}
                     alt="weblogo"
                   />

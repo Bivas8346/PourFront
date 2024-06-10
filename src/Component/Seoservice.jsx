@@ -130,7 +130,7 @@ const Seoservice = () => {
                 <li>.NET</li>
               </ul>
             </div>
-            <div className="col-lg-4" style={{ marginTop: "5%"}}>
+            <div className="col-lg-4" style={{marginTop: "5%", padding:"20px" }}>
               <Carousel fade>
                 <Carousel.Item>
                   <img
@@ -872,7 +872,7 @@ const Seoservice = () => {
                 </div>
                 <div className="col-6">
                   <img
-                    src="../assats/images/logo-4.png"
+                    src="../assats/images/logo-6.png"
                     width={170}
                     alt="weblogo"
                   />

@@ -125,7 +125,7 @@ const Videservice = () => {
                 {/* <li>TECHNOLOGY 1</li> */}
               </ul>
             </div>
-            <div className="col-lg-4" style={{ marginTop: "5%" }}>
+            <div className="col-lg-4" style={{marginTop: "5%", padding:"20px" }}>
               <Carousel fade>
                 <Carousel.Item>
                   <img
@@ -860,7 +860,7 @@ const Videservice = () => {
                 </div>
                 <div className="col-6">
                   <img
-                    src="../assats/images/logo-4.png"
+                    src="../assats/images/logo-6.png"
                     width={170}
                     alt="weblogo"
                   />

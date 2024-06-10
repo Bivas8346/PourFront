@@ -131,7 +131,7 @@ const Appservice = () => {
                 <li>MYSQL</li>
               </ul>
             </div>
-            <div className="col-lg-4">
+            <div className="col-lg-4" style={{marginTop: "5%", padding:"20px" }}>
               <Carousel fade>
                 <Carousel.Item>
                   <img

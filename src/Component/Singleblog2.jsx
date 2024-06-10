@@ -321,7 +321,7 @@ const Singleblog2 = () => {
                 </div>
                 <div className="col-6">
                   <img
-                    src="../assats/images/logo-4.png"
+                    src="../assats/images/logo-6.png"
                     width={170}
                     alt="weblogo"
                   />

@@ -210,7 +210,11 @@ const ApplyForm = () => {
                       <option value>Apply...</option>
                       <option>Web Devloper</option>
                       <option>Digital Marketer</option>
+                      <option>SEO Executive</option>
                       <option>Hybrid App Devloper</option>
+                      <option>Tele Service Executive</option>
+                      <option>Field Sales Executive</option>
+                      <option>HR</option>
                     </select>
                   </fieldset>
                 </div>
@@ -415,7 +419,7 @@ const ApplyForm = () => {
                 </div>
                 <div className="col-6">
                   <img
-                    src="./assats/images/logo-4.png"
+                    src="./assats/images/logo-6.png"
                     width={170}
                     alt="weblogo"
                   />
