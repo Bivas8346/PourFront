@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const SingleBlog = () => {
-
   return (
     <>
       {/* <!-- Navbar --> */}
@@ -60,10 +59,11 @@ const SingleBlog = () => {
         </div>
       </nav>
       {/* <!-- Every Single page for blog --> */}
-      <div className="" style={{marginTop:"10%"}}>
+      <div className="" style={{ marginTop: "10%" }}>
         <div className="col-md-8 mx-auto">
           <h1 style={{ fontWeight: "600" }}>
-            The Best Activewear from the Nordstrom Anniversary Sale
+            The Art of Effective Advertising: Strategies for Capturing Attention
+            and Driving Results
           </h1>
           <div className="py-3 text-dark flex items-center justify-center">
             <small className="mr-3 flex flex-row items-center">
@@ -111,7 +111,7 @@ const SingleBlog = () => {
                   ></path>
                   <path d="M0 0h24v24H0z" fill="none"></path>
                 </svg>
-                <span className="ml-1">AliSher Azimi</span>
+                <span className="ml-1">Pour Technologies</span>
               </a>
             </small>
             <small>
@@ -131,7 +131,7 @@ const SingleBlog = () => {
                     d="M15.4496399,8.42490555 L8.66109799,1.63636364 L1.63636364,1.63636364 L1.63636364,8.66081885 L8.42522727,15.44178 C8.57869221,15.5954158 8.78693789,15.6817418 9.00409091,15.6817418 C9.22124393,15.6817418 9.42948961,15.5954158 9.58327627,15.4414581 L15.4486339,9.57610048 C15.7651495,9.25692435 15.7649133,8.74206554 15.4496399,8.42490555 Z M16.6084423,10.7304545 L10.7406818,16.59822 C10.280287,17.0591273 9.65554997,17.3181054 9.00409091,17.3181054 C8.35263185,17.3181054 7.72789481,17.0591273 7.26815877,16.5988788 L0.239976954,9.57887876 C0.0863319284,9.4254126 0,9.21716044 0,9 L0,0.818181818 C0,0.366312477 0.366312477,0 0.818181818,0 L9,0 C9.21699531,0 9.42510306,0.0862010512 9.57854191,0.239639906 L16.6084423,7.26954545 C17.5601275,8.22691012 17.5601275,9.77308988 16.6084423,10.7304545 Z M5,6 C4.44771525,6 4,5.55228475 4,5 C4,4.44771525 4.44771525,4 5,4 C5.55228475,4 6,4.44771525 6,5 C6,5.55228475 5.55228475,6 5,6 Z"
                   ></path>
                 </svg>
-                <span className="ml-1">activewear</span>
+                <span className="ml-1">Advertising</span>
               </a>
             </small>
           </div>
@@ -142,7 +142,7 @@ const SingleBlog = () => {
           style={{
             height: "400px",
             backgroundImage:
-              "url(https://images.pexels.com/photos/5120892/pexels-photo-5120892.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=625.0&sharp=10&w=1500)",
+              "url(https://cdn.pixabay.com/photo/2022/03/26/01/52/seo-7092116_1280.png)",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -151,46 +151,55 @@ const SingleBlog = () => {
         <div className="col-lg-8 p-2 p-sm-4 mx-auto">
           <div className="text-secondary">
             <p className="my-2" style={{ lineHeight: "2" }}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              In today's crowded and competitive marketplace, advertising has
+              become an essential tool for businesses to stand out, connect with
+              their target audiences, and ultimately drive sales and growth.
+              However, with consumers bombarded by countless advertisements
+              across various channels, crafting an effective advertising
+              campaign that resonates and compels action has become a
+              significant challenge. <br />
+              Effective advertising is both an art and a science, requiring a
+              delicate balance of creativity, strategic thinking, and
+              data-driven insights. At its core, successful advertising
+              campaigns must capture the attention of the intended audience,
+              communicate a compelling message, and evoke a desired response,
+              whether it's making a purchase, exploring a website, or engaging
+              with a brand.
             </p>
             <br />
-            <br />
-            <h3 className="font-weight-bold text-dark">
-              #1. What is Lorem Ipsum?
-            </h3>
+            
             <p className="my-2" style={{ lineHeight: "2" }}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              One key strategy for effective advertising is understanding your
+              target audience's preferences, behaviors, and pain points. By
+              conducting thorough market research and leveraging data analytics,
+              businesses can tailor their advertising messages and channels to
+              resonate deeply with their ideal customers. This personalized
+              approach not only increases the chances of capturing attention but
+              also fosters a stronger emotional connection with the brand.{" "}
+              <br />
+              Another critical aspect of effective advertising is storytelling.
+              Memorable and impactful advertisements often weave a compelling
+              narrative that resonates with the audience on an emotional level.
+              By tapping into human emotions, values, and aspirations,
+              businesses can create a lasting impression and establish a deeper
+              connection with their customers.
             </p>
             <br />
             <p className="my-2" style={{ lineHeight: "2" }}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              Furthermore, effective advertising campaigns must be multi-faceted
+              and adaptable, leveraging a combination of traditional and digital
+              channels to reach audiences across various touchpoints. From
+              television and print advertisements to social media campaigns,
+              influencer marketing, and interactive experiences, businesses must
+              embrace a diverse range of advertising strategies to maximize
+              their reach and impact. <br /> In the ever-evolving landscape of
+              advertising, businesses that embrace innovation, data-driven
+              decision-making, and a customer-centric approach will emerge as
+              leaders. By continuously refining their advertising strategies,
+              measuring results, and adapting to changing consumer preferences,
+              companies can unlock the true power of effective advertising and
+              achieve sustained success in capturing attention and driving
+              desired outcomes.
             </p>
           </div>
         </div>

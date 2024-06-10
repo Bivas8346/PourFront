@@ -125,28 +125,36 @@ const Webservice = () => {
                 <li>MONGODB</li>
                 <li>PHP</li>
                 <li>MYSQL</li>
+                <li>WORDPRESS</li>
               </ul>
             </div>
-            <div className="col-lg-4">
+            <div className="col-lg-4" style={{marginTop: "8%"}}>
               <Carousel fade>
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src="../assats/images/seo.png"
+                    src="../assats/images/REACT_LOGO.png"
                     alt="First slide"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src="../assats/images/seo.png"
+                    src="../assats/images/php.png"
                     alt="Second slide"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src="../assats/images/seo.png"
+                    src="../assats/images/wordpress.png"
+                    alt="Third slide"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src="../assats/images/mongo.png"
                     alt="Third slide"
                   />
                 </Carousel.Item>
@@ -439,7 +447,7 @@ const Webservice = () => {
                   <span className="pricing">
                     <span>
                       {" "}
-                      ₹49 <small>/ m</small>{" "}
+                      {/* ₹49 <small>/ m</small>{" "} */}
                     </span>
                   </span>
                   <p className="title">Advanced Plan</p>

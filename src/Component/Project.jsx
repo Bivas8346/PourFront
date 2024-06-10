@@ -91,7 +91,7 @@ const Project = () => {
           <div className="feat-img">
             <img
               className="blog-img"
-              src="../assats/images/seo.png"
+              src="https://cdn.pixabay.com/photo/2022/03/26/01/52/seo-7092116_1280.png"
               alt="blog-img"
             />
           </div>
@@ -116,11 +116,16 @@ const Project = () => {
               </ul>
               <h2 className="blog-h">
                 <Link to={`/oneblog`} className="blog-a">
-                  Blog Title
+                  The Art of Effective Advertising: Strategies for Capturing
+                  Attention and Driving Results
                 </Link>
               </h2>
             </header>
-            <p>Blog Sub HEading</p>
+            <p>
+              In today's crowded and competitive marketplace, advertising has
+              become an essential tool for businesses to stand out, connect with
+              their target audiences, and ultimately drive sales and growth.
+            </p>
             <footer>
               <Link to={`/oneblog`} className="more-link blog-a">
                 Read More
@@ -132,7 +137,7 @@ const Project = () => {
           <div className="feat-img">
             <img
               className="blog-img"
-              src="https://images.unsplash.com/photo-1505330622279-bf7d7fc918f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fGJsb2d8ZW58MHx8MHx8fDA%3D"
+              src="https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg"
               alt="blog-img"
             />
           </div>
@@ -157,16 +162,17 @@ const Project = () => {
               </ul>
               <h2 className="blog-h">
                 <Link to={`/2ndblog`} className="blog-a">
-                  Blog Title
+                  Crafting Digital Excellence: The Importance of Website and
+                  Application Development
                 </Link>
               </h2>
             </header>
             <p>
-              Pellentesque habitant morbi tristique senectus et netus et
-              malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat
-              vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
-              amet quam egestas semper. Aenean ultricies mi vitae est. Mauris
-              placerat eleifend leo.
+              In the digital age, having a robust online presence and innovative
+              applications has become paramount for businesses to thrive and
+              stay competitive. A well-designed website serves as the digital
+              storefront, showcasing a company's products, services, and brand
+              identity to the world.
             </p>
             <footer>
               <Link to={`/2ndblog`} className="more-link blog-a">
@@ -225,7 +231,7 @@ const Project = () => {
           </article>
         </div>
 
-        <div className="blog-post">
+        {/* <div className="blog-post">
           <div className="feat-img">
             <img
               className="blog-img"
@@ -271,7 +277,7 @@ const Project = () => {
               </Link>
             </footer>
           </article>
-        </div>
+        </div> */}
       </div>
       {/* <!-- Footer --> */}
       <footer className="container-fluid gtco-footer">

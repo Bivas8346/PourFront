@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { Link } from "react-router-dom";
 
 const Singlebol1 = () => {
@@ -59,10 +59,11 @@ const Singlebol1 = () => {
         </div>
       </nav>
       {/* <!-- Every Single page for blog --> */}
-      <div className="" style={{marginTop:"10%"}}>
+      <div className="" style={{ marginTop: "10%" }}>
         <div className="col-md-8 mx-auto">
           <h1 style={{ fontWeight: "600" }}>
-            The Best Activewear from the Nordstrom Anniversary Sale
+            Crafting Digital Excellence: The Importance of Website and
+            Application Development
           </h1>
           <div className="py-3 text-dark flex items-center justify-center">
             <small className="mr-3 flex flex-row items-center">
@@ -110,7 +111,7 @@ const Singlebol1 = () => {
                   ></path>
                   <path d="M0 0h24v24H0z" fill="none"></path>
                 </svg>
-                <span className="ml-1">AliSher Azimi</span>
+                <span className="ml-1">Pour Technologies</span>
               </a>
             </small>
             <small>
@@ -130,7 +131,7 @@ const Singlebol1 = () => {
                     d="M15.4496399,8.42490555 L8.66109799,1.63636364 L1.63636364,1.63636364 L1.63636364,8.66081885 L8.42522727,15.44178 C8.57869221,15.5954158 8.78693789,15.6817418 9.00409091,15.6817418 C9.22124393,15.6817418 9.42948961,15.5954158 9.58327627,15.4414581 L15.4486339,9.57610048 C15.7651495,9.25692435 15.7649133,8.74206554 15.4496399,8.42490555 Z M16.6084423,10.7304545 L10.7406818,16.59822 C10.280287,17.0591273 9.65554997,17.3181054 9.00409091,17.3181054 C8.35263185,17.3181054 7.72789481,17.0591273 7.26815877,16.5988788 L0.239976954,9.57887876 C0.0863319284,9.4254126 0,9.21716044 0,9 L0,0.818181818 C0,0.366312477 0.366312477,0 0.818181818,0 L9,0 C9.21699531,0 9.42510306,0.0862010512 9.57854191,0.239639906 L16.6084423,7.26954545 C17.5601275,8.22691012 17.5601275,9.77308988 16.6084423,10.7304545 Z M5,6 C4.44771525,6 4,5.55228475 4,5 C4,4.44771525 4.44771525,4 5,4 C5.55228475,4 6,4.44771525 6,5 C6,5.55228475 5.55228475,6 5,6 Z"
                   ></path>
                 </svg>
-                <span className="ml-1">activewear</span>
+                <span className="ml-1">Development</span>
               </a>
             </small>
           </div>
@@ -141,7 +142,7 @@ const Singlebol1 = () => {
           style={{
             height: "400px",
             backgroundImage:
-              "url(https://images.pexels.com/photos/5120892/pexels-photo-5120892.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=625.0&sharp=10&w=1500)",
+              "url(https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg)",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -150,46 +151,58 @@ const Singlebol1 = () => {
         <div className="col-lg-8 p-2 p-sm-4 mx-auto">
           <div className="text-secondary">
             <p className="my-2" style={{ lineHeight: "2" }}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              In the digital age, having a robust online presence and innovative
+              applications has become paramount for businesses to thrive and
+              stay competitive. A well-designed website serves as the digital
+              storefront, showcasing a company's products, services, and brand
+              identity to the world. On the other hand, custom-built
+              applications can streamline operations, enhance productivity, and
+              provide a superior user experience to customers. <br /> At the
+              core of successful website development lies a deep understanding
+              of user behavior and expectations. An effective website must be
+              visually appealing, intuitive to navigate, and optimized for
+              various devices and platforms. By leveraging responsive design
+              principles and adhering to best practices in user experience (UX)
+              and user interface (UI) design, businesses can create websites
+              that captivate visitors and ensure a seamless browsing experience.
             </p>
             <br />
-            <br />
+            {/* <br />
             <h3 className="font-weight-bold text-dark">
               #1. What is Lorem Ipsum?
-            </h3>
+            </h3> */}
             <p className="my-2" style={{ lineHeight: "2" }}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              Furthermore, search engine optimization (SEO) plays a crucial role
+              in website development, ensuring that the site is visible and
+              easily discoverable by potential customers. By conducting thorough
+              keyword research, implementing on-page optimization techniques,
+              and building a strong backlink profile, businesses can improve
+              their search engine rankings and drive organic traffic to their
+              digital platforms. <br /> In addition to websites, custom
+              application development has become essential for organizations
+              seeking to gain a competitive edge. Whether it's a mobile app, a
+              web application, or an enterprise software solution, tailored
+              applications can automate processes, enhance data management, and
+              facilitate efficient collaboration among teams. By working closely
+              with experienced developers, businesses can transform their ideas
+              into functional and user-friendly applications that address
+              specific business needs and challenges.
             </p>
             <br />
             <p className="my-2" style={{ lineHeight: "2" }}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              Moreover, application development often involves leveraging
+              cutting-edge technologies, such as artificial intelligence (AI),
+              machine learning, and the Internet of Things (IoT), to create
+              intelligent and connected solutions. These advanced technologies
+              enable businesses to gain valuable insights, make data-driven
+              decisions, and deliver personalized experiences to their
+              customers. <br /> In the ever-evolving digital landscape, website and
+              application development are no longer just optional investments
+              but strategic necessities for businesses seeking to thrive. By
+              prioritizing user experience, embracing innovation, and staying
+              ahead of technological trends, companies can differentiate
+              themselves, enhance their digital presence, and ultimately drive
+              growth and success in the digital realm.
             </p>
           </div>
         </div>
@@ -359,7 +372,7 @@ const Singlebol1 = () => {
         <i className="fa fa-angle-up"></i>
       </a>
     </>
-  )
-}
+  );
+};
 
-export default Singlebol1
+export default Singlebol1;

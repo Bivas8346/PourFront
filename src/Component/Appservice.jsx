@@ -136,21 +136,28 @@ const Appservice = () => {
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src="../assats/images/seo.png"
+                    src="../assats/images/php.png"
                     alt="First slide"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src="../assats/images/seo.png"
+                    src="../assats/images/wordpress.png"
                     alt="Second slide"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src="../assats/images/seo.png"
+                    src="../assats/images/REACT_LOGO.png"
+                    alt="Third slide"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src="../assats/images/mongo.png"
                     alt="Third slide"
                   />
                 </Carousel.Item>
