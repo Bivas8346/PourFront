@@ -53,7 +53,7 @@ const Home = () => {
           <div
             id="my-nav"
             className="collapse navbar-collapse"
-            style={{ paddingLeft: "20%", paddingRight: "10%" }}
+            style={{ paddingLeft: "20%", paddingRight: "10%", backgroundColor:"#fffeeb" }}
           >
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">

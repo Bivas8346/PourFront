@@ -118,7 +118,7 @@ const Adservice = () => {
                 Technologie We Use
                 <br />
               </h2>
-              <ul style={{ fontWeight: "bolder", fontSize: "20px" }}>
+              <ul style={{ fontWeight: "bolder", fontSize: "20px",backgroundColor:"#fffeeb" }}>
                 <li>TECHNOLOGY 1</li>
                 <li>TECHNOLOGY 1</li>
                 <li>TECHNOLOGY 1</li>
