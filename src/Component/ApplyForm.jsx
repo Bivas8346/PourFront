@@ -280,7 +280,7 @@ const ApplyForm = () => {
                   <ReCAPTCHA
                     ref={recaptchaRef}
                     sitekey="YOUR_SITE_KEY"
-                    size="normal" // or "invisible"
+                    size="small" // or "invisible"
                     onChange={onChange}
                   />
                   <br />

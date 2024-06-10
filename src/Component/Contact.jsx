@@ -77,7 +77,11 @@ const Contact = () => {
           <div
             id="my-nav"
             className="collapse navbar-collapse"
-            style={{ paddingLeft: "20%", paddingRight: "10%",backgroundColor:"#fffeeb" }}
+            style={{
+              paddingLeft: "20%",
+              paddingRight: "10%",
+              backgroundColor: "#fffeeb",
+            }}
           >
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
@@ -238,16 +242,13 @@ const Contact = () => {
                             ></textarea>
                           </fieldset>
                         </div>
-                        <div className="col-lg-12 col-sm-12 col-12">
-                          <ReCAPTCHA
-                            ref={recaptchaRef}
-                            sitekey="6LcVV_UpAAAAAMcDR_FpYS1HmUwIPd_1Ijd4j3zm"
-                            size="normal"
-                            style={{ marginLeft: "30%" }}
-                            onChange={onChange}
-                          />
-                          <br />
-                        </div>
+                        <ReCAPTCHA
+                          ref={recaptchaRef}
+                          sitekey="6LcVV_UpAAAAAMcDR_FpYS1HmUwIPd_1Ijd4j3zm"
+                          size="normal"
+                          onChange={onChange}
+                        />
+                        <br />
                         <div className="col-lg-12 col-sm-12 col-12">
                           <fieldset>
                             <button
