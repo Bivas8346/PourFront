@@ -180,7 +180,7 @@ const Project = () => {
           <div className="feat-img">
             <img
               className="blog-img"
-              src="https://images.unsplash.com/photo-1505330622279-bf7d7fc918f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fGJsb2d8ZW58MHx8MHx8fDA%3D"
+              src="https://cdn.pixabay.com/photo/2016/06/03/13/57/digital-marketing-1433427_1280.jpg"
               alt="blog-img"
             />
           </div>
@@ -205,16 +205,17 @@ const Project = () => {
               </ul>
               <h2 className="blog-h">
                 <Link to={`/3rdblog`} className="blog-a">
-                  Blog Title
+                  Unlocking Growth in the Digital Age: The Power of Digital
+                  Marketing
                 </Link>
               </h2>
             </header>
             <p>
-              Pellentesque habitant morbi tristique senectus et netus et
-              malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat
-              vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
-              amet quam egestas semper. Aenean ultricies mi vitae est. Mauris
-              placerat eleifend leo.
+              Digital marketing has revolutionized the way businesses connect
+              with their target audiences in the modern era. With the advent of
+              the internet and the ubiquitous presence of digital devices,
+              companies now have unprecedented opportunities to reach and engage
+              with customers through a multitude of online channels.
             </p>
             <footer>
               <Link to={`/3rdblog`} className="more-link blog-a">
