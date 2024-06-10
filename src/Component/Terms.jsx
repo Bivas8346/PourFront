@@ -170,7 +170,7 @@ const Terms = () => {
                     </li>
                     <li className="nav-item">
                       <Link className="nav-link" to="/privecy">
-                        Privecy Policy
+                        Privacy Policy
                       </Link>
                     </li>
                     <li className="nav-item">
@@ -245,7 +245,7 @@ const Terms = () => {
                     </li>
                     <li className="nav-item">
                       <Link className="nav-link" to="/privecy">
-                        Privecy Policy
+                        Privacy Policy
                       </Link>
                     </li>
                     <li className="nav-item">

@@ -229,7 +229,7 @@ const Singleblog2 = () => {
                     </li>
                     <li className="nav-item">
                       <Link className="nav-link" to="/privecy">
-                        Privecy Policy
+                        Privacy Policy
                       </Link>
                     </li>
                     <li className="nav-item">
@@ -304,7 +304,7 @@ const Singleblog2 = () => {
                     </li>
                     <li className="nav-item">
                       <Link className="nav-link" to="/privecy">
-                        Privecy Policy
+                        Privacy Policy
                       </Link>
                     </li>
                     <li className="nav-item">

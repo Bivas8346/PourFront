@@ -268,7 +268,7 @@ const Contact = () => {
                           <div className="info-item">
                             <i className="fa fa-phone"></i>
                             <h4>
-                              <Link to=" ">+91 98744 33669</Link>
+                              <Link to=" ">+91 8584858693</Link>
                             </h4>
                           </div>
                         </div>
@@ -344,7 +344,7 @@ const Contact = () => {
                     </li>
                     <li className="nav-item">
                       <Link className="nav-link" to="/privecy">
-                        Privecy Policy
+                        Privacy Policy
                       </Link>
                     </li>
                     <li className="nav-item">
@@ -419,7 +419,7 @@ const Contact = () => {
                     </li>
                     <li className="nav-item">
                       <Link className="nav-link" to="/privecy">
-                        Privecy Policy
+                        Privacy Policy
                       </Link>
                     </li>
                     <li className="nav-item">
