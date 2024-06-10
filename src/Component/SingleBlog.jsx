@@ -329,7 +329,7 @@ const SingleBlog = () => {
                   />
                   <p style={{ color: "white" }}>Kolkata, Dumdum</p>
 
-                  <h4 className="mt-5">Fllow Us</h4>
+                  <h4 className="mt-5">Follow Us</h4>
                   <ul className="nav follow-us-nav">
                     <li className="nav-item">
                       <Link className="nav-link pl-0" to="#">
