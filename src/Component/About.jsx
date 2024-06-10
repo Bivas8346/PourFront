@@ -382,7 +382,7 @@ const About = () => {
       {/* <!-- Testimonials --> */}
       <div className="container-fluid gtco-testimonials">
         <div className="container">
-          <h2>What our customers say about us.</h2>
+          {/* <h2>What our customers say about us.</h2> */}
           {/* <div className="row">
             <div className="col-12 col-lg-4" style={{ marginTop: "3%" }}>
               <div className="card text-center">
@@ -444,7 +444,7 @@ const About = () => {
               </div>
             </div>
           </div> */}
-          <Slider {...settings}>
+          {/* <Slider {...settings}>
             <div>
               <div>
                 <div className="card text-center">
@@ -510,14 +510,14 @@ const About = () => {
                 </div>
               </div>
             </div>
-          </Slider>
+          </Slider> */}
         </div>
       </div>
-      <div className="container-fluid gtco-features">
+      {/* <div className="container-fluid gtco-features">
         <a href="/review" style={{ marginLeft: "35%" }}>
           View More <i className="fa fa-angle-right" aria-hidden="true"></i>
         </a>
-      </div>
+      </div> */}
       {/* <!-- Footer --> */}
       <footer className="container-fluid gtco-footer">
         <div className="container">
