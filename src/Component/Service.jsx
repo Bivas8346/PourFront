@@ -220,7 +220,7 @@ const Service = () => {
                 </div>
               </Link>
             </div>
-            <div className="col-lg-4 col-md-6 col-sm-6 col-12">
+            {/* <div className="col-lg-4 col-md-6 col-sm-6 col-12">
               <Link to={`/adservice`}>
                 <div className="e-card playing">
                   <div className="image"></div>
@@ -241,7 +241,7 @@ const Service = () => {
                   </div>
                 </div>
               </Link>
-            </div>
+            </div> */}
             {/* <div className="col-lg-4 col-md-6 col-sm-6 col-12">
               <Link to={`/videoservice`}>
                 <div className="e-card playing">

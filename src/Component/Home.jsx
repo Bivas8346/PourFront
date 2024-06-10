@@ -189,10 +189,8 @@ const Home = () => {
         <div className="container">
           <h2>Explore Our Services We Offer For You</h2>
           <div className="row">
-            <div
-              className="col-lg-4 col-md-6 col-sm-6 col-12"
-            >
-              <Link to="/service">
+            <div className="col-lg-4 col-md-6 col-sm-6 col-12">
+              <Link to={`/webservice`}>
                 <div className="e-card playing">
                   <div className="image"></div>
                   <div className="wave"></div>
@@ -200,22 +198,20 @@ const Home = () => {
                   <div className="wave"></div>
                   <div className="infotop">
                     <img
-                      src="../assats/images/seo.png"
+                      src="../assats/images/web.png"
                       alt="service image"
                       width={150}
                     />
                     <br />
-                    Web Dev
+                    Web Development
                     <br />
-                    <div className="name">Web Dev</div>
+                    <div className="name">Crafting responsive, user-friendly websites tailored to your business needs.</div>
                   </div>
                 </div>
               </Link>
             </div>
-            <div
-              className="col-lg-4 col-md-6 col-sm-6 col-12"
-            >
-              <Link to="/service">
+            <div className="col-lg-4 col-md-6 col-sm-6 col-12">
+              <Link to={`/appservice`}>
                 <div className="e-card playing">
                   <div className="image"></div>
                   <div className="wave"></div>
@@ -223,22 +219,20 @@ const Home = () => {
                   <div className="wave"></div>
                   <div className="infotop">
                     <img
-                      src="../assats/images/seo.png"
+                      src="../assats/images/webapp.png"
                       alt="service image"
                       width={150}
                     />
                     <br />
-                    Web Dev
+                    Web Application Development
                     <br />
-                    <div className="name">Web Dev</div>
+                    <div className="name"> Building innovative mobile and web applications to streamline operations and enhance customer experiences.</div>
                   </div>
                 </div>
               </Link>
             </div>
-            <div
-              className="col-lg-4 col-md-6 col-sm-6 col-12"
-            >
-              <Link to="/service">
+            <div className="col-lg-4 col-md-6 col-sm-6 col-12">
+              <Link to={`/marketingservice`}>
                 <div className="e-card playing">
                   <div className="image"></div>
                   <div className="wave"></div>
@@ -246,22 +240,20 @@ const Home = () => {
                   <div className="wave"></div>
                   <div className="infotop">
                     <img
-                      src="../assats/images/seo.png"
+                      src="../assats/images/digital.png"
                       alt="service image"
                       width={150}
                     />
                     <br />
-                    Web Dev
+                    Digital Marketing
                     <br />
-                    <div className="name">Web Dev</div>
+                    <div className="name">Leveraging the power of online channels to boost brand visibility, engage audiences, and drive conversions.</div>
                   </div>
                 </div>
               </Link>
             </div>
-            <div
-              className="col-lg-4 col-md-6 col-sm-6 col-12"
-            >
-              <Link to="/service">
+            <div className="col-lg-4 col-md-6 col-sm-6 col-12">
+              <Link to={`/seoservice`}>
                 <div className="e-card playing">
                   <div className="image"></div>
                   <div className="wave"></div>
@@ -269,22 +261,20 @@ const Home = () => {
                   <div className="wave"></div>
                   <div className="infotop">
                     <img
-                      src="../assats/images/seo.png"
+                      src="../assats/images/seo (2).png"
                       alt="service image"
                       width={150}
                     />
                     <br />
-                    Web Dev
+                    Application Development 
                     <br />
-                    <div className="name">seo Dev</div>
+                    <div className="name">Developing robust, scalable, and customized software applications to drive operational efficiency and productivity.</div>
                   </div>
                 </div>
               </Link>
             </div>
-            <div
-              className="col-lg-4 col-md-6 col-sm-6 col-12"
-            >
-              <Link to="/service">
+            <div className="col-lg-4 col-md-6 col-sm-6 col-12">
+              <Link to={`/videoservice`}>
                 <div className="e-card playing">
                   <div className="image"></div>
                   <div className="wave"></div>
@@ -292,22 +282,20 @@ const Home = () => {
                   <div className="wave"></div>
                   <div className="infotop">
                     <img
-                      src="../assats/images/seo.png"
+                      src="../assats/images/video.png"
                       alt="service image"
                       width={150}
                     />
                     <br />
-                    Web Dev
+                    Video Advertisement
                     <br />
-                    <div className="name">Web Dev</div>
+                    <div className="name"> Captivating storytelling through engaging video content to promote your brand and products.</div>
                   </div>
                 </div>
               </Link>
             </div>
-            <div
-              className="col-lg-4 col-md-6 col-sm-6 col-12"
-            >
-              <Link to="/service">
+            {/* <div className="col-lg-4 col-md-6 col-sm-6 col-12">
+              <Link to={`/adservice`}>
                 <div className="e-card playing">
                   <div className="image"></div>
                   <div className="wave"></div>
@@ -315,18 +303,40 @@ const Home = () => {
                   <div className="wave"></div>
                   <div className="infotop">
                     <img
-                      src="../assats/images/seo.png"
+                      src="../assats/images/adv.png"
                       alt="service image"
                       width={150}
                     />
                     <br />
-                    Web Dev
+                    Online Advertisement
                     <br />
-                    <div className="name">Web Dev</div>
+                    <div className="name">Targeted, data-driven online advertising campaigns to reach your ideal customers across various platforms.
+                    </div>
                   </div>
                 </div>
               </Link>
-            </div>
+            </div> */}
+            {/* <div className="col-lg-4 col-md-6 col-sm-6 col-12">
+              <Link to={`/videoservice`}>
+                <div className="e-card playing">
+                  <div className="image"></div>
+                  <div className="wave"></div>
+                  <div className="wave"></div>
+                  <div className="wave"></div>
+                  <div className="infotop">
+                    <img
+                      src="../assats/images/seo.svg"
+                      alt="service image"
+                      width={150}
+                    />
+                    <br />
+                    webdev
+                    <br />
+                    <div className="name">webdev</div>
+                  </div>
+                </div>
+              </Link>
+            </div> */}
           </div>
         </div>
       </div>

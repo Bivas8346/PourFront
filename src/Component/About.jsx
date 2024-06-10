@@ -38,7 +38,7 @@ const About = () => {
       {/* <!-- Navbar --> */}
       <nav className="navbar navbar-expand-lg navbar-light gtco-main-nav">
         <div className="container">
-          <Link className="navbar-brand" to="/" style={{paddingRight:"10%"}}>
+          <Link className="navbar-brand" to="/" style={{ paddingRight: "10%" }}>
             <img src="./assats/images/logo-6.png" width={180} alt="weblogo" />
           </Link>
           <button
@@ -49,7 +49,11 @@ const About = () => {
             <span className="bar1"></span> <span className="bar2"></span>
             <span className="bar3"></span>
           </button>
-          <div id="my-nav" className="collapse navbar-collapse" style={{paddingLeft:"20%",paddingRight:"10%"}}>
+          <div
+            id="my-nav"
+            className="collapse navbar-collapse"
+            style={{ paddingLeft: "20%", paddingRight: "10%" }}
+          >
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
                 <Link className="nav-link" to="/">
@@ -89,18 +93,19 @@ const About = () => {
       <div className="container-fluid gtco-banner-area">
         <div className="container">
           <div className="row">
-          
             <div className="col-md-6">
-            <h1>
-                Unleash Your Digital Potential with <br />
-                <span>Pour Technologies</span>
+              <h1>
+                Pioneers of <span>Digital Transformation</span> <br />
               </h1>
               <p>
-                We promise to bring the best solution for your business.
-                Innovative Software Solutions for Your Business Growth
+                Meet the Exceptional Team Driving Innovation at Pour
+                Technologies. Explore the collective expertise and passion that
+                fuel our commitment to delivering cutting-edge solutions.
+                Discover the minds behind our success, shaping the future of
+                digital experiences.
               </p>
             </div>
-        
+
             <div className="col-md-6">
               <div className="card">
                 <img
@@ -130,8 +135,8 @@ const About = () => {
                 experts, cutting-edge technology, and a commitment to
                 excellence, we strive to deliver solutions that not only meet
                 but exceed your expectations. From web development to
-                cybersecurity, cloud solutions to digital marketing strategies,
-                we're here to empower your success.
+                application development, video advertisement to digital
+                marketing strategies, we're here to empower your success.
               </p>
             </div>
           </div>
@@ -204,10 +209,11 @@ const About = () => {
               <p>
                 <small>
                   At Pour Technologies, we specialize in developing cutting-edge
-                  cloud-based applications that help streamline your operations,
-                  reduce costs, and enhance productivity. Whether you need a
-                  custom CRM, project management tool, or any other cloud-based
-                  solution, our team is ready to turn your vision into reality.
+                  user friendly applications that help streamline your
+                  operations, reduce costs, and enhance productivity. Whether
+                  you need a custom CRM, project management tool, or any other
+                  cloud-based solution, our team is ready to turn your vision
+                  into reality.
                 </small>
               </p>
             </div>
