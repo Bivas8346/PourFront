@@ -122,34 +122,41 @@ const Seoservice = () => {
                 <br />
               </h2>
               <ul style={{ fontWeight: "bolder", fontSize: "20px" }}>
-                <li>TECHNOLOGY 1</li>
-                <li>TECHNOLOGY 1</li>
-                <li>TECHNOLOGY 1</li>
-                <li>TECHNOLOGY 1</li>
-                <li>TECHNOLOGY 1</li>
-                <li>TECHNOLOGY 1</li>
+                <li>Kotlin</li>
+                <li>Java</li>
+                <li>React Native</li>
+                <li>Flutter</li>
+                <li>Swift</li>
+                <li>.NET</li>
               </ul>
             </div>
-            <div className="col-lg-4">
+            <div className="col-lg-4" style={{ marginTop: "5%"}}>
               <Carousel fade>
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src="../assats/images/seo.png"
+                    src="../assats/images/flutter.png"
                     alt="First slide"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src="../assats/images/seo.png"
+                    src="../assats/images/kotlin.png"
                     alt="Second slide"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src="../assats/images/seo.png"
+                    src="../assats/images/swift.png"
+                    alt="Third slide"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src="../assats/images/java.png"
                     alt="Third slide"
                   />
                 </Carousel.Item>
@@ -444,7 +451,7 @@ const Seoservice = () => {
                   <span className="pricing">
                     <span>
                       {" "}
-                      ₹49 <small>/ m</small>{" "}
+                      {/* ₹49 <small>/ m</small>{" "} */}
                     </span>
                   </span>
                   <p className="title">Advanced Plan</p>

@@ -62,7 +62,7 @@ const Singleblog2 = () => {
       <div className="" style={{ marginTop: "10%" }}>
         <div className="col-md-8 mx-auto">
           <h1 style={{ fontWeight: "600" }}>
-            The Best Activewear from the Nordstrom Anniversary Sale
+            Unlocking Growth in the Digital Age: The Power of Digital Marketing
           </h1>
           <div className="py-3 text-dark flex items-center justify-center">
             <small className="mr-3 flex flex-row items-center">
@@ -110,7 +110,7 @@ const Singleblog2 = () => {
                   ></path>
                   <path d="M0 0h24v24H0z" fill="none"></path>
                 </svg>
-                <span className="ml-1">AliSher Azimi</span>
+                <span className="ml-1">Pour Technologies</span>
               </a>
             </small>
             <small>
@@ -130,7 +130,7 @@ const Singleblog2 = () => {
                     d="M15.4496399,8.42490555 L8.66109799,1.63636364 L1.63636364,1.63636364 L1.63636364,8.66081885 L8.42522727,15.44178 C8.57869221,15.5954158 8.78693789,15.6817418 9.00409091,15.6817418 C9.22124393,15.6817418 9.42948961,15.5954158 9.58327627,15.4414581 L15.4486339,9.57610048 C15.7651495,9.25692435 15.7649133,8.74206554 15.4496399,8.42490555 Z M16.6084423,10.7304545 L10.7406818,16.59822 C10.280287,17.0591273 9.65554997,17.3181054 9.00409091,17.3181054 C8.35263185,17.3181054 7.72789481,17.0591273 7.26815877,16.5988788 L0.239976954,9.57887876 C0.0863319284,9.4254126 0,9.21716044 0,9 L0,0.818181818 C0,0.366312477 0.366312477,0 0.818181818,0 L9,0 C9.21699531,0 9.42510306,0.0862010512 9.57854191,0.239639906 L16.6084423,7.26954545 C17.5601275,8.22691012 17.5601275,9.77308988 16.6084423,10.7304545 Z M5,6 C4.44771525,6 4,5.55228475 4,5 C4,4.44771525 4.44771525,4 5,4 C5.55228475,4 6,4.44771525 6,5 C6,5.55228475 5.55228475,6 5,6 Z"
                   ></path>
                 </svg>
-                <span className="ml-1">activewear</span>
+                <span className="ml-1">Digital Marketing</span>
               </a>
             </small>
           </div>
@@ -141,7 +141,7 @@ const Singleblog2 = () => {
           style={{
             height: "400px",
             backgroundImage:
-              "url(https://images.pexels.com/photos/5120892/pexels-photo-5120892.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=625.0&sharp=10&w=1500)",
+              "url(https://cdn.pixabay.com/photo/2016/06/03/13/57/digital-marketing-1433427_1280.jpg)",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -150,46 +150,54 @@ const Singleblog2 = () => {
         <div className="col-lg-8 p-2 p-sm-4 mx-auto">
           <div className="text-secondary">
             <p className="my-2" style={{ lineHeight: "2" }}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              Digital marketing has revolutionized the way businesses connect
+              with their target audiences in the modern era. With the advent of
+              the internet and the ubiquitous presence of digital devices,
+              companies now have unprecedented opportunities to reach and engage
+              with customers through a multitude of online channels. From search
+              engine optimization (SEO) and pay-per-click (PPC) advertising to
+              social media marketing, email marketing, and content creation, the
+              realm of digital marketing encompasses a wide array of strategies
+              and tactics.
             </p>
             <br />
-            <br />
-            <h3 className="font-weight-bold text-dark">
+            {/* <br /> */}
+            {/* <h3 className="font-weight-bold text-dark">
               #1. What is Lorem Ipsum?
-            </h3>
+            </h3> */}
             <p className="my-2" style={{ lineHeight: "2" }}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+            At the heart of effective digital marketing lies a deep
+              understanding of your target audience – their preferences,
+              behaviors, and online journeys. By leveraging data-driven insights
+              and analytics, businesses can craft personalized and highly
+              targeted campaigns that resonate with their customers on a deeper
+              level. This level of customization and precision targeting was
+              previously unattainable through traditional marketing channels.
+              One of the key advantages of digital marketing is its ability to
+              provide real-time monitoring and optimization capabilities.
+              Businesses can track the performance of their campaigns, analyze
+              user engagement metrics, and swiftly adapt their strategies based
+              on these valuable insights. This agility allows for continuous
+              improvement and maximization of marketing efforts, ensuring that
+              resources are allocated efficiently and effectively.
             </p>
             <br />
             <p className="my-2" style={{ lineHeight: "2" }}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+
+              Moreover,
+              digital marketing fosters two-way communication and customer
+              engagement, enabling businesses to build brand loyalty and
+              establish long-lasting relationships with their audience. Through
+              social media platforms, interactive content, and personalized
+              outreach, companies can create immersive experiences that leave a
+              lasting impression and cultivate a dedicated customer base. As
+              technology continues to evolve at a rapid pace, businesses that
+              embrace digital marketing and stay ahead of the curve will gain a
+              significant competitive advantage in the ever-changing digital
+              landscape. By combining innovative strategies, data-driven
+              decision-making, and a customer-centric approach, companies can
+              unlock new opportunities for growth, brand awareness, and customer
+              acquisition in the digital realm.
             </p>
           </div>
         </div>

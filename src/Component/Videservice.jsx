@@ -125,26 +125,26 @@ const Videservice = () => {
                 {/* <li>TECHNOLOGY 1</li> */}
               </ul>
             </div>
-            <div className="col-lg-4">
+            <div className="col-lg-4" style={{ marginTop: "5%" }}>
               <Carousel fade>
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src="../assats/images/seo.png"
+                    src="../assats/images/youtubr_ads.png"
                     alt="First slide"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src="../assats/images/seo.png"
+                    src="../assats/images/google_ads.png"
                     alt="Second slide"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src="../assats/images/seo.png"
+                    src="../assats/images/facebook_ads.png"
                     alt="Third slide"
                   />
                 </Carousel.Item>
@@ -439,7 +439,7 @@ const Videservice = () => {
                   <span className="pricing">
                     <span>
                       {" "}
-                      ₹49 <small>/ m</small>{" "}
+                      {/* ₹49 <small>/ m</small>{" "} */}
                     </span>
                   </span>
                   <p className="title">Advanced Plan</p>

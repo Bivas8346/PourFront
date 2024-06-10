@@ -1,12 +1,10 @@
-import React, { useRef } from "react";
-import { useEffect, useState } from "react";
-import axios from "axios";
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import React, { useRef, useState, useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import ReCAPTCHA from "react-google-recaptcha";
 
 const ApplyForm = () => {
   const recaptchaRef = useRef(null);
+<<<<<<< HEAD
 
   const onChange = (value) => {
     console.log("Captcha value:", value);
@@ -25,6 +23,32 @@ const ApplyForm = () => {
   });
 
   const navigate = useNavigate();
+=======
+  const [careerData, setAllcareer] = useState([]);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    fetch('YOUR_GET_API_URL_HERE')
+      .then(response => response.json())
+      .then(data => {
+        setAllcareer(data.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
+  const [cont, setCont] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    job_role: "",
+    address: "",
+    zip: "",
+    experience: "",
+    cv: "",
+  });
+>>>>>>> 384977f63e5c4e5a1459366f54602c01de8f39b0
 
   useEffect(() => {
     const today = new Date();
@@ -52,6 +76,7 @@ const ApplyForm = () => {
       Experience: formData.Experience,
       CV: formData.CV,
     };
+<<<<<<< HEAD
     axios
       .post(
         "https://sheet.best/api/sheets/75ae80df-a940-4421-9b4f-9bd5553a22ee",
@@ -59,16 +84,53 @@ const ApplyForm = () => {
       )
       .then((res) => {
         console.log(res);
+=======
+    fetch('YOUR_POST_API_URL_HERE', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(add),
+    })
+    .then((res) => res.json())
+    .then((res) => {
+      if (res.result === 'success') {
+>>>>>>> 384977f63e5c4e5a1459366f54602c01de8f39b0
         navigate("/thank");
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+      } else {
+        console.error("Submission error:", res.error);
+      }
+    })
+    .catch((err) => {
+      console.log(err);
+    });
   };
 
+<<<<<<< HEAD
+=======
+  const convertToBase64 = (file) => {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = (error) => reject(error);
+    });
+  };
+
+  const onChange = (value) => {
+    console.log("Captcha value:", value);
+  };
+
+  const closeNavbar = () => {
+    const navbar = document.getElementById('my-nav');
+    if (navbar.classList.contains('show')) {
+      navbar.classList.remove('show');
+    }
+  };
+
+>>>>>>> 384977f63e5c4e5a1459366f54602c01de8f39b0
   return (
     <>
-      {/* <!-- Navbar --> */}
       <nav className="navbar navbar-expand-lg navbar-light gtco-main-nav">
         <div className="container">
           <Link className="navbar-brand" to="/" style={{ paddingRight: "10%" }}>
@@ -78,6 +140,10 @@ const ApplyForm = () => {
             className="navbar-toggler"
             data-target="#my-nav"
             data-toggle="collapse"
+            onClick={() => {
+              const navbar = document.getElementById('my-nav');
+              navbar.classList.toggle('show');
+            }}
           >
             <span className="bar1"></span> <span className="bar2"></span>
             <span className="bar3"></span>
@@ -89,32 +155,37 @@ const ApplyForm = () => {
           >
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
-                <Link className="nav-link" to="/">
+                <Link className="nav-link" to="/" onClick={closeNavbar}>
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/service">
+                <Link className="nav-link" to="/service" onClick={closeNavbar}>
                   Services
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/about">
+                <Link className="nav-link" to="/about" onClick={closeNavbar}>
                   About
                 </Link>
               </li>
               <li className="nav-item">
+<<<<<<< HEAD
                 <Link className="nav-link active" to="/career">
                   Carrer
+=======
+                <Link className="nav-link active" to="/career" onClick={closeNavbar}>
+                  Career
+>>>>>>> 384977f63e5c4e5a1459366f54602c01de8f39b0
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/blog">
+                <Link className="nav-link" to="/blog" onClick={closeNavbar}>
                   Blog
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/contact">
+                <Link className="nav-link" to="/contact" onClick={closeNavbar}>
                   Contact
                 </Link>
               </li>
@@ -122,7 +193,6 @@ const ApplyForm = () => {
           </div>
         </div>
       </nav>
-      {/* <!-- Banner --> */}
       <div className="container-fluid gtco-banner-area">
         <div className="container">
           <div className="row">
@@ -148,7 +218,6 @@ const ApplyForm = () => {
           </div>
         </div>
       </div>
-      {/* <!-- Main Apply From --> */}
       <div className="contact-us section" id="contact">
         <div className="container">
           <div className="contact-us-content">
@@ -250,17 +319,6 @@ const ApplyForm = () => {
                     />
                   </fieldset>
                 </div>
-                {/* <div className="col-lg-6 col-sm-6 col-12">
-                  <fieldset>
-                    <input
-                      style={{ fontSize: "120%" }}
-                      type="number"
-                      name="Exyear"
-                      placeholder="How Many Year..."
-                      onChange={handleChange}
-                    />
-                  </fieldset>
-                </div> */}
                 <div className="col-lg-6 col-sm-6 col-12">
                   <fieldset>
                     <input
@@ -268,10 +326,10 @@ const ApplyForm = () => {
                       type="file"
                       name="CV"
                       onChange={handleChange}
-                      // required
                     />
                   </fieldset>
                 </div>
+<<<<<<< HEAD
                 <div className="col-lg-6 col-sm-6 col-12">
                   <ReCAPTCHA
                     ref={recaptchaRef}
@@ -281,15 +339,17 @@ const ApplyForm = () => {
                   />
                   <br />
                 </div>
+=======
+                <ReCAPTCHA
+                  ref={recaptchaRef}
+                  sitekey="YOUR_SITE_KEY"
+                  size="normal"
+                  onChange={onChange}
+                />
+>>>>>>> 384977f63e5c4e5a1459366f54602c01de8f39b0
                 <div className="col-lg-12 col-sm-12 col-12">
                   <fieldset>
-                    <button
-                      type="submit"
-                      className="orange-button"
-                      style={{ fontSize: "120%" }}
-                    >
-                      Apply Now
-                    </button>
+                    <button type="submit">Submit Application</button>
                   </fieldset>
                 </div>
               </div>
@@ -297,165 +357,6 @@ const ApplyForm = () => {
           </div>
         </div>
       </div>
-      {/* <!-- Footer --> */}
-      <footer className="container-fluid gtco-footer">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6">
-              <div className="row">
-                <div className="col-6">
-                  <h4>Company</h4>
-                  <ul className="nav flex-column company-nav">
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/">
-                        Home
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/service">
-                        Services
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/about">
-                        About
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/privecy">
-                        Privecy Policy
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/terms">
-                        Terms & Conditions
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/contact">
-                        Contact
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-                <div className="col-6">
-                  <h4>Services</h4>
-                  <ul className="nav flex-column services-nav">
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/service">
-                        Web Design
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/service">
-                        Graphics Design
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/service">
-                        App Design
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/service">
-                        SEO
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/service">
-                        Marketing
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/service">
-                        Analytic
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-                <div className="col-12"></div>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="row">
-                <div className="col-6">
-                  <h4>Support</h4>
-                  <ul className="nav flex-column company-nav">
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/">
-                        Home
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/service">
-                        Services
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/about">
-                        About
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/privecy">
-                        Privecy Policy
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/terms">
-                        Terms & Conditions
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/contact">
-                        Contact
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-                <div className="col-6">
-                  <img
-                    src="./assats/images/logo-4.png"
-                    width={170}
-                    alt="weblogo"
-                  />
-                  <p style={{ color: "white" }}>Kolkata, Dumdum</p>
-
-                  <h4 className="mt-5">Fllow Us</h4>
-                  <ul className="nav follow-us-nav">
-                    <li className="nav-item">
-                      <Link className="nav-link pl-0" to="#">
-                        <i className="fa fa-facebook" aria-hidden="true"></i>
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="#">
-                        <i className="fa fa-twitter" aria-hidden="true"></i>
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="#">
-                        <i className="fa fa-google" aria-hidden="true"></i>
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="#">
-                        <i className="fa fa-linkedin" aria-hidden="true"></i>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-                <div className="col-12">
-                  <p style={{ marginLeft: "-50%" }}>
-                    &copy; 2024. All Rights Reserved . Design by Pour
-                    Technologies .
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </>
   );
 };
