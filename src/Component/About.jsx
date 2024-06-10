@@ -8,18 +8,6 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 const About = () => {
-  const [aboutData, setAllabout] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get("https://pour-tech.onrender.com/api/getAbout")
-      .then((res) => {
-        setAllabout(res.data.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
   const settings = {
     dots: true,
     infinite: true,
