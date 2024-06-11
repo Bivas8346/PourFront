@@ -275,11 +275,12 @@ body {
 }
 @media (max-width: 600px) {
   .gtco-banner-area::after {
-    position:relative;
-    width: 45%;
-    height: 270px;
-    left: 55.5%;
-    border-radius: 70% 0 70% 70%;
+    width: 59%;
+    height: 380px;
+    top:5%;
+    rotate: 90deg;
+    left: 21.8%;
+    border-radius: 0% 50% 50% 50%;
   }
 }
 .gtco-banner-area::before {
@@ -317,11 +318,12 @@ body {
 }
 @media (max-width: 600px) {
   .gtco-banner-area::before {
-    position:relative;
-    width: 65%;
-    height: 400px;
-    left: 50.5%;
-    border-radius: 70% 0 70% 70%;
+    width: 59%;
+    height: 380px;
+    top:10%;
+    rotate: 90deg;
+    left: 21.8%;
+    border-radius: 0% 50% 50% 50%;
   }
 }
 
@@ -1240,7 +1242,6 @@ body {
 .gtco-footer .col-12 p {
   font-family: "Lato-Regular";
   font-size: 18px;
-  margin-left:"30%";
   color: #ffffff;
 }
 @media (max-width: 991px) {
@@ -1250,18 +1251,7 @@ body {
 }
 @media (max-width: 991px) {
   .gtco-footer .col-lg-6 {
-    margin-bottom: 50p-x;
-  }
-}
-@media (max-width: 991px) {
-  .gtco-footer .footer-logo {
-      
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+    margin-bottom: 50px;
   }
 }
 
