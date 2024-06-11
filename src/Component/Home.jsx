@@ -53,7 +53,11 @@ const Home = () => {
           <div
             id="my-nav"
             className="collapse navbar-collapse"
-            style={{ paddingLeft: "20%", paddingRight: "10%", backgroundColor:"#fffeeb" }}
+            style={{
+              paddingLeft: "20%",
+              paddingRight: "10%",
+              backgroundColor: "#fffeeb",
+            }}
           >
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
@@ -205,7 +209,10 @@ const Home = () => {
                     <br />
                     Web Development
                     <br />
-                    <div className="name">Crafting responsive, user-friendly websites tailored to your business needs.</div>
+                    <div className="name">
+                      Crafting responsive, user-friendly websites tailored to
+                      your business needs.
+                    </div>
                   </div>
                 </div>
               </Link>
@@ -226,7 +233,11 @@ const Home = () => {
                     <br />
                     Web Application Development
                     <br />
-                    <div className="name"> Building innovative mobile and web applications to streamline operations and enhance customer experiences.</div>
+                    <div className="name">
+                      {" "}
+                      Building innovative mobile and web applications to
+                      streamline operations and enhance customer experiences.
+                    </div>
                   </div>
                 </div>
               </Link>
@@ -247,7 +258,10 @@ const Home = () => {
                     <br />
                     Digital Marketing
                     <br />
-                    <div className="name">Leveraging the power of online channels to boost brand visibility, engage audiences, and drive conversions.</div>
+                    <div className="name">
+                      Leveraging the power of online channels to boost brand
+                      visibility, engage audiences, and drive conversions.
+                    </div>
                   </div>
                 </div>
               </Link>
@@ -266,9 +280,13 @@ const Home = () => {
                       width={150}
                     />
                     <br />
-                    Application Development 
+                    Application Development
                     <br />
-                    <div className="name">Developing robust, scalable, and customized software applications to drive operational efficiency and productivity.</div>
+                    <div className="name">
+                      Developing robust, scalable, and customized software
+                      applications to drive operational efficiency and
+                      productivity.
+                    </div>
                   </div>
                 </div>
               </Link>
@@ -289,7 +307,11 @@ const Home = () => {
                     <br />
                     Video Advertisement
                     <br />
-                    <div className="name"> Captivating storytelling through engaging video content to promote your brand and products.</div>
+                    <div className="name">
+                      {" "}
+                      Captivating storytelling through engaging video content to
+                      promote your brand and products.
+                    </div>
                   </div>
                 </div>
               </Link>
@@ -929,7 +951,7 @@ const Home = () => {
       <footer className="container-fluid gtco-footer">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6">
+            <div className="col-lg-8">
               <div className="row">
                 <div className="col-6">
                   <h4>Support</h4>
@@ -1004,44 +1026,9 @@ const Home = () => {
                 <div className="col-12"></div>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-4">
               <div className="row">
-                <div className="col-6">
-                  <h4>Support</h4>
-                  <ul className="nav flex-column company-nav">
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/">
-                        Home
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/service">
-                        Services
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/about">
-                        About
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/privecy">
-                        Privacy Policy
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/terms">
-                        Terms & Conditions
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/contact">
-                        Contact
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-                <div className="col-6">
+                <div className="col-10">
                   <img
                     src="./assats/images/logo-6.png"
                     width={170}
@@ -1073,14 +1060,13 @@ const Home = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="col-12">
-                  <p style={{ marginLeft: "-50%" }}>
-                    &copy; 2024. All Rights Reserved . Design by Pour
-                    Technologies .
-                  </p>
-                </div>
               </div>
             </div>
+          </div>
+          <div className="col-12">
+            <p style={{ marginLeft:"10%"}}>
+              &copy; 2024. All Rights Reserved . Design by Pour Technologies .
+            </p>
           </div>
         </div>
       </footer>
