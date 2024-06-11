@@ -459,7 +459,7 @@ const Appservice = () => {
                   <span className="pricing">
                     <span>
                       {" "}
-                      ₹49 <small>/ m</small>{" "}
+                      {/* ₹49 <small>/ m</small>{" "} */}
                     </span>
                   </span>
                   <p className="title">Advanced Plan</p>

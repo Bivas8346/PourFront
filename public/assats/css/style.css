@@ -1175,6 +1175,9 @@ body {
   margin-top: 5%;
   background-color: #83827d;
 }
+.copyright{
+  margin-left: 27%;
+}
 .gtco-footer h4 {
   font-family: "Lato-Medium";
   font-size: 24px;
@@ -1252,6 +1255,20 @@ body {
 @media (max-width: 991px) {
   .gtco-footer .col-lg-6 {
     margin-bottom: 50px;
+  }
+}
+@media (max-width: 991px) {
+  .gtco-footer .footer-logo {
+      
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .copyright{
+    margin-left: 10px;
   }
 }
 

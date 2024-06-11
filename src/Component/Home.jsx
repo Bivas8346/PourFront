@@ -1050,11 +1050,6 @@ const Home = () => {
                     </li>
                     <li className="nav-item">
                       <Link className="nav-link" to="#">
-                        <i className="fa fa-google" aria-hidden="true"></i>
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="#">
                         <i className="fa fa-linkedin" aria-hidden="true"></i>
                       </Link>
                     </li>
@@ -1064,8 +1059,8 @@ const Home = () => {
             </div>
           </div>
           <div className="copyright col-12">
-            <p style={{ marginLeft:"10%"}}>
-              &copy; 2024. All Rights Reserved . Design by Pour Technologies .
+            <p>
+              &copy; 2024. All Rights Reserved. Designed by Pour Technologies.
             </p>
           </div>
         </div>
