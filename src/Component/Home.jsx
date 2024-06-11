@@ -1026,12 +1026,12 @@ const Home = () => {
                 <div className="col-12"></div>
               </div>
             </div>
-            <div className="col-lg-4">
+            <div className="footer-logo col-lg-4 col-sm-6">
               <div className="row">
                 <div className="col-10">
                   <img
                     src="./assats/images/logo-6.png"
-                    width={170}
+                    width={120}
                     alt="weblogo"
                   />
                   <p style={{ color: "white" }}>Kolkata, Dumdum</p>
@@ -1063,7 +1063,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="col-12">
+          <div className="copyright col-12">
             <p style={{ marginLeft:"10%"}}>
               &copy; 2024. All Rights Reserved . Design by Pour Technologies .
             </p>
