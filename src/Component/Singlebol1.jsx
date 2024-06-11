@@ -212,10 +212,10 @@ const Singlebol1 = () => {
       <footer className="container-fluid gtco-footer">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6">
+            <div className="col-lg-8">
               <div className="row">
                 <div className="col-6">
-                  <h4>Company</h4>
+                  <h4>Support</h4>
                   <ul className="nav flex-column company-nav">
                     <li className="nav-item">
                       <Link className="nav-link" to="/">
@@ -287,47 +287,12 @@ const Singlebol1 = () => {
                 <div className="col-12"></div>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="footer-logo col-lg-4 col-sm-6">
               <div className="row">
-                <div className="col-6">
-                  <h4>Support</h4>
-                  <ul className="nav flex-column company-nav">
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/">
-                        Home
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/service">
-                        Services
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/about">
-                        About
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/privecy">
-                        Privacy Policy
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/terms">
-                        Terms & Conditions
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/contact">
-                        Contact
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-                <div className="col-6">
+                <div className="col-10">
                   <img
-                    src="../assats/images/logo-6.png"
-                    width={170}
+                    src="./assats/images/logo-6.png"
+                    width={120}
                     alt="weblogo"
                   />
                   <p style={{ color: "white" }}>Kolkata, Dumdum</p>
@@ -346,24 +311,18 @@ const Singlebol1 = () => {
                     </li>
                     <li className="nav-item">
                       <Link className="nav-link" to="#">
-                        <i className="fa fa-google" aria-hidden="true"></i>
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="#">
                         <i className="fa fa-linkedin" aria-hidden="true"></i>
                       </Link>
                     </li>
                   </ul>
                 </div>
-                <div className="col-12">
-                  <p style={{ marginLeft: "-50%" }}>
-                    &copy; 2024. All Rights Reserved . Design by Pour
-                    Technologies .
-                  </p>
-                </div>
               </div>
             </div>
+          </div>
+          <div className="copyright col-12">
+            <p>
+              &copy; 2024. All Rights Reserved. Designed by Pour Technologies.
+            </p>
           </div>
         </div>
       </footer>
