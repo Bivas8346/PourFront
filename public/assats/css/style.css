@@ -275,9 +275,11 @@ body {
 }
 @media (max-width: 600px) {
   .gtco-banner-area::after {
-    width: 90%;
-    height: 500px;
-    left: 8.5%;
+    position:relative;
+    width: 45%;
+    height: 270px;
+    left: 55.5%;
+    border-radius: 70% 0 70% 70%;
   }
 }
 .gtco-banner-area::before {
@@ -315,9 +317,11 @@ body {
 }
 @media (max-width: 600px) {
   .gtco-banner-area::before {
-    width: 70%;
-    height: 480px;
-    left: 2.5%;
+    position:relative;
+    width: 65%;
+    height: 400px;
+    left: 50.5%;
+    border-radius: 70% 0 70% 70%;
   }
 }
 
@@ -1249,7 +1253,6 @@ body {
   }
 }
 
-
 /* Service Card */
 .e-card {
   margin: 20px auto;
@@ -1331,7 +1334,8 @@ body {
 }
 
 @keyframes wave {
-  0% {
+  
+0% {
     transform: rotate(0deg);
   }
 
