@@ -22,7 +22,11 @@ const Videservice = () => {
           <div
             id="my-nav"
             className="collapse navbar-collapse"
-            style={{ paddingLeft: "20%", paddingRight: "10%",backgroundColor:"#fffeeb" }}
+            style={{
+              paddingLeft: "20%",
+              paddingRight: "10%",
+              backgroundColor: "#fffeeb",
+            }}
           >
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
@@ -65,14 +69,21 @@ const Videservice = () => {
           <div className="row">
             <div className="col-md-6">
               <h1>
-                Video Advertisement: <span>Captivating Visuals, Compelling Stories: Elevating Your Brand's Impact</span>
+                Video Advertisement:{" "}
+                <span>
+                  Captivating Visuals, Compelling Stories: Elevating Your
+                  Brand's Impact
+                </span>
               </h1>
               <p>
-              Captivating video content that communicates brand messaging, showcases offerings, and fosters emotional connections with the audience. Telling compelling stories through visual storytelling.
+                Captivating video content that communicates brand messaging,
+                showcases offerings, and fosters emotional connections with the
+                audience. Telling compelling stories through visual
+                storytelling.
               </p>
             </div>
             <br />
-            <div className="gtco-from">
+            <div className="gtco-from" style={{ marginTop: "0.5%" }}>
               <div className="contact">
                 <h3 style={{ marginTop: "2%" }}>Consult With Our Team</h3>
                 <input
@@ -125,7 +136,10 @@ const Videservice = () => {
                 {/* <li>TECHNOLOGY 1</li> */}
               </ul>
             </div>
-            <div className="col-lg-4" style={{marginTop: "5%", padding:"20px" }}>
+            <div
+              className="col-lg-4"
+              style={{ marginTop: "5%", padding: "20px" }}
+            >
               <Carousel fade>
                 <Carousel.Item>
                   <img
@@ -437,10 +451,7 @@ const Videservice = () => {
               <div className="plan">
                 <div className="inner">
                   <span className="pricing">
-                    <span>
-                      {" "}
-                      {/* ₹49 <small>/ m</small>{" "} */}
-                    </span>
+                    <span> {/* ₹49 <small>/ m</small>{" "} */}</span>
                   </span>
                   <p className="title">Advanced Plan</p>
                   <p className="info">plan for Large business.</p>

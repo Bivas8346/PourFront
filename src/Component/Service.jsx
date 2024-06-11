@@ -75,7 +75,7 @@ const Service = () => {
               </p>
             </div>
             <br />
-            <div className="gtco-from">
+            <div className="gtco-from"  style={{marginTop:"0.5%"}}>
               <div className="contact">
                 <h3 style={{ marginTop: "2%" }}>Consult With Our Team</h3>
                 <input
