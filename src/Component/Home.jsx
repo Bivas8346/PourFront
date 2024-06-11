@@ -613,7 +613,7 @@ const Home = () => {
         </div>
       </div>
       {/* <!-- Number Block --> */}
-      <div className="container-fluid gtco-numbers-block" style={{marginBottom:"5%"}}>
+      <div className="container-fluid gtco-numbers-block" style={{marginBottom:"10%"}}>
         <div className="container">
           <svg width="95%" viewBox="0 0 1600 400">
             <defs>
