@@ -1240,6 +1240,7 @@ body {
 .gtco-footer .col-12 p {
   font-family: "Lato-Regular";
   font-size: 18px;
+  margin-left:"30%";
   color: #ffffff;
 }
 @media (max-width: 991px) {
@@ -1249,7 +1250,18 @@ body {
 }
 @media (max-width: 991px) {
   .gtco-footer .col-lg-6 {
-    margin-bottom: 50px;
+    margin-bottom: 50p-x;
+  }
+}
+@media (max-width: 991px) {
+  .gtco-footer .footer-logo {
+      
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
   }
 }
 

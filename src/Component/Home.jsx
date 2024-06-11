@@ -613,7 +613,7 @@ const Home = () => {
         </div>
       </div>
       {/* <!-- Number Block --> */}
-      <div className="container-fluid gtco-numbers-block" style={{marginBottom:"10%"}}>
+      <div className="container-fluid gtco-numbers-block">
         <div className="container">
           <svg width="95%" viewBox="0 0 1600 400">
             <defs>
@@ -692,6 +692,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <br />
       {/* <!-- Discover our project --> */}
       {/* <div className="projects section gtco-testimonials">
         <div className="container">
@@ -1025,12 +1026,12 @@ const Home = () => {
                 <div className="col-12"></div>
               </div>
             </div>
-            <div className="col-lg-4">
+            <div className="footer-logo col-lg-4 col-sm-6">
               <div className="row">
                 <div className="col-10">
                   <img
                     src="./assats/images/logo-6.png"
-                    width={170}
+                    width={120}
                     alt="weblogo"
                   />
                   <p style={{ color: "white" }}>Kolkata, Dumdum</p>
@@ -1062,7 +1063,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="col-12">
+          <div className="copyright col-12">
             <p style={{ marginLeft:"10%"}}>
               &copy; 2024. All Rights Reserved . Design by Pour Technologies .
             </p>
