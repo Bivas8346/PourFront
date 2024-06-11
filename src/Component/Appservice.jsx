@@ -22,7 +22,11 @@ const Appservice = () => {
           <div
             id="my-nav"
             className="collapse navbar-collapse"
-            style={{ paddingLeft: "20%", paddingRight: "10%",backgroundColor:"#fffeeb" }}
+            style={{
+              paddingLeft: "20%",
+              paddingRight: "10%",
+              backgroundColor: "#fffeeb",
+            }}
           >
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
@@ -77,7 +81,7 @@ const Appservice = () => {
               </p>
             </div>
             <br />
-            <div className="gtco-from">
+            <div className="gtco-from" style={{ marginTop: "0.5%" }}>
               <div className="contact">
                 <h3 style={{ marginTop: "2%" }}>Consult With Our Team</h3>
                 <input
@@ -122,7 +126,7 @@ const Appservice = () => {
                 <br />
               </h2>
               <ul style={{ fontWeight: "bolder", fontSize: "20px" }}>
-              <li>REACT</li>
+                <li>REACT</li>
                 <li>LARAVEL</li>
                 <li>NODE</li>
                 <li>EXPRESS JS</li>
@@ -131,7 +135,10 @@ const Appservice = () => {
                 <li>MYSQL</li>
               </ul>
             </div>
-            <div className="col-lg-4" style={{marginTop: "5%", padding:"20px" }}>
+            <div
+              className="col-lg-4"
+              style={{ marginTop: "5%", padding: "20px" }}
+            >
               <Carousel fade>
                 <Carousel.Item>
                   <img
