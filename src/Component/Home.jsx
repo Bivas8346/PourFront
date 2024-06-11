@@ -692,7 +692,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <br />
       {/* <!-- Discover our project --> */}
       {/* <div className="projects section gtco-testimonials">
         <div className="container">
@@ -1026,12 +1025,12 @@ const Home = () => {
                 <div className="col-12"></div>
               </div>
             </div>
-            <div className="footer-logo col-lg-4 col-sm-6">
+            <div className="col-lg-4">
               <div className="row">
                 <div className="col-10">
                   <img
                     src="./assats/images/logo-6.png"
-                    width={120}
+                    width={170}
                     alt="weblogo"
                   />
                   <p style={{ color: "white" }}>Kolkata, Dumdum</p>
@@ -1063,7 +1062,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="copyright col-12">
+          <div className="col-12">
             <p style={{ marginLeft:"10%"}}>
               &copy; 2024. All Rights Reserved . Design by Pour Technologies .
             </p>
