@@ -239,6 +239,18 @@ body {
     color: #1d3ede;
   }
 }
+.nav-logo{
+  width: 180px;
+}
+@media (max-width: 600px) {
+  .nav-logo{
+    width: 120px;
+  }
+  .gtco-main-nav {
+    padding: 10px 0;
+    height: 90px;
+  }
+}
 /* Banner */
 .gtco-banner-area::after {
   position: absolute;
@@ -277,7 +289,7 @@ body {
   .gtco-banner-area::after {
     width: 59%;
     height: 380px;
-    top:5%;
+    top:2.7%;
     rotate: 90deg;
     left: 25.8%;
     border-radius: 0% 50% 50% 50%;
@@ -320,7 +332,7 @@ body {
   .gtco-banner-area::before {
     width: 59%;
     height: 380px;
-    top:10%;
+    top:8%;
     rotate: 90deg;
     left: 25.8%;
     border-radius: 0% 50% 50% 50%;
@@ -332,9 +344,9 @@ body {
 .gtco-features a,
 .gtco-news .owl-carousel .card a,
 .gtco-footer .submit-button {
-  background-image: -moz-linear-gradient(0deg, #e7e74a 0%, #fcf403 100%);
-  background-image: -webkit-linear-gradient(0deg, #e7e74a 0%, #fcf403 100%);
-  background-image: -ms-linear-gradient(0deg, #e7e74a 0%, #fcf403 100%);
+  background-image: -moz-linear-gradient(0deg, #f98d56 0%, #f98d56 100%);
+  background-image: -webkit-linear-gradient(0deg, #f98d56 0%, #f98d56 100%);
+  background-image: -ms-linear-gradient(0deg, #f98d56 0%, #f98d56 100%);
   font-size: 18px;
   font-family: "OpenSans-Semibold";
   color: #fff;
@@ -354,7 +366,7 @@ body {
   border-radius: 50%;
   height: 32px;
   width: 32px;
-  color: #fcf403;
+  color: #ec813a;
   font-size: 22px;
   text-align: center;
   padding-top: 5px;

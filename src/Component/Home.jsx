@@ -40,7 +40,7 @@ const Home = () => {
       <nav className="navbar navbar-expand-lg navbar-light  gtco-main-nav">
         <div className="container sticky">
           <Link className="navbar-brand" to="/" style={{ paddingRight: "10%" }}>
-            <img src="./assats/images/logo-6.png" width={180} alt="weblogo" />
+            <img src="./assats/images/logo-6.png" alt="weblogo" className="nav-logo"/>
           </Link>
           <button
             className="navbar-toggler"
@@ -108,10 +108,8 @@ const Home = () => {
                 Innovative Software Solutions for Your Business Growth
               </p>
               <br />
-              <br />
-              <br />
               <Link to="/contact">
-                Contact Us{" "}
+                Contact Us
                 <i className="fa fa-angle-right" aria-hidden="true"></i>
               </Link>
             </div>

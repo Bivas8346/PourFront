@@ -2,16 +2,66 @@ import React from "react";
 import { useEffect, useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Service = () => {
+  const [formData, setFormData] = useState({
+    Date: "",
+    Name: "",
+    Email: "",
+    PhoneNumber: "",
+    Message: "",
+  });
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const today = new Date();
+    const date = today.toISOString().split("T")[0]; // Format as YYYY-MM-DD
+    setFormData((prevState) => ({ ...prevState, Date: date }));
+  }, []);
+
+  let handleChange = (event) => {
+    let { name, value } = event.target;
+    console.log(name, value);
+    setFormData((prevState) => ({ ...prevState, [name]: value }));
+  };
+
+  let handleSubmit = (event) => {
+    event.preventDefault();
+    console.log("submited:", formData);
+    let add = {
+      Date: formData.Date,
+      Name: formData.Name,
+      Email: formData.Email,
+      PhoneNumber: formData.PhoneNumber,
+      Message: formData.Message,
+    };
+    axios
+      .post(
+        "https://sheet.best/api/sheets/a8f6a41a-16f3-431c-9711-821664f35f7a",
+        add
+      )
+      .then((res) => {
+        console.log(res);
+        navigate("/thank");
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
   return (
     <>
       {/* <!-- Navbar --> */}
       <nav className="navbar navbar-expand-lg navbar-light gtco-main-nav">
         <div className="container">
           <Link className="navbar-brand" to="/" style={{ paddingRight: "10%" }}>
-            <img src="./assats/images/logo-6.png" width={180} alt="weblogo" />
+            <img
+              src="./assats/images/logo-6.png"
+              className="nav-logo"
+              alt="weblogo"
+            />
           </Link>
           <button
             className="navbar-toggler"
@@ -24,7 +74,11 @@ const Service = () => {
           <div
             id="my-nav"
             className="collapse navbar-collapse"
-            style={{ paddingLeft: "20%", paddingRight: "10%",backgroundColor:"#fffeeb" }}
+            style={{
+              paddingLeft: "20%",
+              paddingRight: "10%",
+              backgroundColor: "#fffeeb",
+            }}
           >
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
@@ -75,38 +129,55 @@ const Service = () => {
               </p>
             </div>
             <br />
-            <div className="gtco-from"  style={{marginTop:"0.5%"}}>
+            <form
+              className="gtco-from"
+              style={{ marginTop: "0.5%" }}
+              onSubmit={handleSubmit}
+            >
               <div className="contact">
                 <h3 style={{ marginTop: "2%" }}>Consult With Our Team</h3>
+                <input type="hidden" name="Date" value={formData.Date} />
                 <input
                   type="text"
                   className="form-control"
                   placeholder="Full Name"
                   name="Name"
+                  value={formData.Name}
+                  onChange={handleChange}
+                  required
                 />
                 <input
                   type="email"
                   className="form-control"
                   placeholder="Email Address"
+                  pattern="[^ @]*@[^ @]*"
                   name="Email"
+                  value={formData.Email}
+                  onChange={handleChange}
+                  required
                 />
                 <input
                   type="phone"
                   className="form-control"
                   placeholder="Phone Number"
-                  name="Phone"
+                  name="PhoneNumber"
+                  value={formData.PhoneNumber}
+                  onChange={handleChange}
+                  required
                 />
                 <textarea
                   className="form-control"
                   placeholder="Message"
                   name="Message"
+                  value={formData.Message}
+                  onChange={handleChange}
                 ></textarea>
-                <a href="#" className="submit-button">
-                  Submit{" "}
+                <a type="submit" className="submit-button">
+                  Submit
                   <i className="fa fa-angle-right" aria-hidden="true"></i>
                 </a>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
@@ -131,7 +202,10 @@ const Service = () => {
                     <br />
                     Web Development
                     <br />
-                    <div className="name">Crafting responsive, user-friendly websites tailored to your business needs.</div>
+                    <div className="name">
+                      Crafting responsive, user-friendly websites tailored to
+                      your business needs.
+                    </div>
                   </div>
                 </div>
               </Link>
@@ -152,7 +226,11 @@ const Service = () => {
                     <br />
                     Web Application Development
                     <br />
-                    <div className="name"> Building innovative mobile and web applications to streamline operations and enhance customer experiences.</div>
+                    <div className="name">
+                      {" "}
+                      Building innovative mobile and web applications to
+                      streamline operations and enhance customer experiences.
+                    </div>
                   </div>
                 </div>
               </Link>
@@ -173,7 +251,10 @@ const Service = () => {
                     <br />
                     Digital Marketing
                     <br />
-                    <div className="name">Leveraging the power of online channels to boost brand visibility, engage audiences, and drive conversions.</div>
+                    <div className="name">
+                      Leveraging the power of online channels to boost brand
+                      visibility, engage audiences, and drive conversions.
+                    </div>
                   </div>
                 </div>
               </Link>
@@ -192,9 +273,13 @@ const Service = () => {
                       width={150}
                     />
                     <br />
-                    Application Development 
+                    Application Development
                     <br />
-                    <div className="name">Developing robust, scalable, and customized software applications to drive operational efficiency and productivity.</div>
+                    <div className="name">
+                      Developing robust, scalable, and customized software
+                      applications to drive operational efficiency and
+                      productivity.
+                    </div>
                   </div>
                 </div>
               </Link>
@@ -215,7 +300,11 @@ const Service = () => {
                     <br />
                     Video Advertisement
                     <br />
-                    <div className="name"> Captivating storytelling through engaging video content to promote your brand and products.</div>
+                    <div className="name">
+                      {" "}
+                      Captivating storytelling through engaging video content to
+                      promote your brand and products.
+                    </div>
                   </div>
                 </div>
               </Link>
