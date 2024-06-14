@@ -9,7 +9,11 @@ const Marketinkservice = () => {
       <nav className="navbar navbar-expand-lg navbar-light gtco-main-nav">
         <div className="container">
           <Link className="navbar-brand" to="/" style={{ paddingRight: "10%" }}>
-            <img src="../assats/images/logo-6.png" className="nav-logo" alt="weblogo" />
+            <img
+              src="../assats/images/logo-6.png"
+              className="nav-logo"
+              alt="weblogo"
+            />
           </Link>
           <button
             className="navbar-toggler"
@@ -69,7 +73,8 @@ const Marketinkservice = () => {
           <div className="row">
             <div className="col-md-6">
               <h1>
-                Digital Marketing:{" "}
+                <span style={{ color: "#d64806", fontSize: "45px" }}>Digital Marketing:</span>
+                <br />
                 <span>A Holistic Digital Marketing Approach</span>
               </h1>
               <p>
@@ -353,10 +358,10 @@ const Marketinkservice = () => {
                     </li>
                   </ul>
                   <div className="action">
-                    <Link to={`/contact`} className="button">
+                    <a href="#" className="button">
                       {" "}
                       Choose plan{" "}
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -435,10 +440,10 @@ const Marketinkservice = () => {
                     </li>
                   </ul>
                   <div className="action">
-                    <Link to={"/contact"} className="button">
+                    <a href="#" className="button">
                       {" "}
                       Choose plan{" "}
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -514,10 +519,10 @@ const Marketinkservice = () => {
                     </li>
                   </ul>
                   <div className="action">
-                    <Link to={"/contact"} className="button">
+                    <a href="#" className="button">
                       {" "}
                       Choose plan{" "}
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>

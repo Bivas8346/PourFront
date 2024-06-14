@@ -20,12 +20,12 @@ import Thanks from "./Component/Thanks";
 // import Privecy from "./Component/Privecy";
 // import Terms from "./Component/Terms";
 import SingleService from "./Component/SingleService";
-import Webservice from "./Component/Webservice";
-import Marketinkservice from "./Component/Marketinkservice";
-import Seoservice from "./Component/Seoservice";
+// import Webservice from "./Component/Webservice";
+// import Marketinkservice from "./Component/Marketinkservice";
+// import Seoservice from "./Component/Seoservice";
 import Adservice from "./Component/Adservice";
-import Appservice from "./Component/Appservice";
-import Videservice from "./Component/Videservice";
+// import Appservice from "./Component/Appservice";
+// import Videservice from "./Component/Videservice";
 import Moreservice from "./Component/Moreservice";
 import Singlebol1 from "./Component/Singlebol1";
 import Singleblog2 from "./Component/Singleblog2";
@@ -79,6 +79,73 @@ let SingleBlog = React.lazy(() => {
     setTimeout(() => resolve(import("./Component/SingleBlog")), 1000);
   });
 });
+
+
+let Webservice = React.lazy(() => {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(import("./Component/Webservice")), 1000);
+  });
+});
+
+
+let Marketinkservice = React.lazy(() => {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(import("./Component/Marketinkservice")), 1000);
+  });
+});
+
+let Seoservice = React.lazy(() => {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(import("./Component/Seoservice")), 1000);
+  });
+});
+
+let Appservice = React.lazy(() => {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(import("./Component/Appservice")), 1000);
+  });
+});
+
+let Videservice = React.lazy(() => {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(import("./Component/Videservice")), 1000);
+  });
+});
+
+
+// let SingleBlog = React.lazy(() => {
+//   return new Promise((resolve) => {
+//     setTimeout(() => resolve(import("./Component/SingleBlog")), 1000);
+//   });
+// });
+
+
+// let SingleBlog = React.lazy(() => {
+//   return new Promise((resolve) => {
+//     setTimeout(() => resolve(import("./Component/SingleBlog")), 1000);
+//   });
+// });
+
+
+// let SingleBlog = React.lazy(() => {
+//   return new Promise((resolve) => {
+//     setTimeout(() => resolve(import("./Component/SingleBlog")), 1000);
+//   });
+// });
+
+// let SingleBlog = React.lazy(() => {
+//   return new Promise((resolve) => {
+//     setTimeout(() => resolve(import("./Component/SingleBlog")), 1000);
+//   });
+// });
+
+
+// let SingleBlog = React.lazy(() => {
+//   return new Promise((resolve) => {
+//     setTimeout(() => resolve(import("./Component/SingleBlog")), 1000);
+//   });
+// });
+
 
 let Privecy = React.lazy(() => {
   return new Promise((resolve) => {

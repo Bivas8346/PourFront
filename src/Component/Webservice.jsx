@@ -9,7 +9,11 @@ const Webservice = () => {
       <nav className="navbar navbar-expand-lg navbar-light gtco-main-nav">
         <div className="container">
           <Link className="navbar-brand" to="/" style={{ paddingRight: "10%" }}>
-            <img src="../assats/images/logo-6.png" className="nav-logo" alt="weblogo" />
+            <img
+              src="../assats/images/logo-6.png"
+              className="nav-logo"
+              alt="weblogo"
+            />
           </Link>
           <button
             className="navbar-toggler"
@@ -22,7 +26,11 @@ const Webservice = () => {
           <div
             id="my-nav"
             className="collapse navbar-collapse"
-            style={{ paddingLeft: "20%", paddingRight: "10%",backgroundColor:"#fffeeb" }}
+            style={{
+              paddingLeft: "20%",
+              paddingRight: "10%",
+              backgroundColor: "#fffeeb",
+            }}
           >
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
@@ -64,8 +72,10 @@ const Webservice = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <h1>Web Development: <br />
-             <span>Your Gateway to Online Success</span></h1>
+              <h1>
+               <span style={{color: "#d64806", fontSize: "45px"}}> Web Development:</span> <br />
+                <span>Your Gateway to Online Success</span>
+              </h1>
               <p>
                 Visually stunning, user-friendly websites optimized for search
                 and business growth with cutting-edge development expertise.
@@ -73,7 +83,7 @@ const Webservice = () => {
               </p>
             </div>
             <br />
-            <div className="gtco-from"   style={{marginTop:"0.5%"}}>
+            <div className="gtco-from" style={{ marginTop: "0.5%" }}>
               <div className="contact">
                 <h3 style={{ marginTop: "2%" }}>Consult With Our Team</h3>
                 <input
@@ -128,7 +138,10 @@ const Webservice = () => {
                 <li>WORDPRESS</li>
               </ul>
             </div>
-            <div className="col-lg-4" style={{marginTop: "5%", padding:"20px" }}>
+            <div
+              className="col-lg-4"
+              style={{ marginTop: "5%", padding: "20px" }}
+            >
               <Carousel fade>
                 <Carousel.Item>
                   <img
@@ -342,7 +355,9 @@ const Webservice = () => {
                         ></path>
                       </svg>
                     </span> */}
-                      <span><strong>Contact form</strong></span>
+                      <span>
+                        <strong>Contact form</strong>
+                      </span>
                     </li>
                     <li>
                       <span>
@@ -356,10 +371,10 @@ const Webservice = () => {
                     </li>
                   </ul>
                   <div className="action">
-                    <Link to={`/contact`} className="button">
+                    <a href="#" className="button">
                       {" "}
                       Choose plan{" "}
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -443,10 +458,10 @@ const Webservice = () => {
                     </li>
                   </ul>
                   <div className="action">
-                    <Link to={"/contact"} className="button">
+                    <a href="#" className="button">
                       {" "}
                       Choose plan{" "}
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -455,10 +470,7 @@ const Webservice = () => {
               <div className="plan">
                 <div className="inner">
                   <span className="pricing">
-                    <span>
-                      {" "}
-                      {/* ₹49 <small>/ m</small>{" "} */}
-                    </span>
+                    <span> {/* ₹49 <small>/ m</small>{" "} */}</span>
                   </span>
                   <p className="title">Advanced Plan</p>
                   <p className="info">plan for Large business.</p>
@@ -530,10 +542,10 @@ const Webservice = () => {
                     </li>
                   </ul>
                   <div className="action">
-                    <Link to={"/contact"} className="button">
+                    <a href="#" className="button">
                       {" "}
                       Choose plan{" "}
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>

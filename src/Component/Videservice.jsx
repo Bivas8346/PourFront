@@ -9,7 +9,11 @@ const Videservice = () => {
       <nav className="navbar navbar-expand-lg navbar-light gtco-main-nav">
         <div className="container">
           <Link className="navbar-brand" to="/" style={{ paddingRight: "10%" }}>
-            <img src="../assats/images/logo-6.png" className="nav-logo" alt="weblogo" />
+            <img
+              src="../assats/images/logo-6.png"
+              className="nav-logo"
+              alt="weblogo"
+            />
           </Link>
           <button
             className="navbar-toggler"
@@ -69,7 +73,10 @@ const Videservice = () => {
           <div className="row">
             <div className="col-md-6">
               <h1>
-                Video Advertisement:{" "}
+                <span style={{ color: "#d64806", fontSize: "45px" }}>
+                  Video Advertisement:
+                </span>
+                <br />
                 <span>
                   Captivating Visuals, Compelling Stories: Elevating Your
                   Brand's Impact
@@ -348,7 +355,9 @@ const Videservice = () => {
                         ></path>
                       </svg>
                     </span> */}
-                      <span><strong>Stock music</strong></span>
+                      <span>
+                        <strong>Stock music</strong>
+                      </span>
                     </li>
                     <li>
                       <span>
@@ -362,10 +371,10 @@ const Videservice = () => {
                     </li>
                   </ul>
                   <div className="action">
-                    <Link to={`/contact`} className="button">
+                    <a href="#" className="button">
                       {" "}
                       Choose plan{" "}
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -449,10 +458,10 @@ const Videservice = () => {
                     </li>
                   </ul>
                   <div className="action">
-                    <Link to={"/contact"} className="button">
+                    <a href="#" className="button">
                       {" "}
                       Choose plan{" "}
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -461,10 +470,7 @@ const Videservice = () => {
               <div className="plan">
                 <div className="inner">
                   <span className="pricing">
-                    <span>
-                      {" "}
-                      {/* ₹49 <small>/ m</small>{" "} */}
-                    </span>
+                    <span> {/* ₹49 <small>/ m</small>{" "} */}</span>
                   </span>
                   <p className="title">Advanced Plan</p>
                   <p className="info">plan for Large business.</p>
@@ -536,10 +542,10 @@ const Videservice = () => {
                     </li>
                   </ul>
                   <div className="action">
-                    <Link to={"/contact"} className="button">
+                    <a href="#" className="button">
                       {" "}
                       Choose plan{" "}
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>

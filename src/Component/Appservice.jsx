@@ -9,7 +9,11 @@ const Appservice = () => {
       <nav className="navbar navbar-expand-lg navbar-light gtco-main-nav">
         <div className="container">
           <Link className="navbar-brand" to="/" style={{ paddingRight: "10%" }}>
-            <img src="../assats/images/logo-6.png" className="nav-logo" alt="weblogo" />
+            <img
+              src="../assats/images/logo-6.png"
+              className="nav-logo"
+              alt="weblogo"
+            />
           </Link>
           <button
             className="navbar-toggler"
@@ -69,7 +73,10 @@ const Appservice = () => {
           <div className="row">
             <div className="col-md-6">
               <h1>
-                Web App Development:{" "}
+                <span style={{ color: "#d64806", fontSize: "45px" }}>
+                  Web App Development:
+                </span>
+                <br />
                 <span>
                   Unleashing Operational Efficiency through Innovative Web
                   Applications
@@ -354,7 +361,9 @@ const Appservice = () => {
                         ></path>
                       </svg>
                     </span> */}
-                      <span><strong>Contact form</strong></span>
+                      <span>
+                        <strong>Contact form</strong>
+                      </span>
                     </li>
                     <li>
                       <span>
@@ -368,10 +377,10 @@ const Appservice = () => {
                     </li>
                   </ul>
                   <div className="action">
-                    <Link to={`/contact`} className="button">
+                    <a href="#" className="button">
                       {" "}
                       Choose plan{" "}
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -455,10 +464,10 @@ const Appservice = () => {
                     </li>
                   </ul>
                   <div className="action">
-                    <Link to={"/contact"} className="button">
+                    <a href="#" className="button">
                       {" "}
                       Choose plan{" "}
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -467,10 +476,7 @@ const Appservice = () => {
               <div className="plan">
                 <div className="inner">
                   <span className="pricing">
-                    <span>
-                      {" "}
-                      {/* ₹49 <small>/ m</small>{" "} */}
-                    </span>
+                    <span> {/* ₹49 <small>/ m</small>{" "} */}</span>
                   </span>
                   <p className="title">Advanced Plan</p>
                   <p className="info">plan for Large business.</p>
@@ -542,10 +548,10 @@ const Appservice = () => {
                     </li>
                   </ul>
                   <div className="action">
-                    <Link to={"/contact"} className="button">
+                    <a href="#" className="button">
                       {" "}
                       Choose plan{" "}
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>

@@ -9,7 +9,11 @@ const Seoservice = () => {
       <nav className="navbar navbar-expand-lg navbar-light gtco-main-nav">
         <div className="container">
           <Link className="navbar-brand" to="/" style={{ paddingRight: "10%" }}>
-            <img src="../assats/images/logo-6.png" className="nav-logo" alt="weblogo" />
+            <img
+              src="../assats/images/logo-6.png"
+              className="nav-logo"
+              alt="weblogo"
+            />
           </Link>
           <button
             className="navbar-toggler"
@@ -69,7 +73,10 @@ const Seoservice = () => {
           <div className="row">
             <div className="col-md-6">
               <h1>
-                Application Development: <br />
+                <span style={{ color: "#d64806", fontSize:"43px" }}>
+                  Application Development:
+                </span>
+                <br />
                 <span>
                   Tailored Software Solutions to Drive Operational Excellence
                 </span>
@@ -335,7 +342,9 @@ const Seoservice = () => {
                       </svg>
                     </span> */}
                       <span>
-                        <strong>Single platform <br /> (iOS or Android)</strong>
+                        <strong>
+                          Single platform <br /> (iOS or Android)
+                        </strong>
                       </span>
                     </li>
                     <li>
@@ -353,7 +362,9 @@ const Seoservice = () => {
                         ></path>
                       </svg>
                     </span> */}
-                      <span><strong>Standard UI components</strong></span>
+                      <span>
+                        <strong>Standard UI components</strong>
+                      </span>
                     </li>
                     <li>
                       <span>
@@ -367,10 +378,10 @@ const Seoservice = () => {
                     </li>
                   </ul>
                   <div className="action">
-                    <Link to={`/contact`} className="button">
+                    <a href="#" className="button">
                       {" "}
                       Choose plan{" "}
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -454,10 +465,10 @@ const Seoservice = () => {
                     </li>
                   </ul>
                   <div className="action">
-                    <Link to={"/contact"} className="button">
+                    <a href="#" className="button">
                       {" "}
                       Choose plan{" "}
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -466,10 +477,7 @@ const Seoservice = () => {
               <div className="plan">
                 <div className="inner">
                   <span className="pricing">
-                    <span>
-                      {" "}
-                      {/* ₹49 <small>/ m</small>{" "} */}
-                    </span>
+                    <span> {/* ₹49 <small>/ m</small>{" "} */}</span>
                   </span>
                   <p className="title">Advanced Plan</p>
                   <p className="info">plan for Large business.</p>
@@ -509,7 +517,9 @@ const Seoservice = () => {
                       </svg>
                     </span> */}
                       <span>
-                        <strong>Advanced features (AR/VR, AI integration)</strong>
+                        <strong>
+                          Advanced features (AR/VR, AI integration)
+                        </strong>
                       </span>
                     </li>
                     <li>
@@ -541,10 +551,10 @@ const Seoservice = () => {
                     </li>
                   </ul>
                   <div className="action">
-                    <Link to={"/contact"} className="button">
+                    <a href="#" className="button">
                       {" "}
                       Choose plan{" "}
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
