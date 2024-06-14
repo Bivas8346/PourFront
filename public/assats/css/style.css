@@ -1194,7 +1194,7 @@ body {
   font-family: "Lato-Medium";
   font-size: 24px;
   color: #fcf403;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .gtco-footer input,
 .gtco-footer textarea {
@@ -1231,7 +1231,7 @@ body {
 .gtco-footer .company-nav,
 .gtco-footer .services-nav {
   font-family: "OpenSans-Regular";
-  font-size: 20px;
+  font-size: 17px;
 }
 .gtco-footer .company-nav a,
 .gtco-footer .services-nav a {
