@@ -1184,7 +1184,7 @@ body {
 .gtco-footer {
   padding-bottom: 20px;
   padding-top: 20px;
-  margin-top: 5%;
+  /* margin-top: 5%; */
   background-color: #83827d;
 }
 .copyright{
@@ -1252,7 +1252,7 @@ body {
   font-size: 24px;
 }
 .gtco-footer .col-12 {
-  margin-top: 90px;
+  margin-top: 20px;
 }
 .gtco-footer .col-12 p {
   font-family: "Lato-Regular";
