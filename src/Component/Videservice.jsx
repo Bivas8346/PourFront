@@ -132,7 +132,7 @@ const Videservice = () => {
                 <li>YouTube Ads</li>
                 <li>Facebook Ads</li>
                 <li>Instagram Ads</li>
-                <li>Video Search Engine Optimization (SEO)</li>
+                <li>Search Engine Optimization (SEO)</li>
                 {/* <li>TECHNOLOGY 1</li> */}
               </ul>
             </div>
@@ -311,7 +311,7 @@ const Videservice = () => {
                       </svg>
                     </span> */}
                       <span>
-                        <strong>Facebook</strong> ads
+                        <strong>30-second promotional video</strong>
                       </span>
                     </li>
                     <li>
@@ -330,7 +330,7 @@ const Videservice = () => {
                       </svg>
                     </span> */}
                       <span>
-                        <strong>Instagram</strong> ads
+                        <strong>Basic editing</strong>
                       </span>
                     </li>
                     <li>
@@ -348,11 +348,16 @@ const Videservice = () => {
                         ></path>
                       </svg>
                     </span> */}
-                      <span>Banner & Poster</span>
+                      <span><strong>Stock music</strong></span>
                     </li>
                     <li>
                       <span>
-                        Proper<strong>Lead</strong>
+                        <strong>-------</strong>
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        <strong>-------</strong>
                       </span>
                     </li>
                   </ul>
@@ -393,7 +398,7 @@ const Videservice = () => {
                       </svg>
                     </span> */}
                       <span>
-                        <strong>Besic</strong> plans
+                        <strong>60-second custom video</strong>
                       </span>
                     </li>
                     <li>
@@ -412,7 +417,7 @@ const Videservice = () => {
                       </svg>
                     </span> */}
                       <span>
-                        <strong>GMB</strong>
+                        <strong>Professional voiceover</strong>
                       </span>
                     </li>
                     <li>
@@ -430,11 +435,16 @@ const Videservice = () => {
                         ></path>
                       </svg>
                     </span> */}
-                      <span>Web Site</span>
+                      <strong>Blog integration</strong>
                     </li>
                     <li>
                       <span>
-                        More<strong>Leads</strong>
+                        <strong>Custom graphics</strong>
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        <strong>Basic Plan</strong>
                       </span>
                     </li>
                   </ul>
@@ -451,7 +461,10 @@ const Videservice = () => {
               <div className="plan">
                 <div className="inner">
                   <span className="pricing">
-                    <span> {/* ₹49 <small>/ m</small>{" "} */}</span>
+                    <span>
+                      {" "}
+                      {/* ₹49 <small>/ m</small>{" "} */}
+                    </span>
                   </span>
                   <p className="title">Advanced Plan</p>
                   <p className="info">plan for Large business.</p>
@@ -472,7 +485,7 @@ const Videservice = () => {
                       </svg>
                     </span> */}
                       <span>
-                        <strong>Standeard</strong> plans
+                        <strong>High-end production video (2-3 minutes)</strong>
                       </span>
                     </li>
                     <li>
@@ -491,7 +504,7 @@ const Videservice = () => {
                       </svg>
                     </span> */}
                       <span>
-                        Huge <strong>Leads</strong>
+                        <strong>Storytelling, original score</strong>
                       </span>
                     </li>
                     <li>
@@ -509,11 +522,16 @@ const Videservice = () => {
                         ></path>
                       </svg>
                     </span> */}
-                      <span>Website/Hybrid App</span>
+                      {/* <strong>Search Engine Optimization (SEO)</strong> */}
                     </li>
                     <li>
                       <span>
-                        <strong>6 Months</strong>Free Maintainance
+                        <strong>Advanced post-production</strong>
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        <strong>Standard Plan</strong>
                       </span>
                     </li>
                   </ul>

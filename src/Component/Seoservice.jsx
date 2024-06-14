@@ -316,7 +316,7 @@ const Seoservice = () => {
                       </svg>
                     </span> */}
                       <span>
-                        <strong>Facebook</strong> ads
+                        <strong>Basic app functionality</strong>
                       </span>
                     </li>
                     <li>
@@ -335,7 +335,7 @@ const Seoservice = () => {
                       </svg>
                     </span> */}
                       <span>
-                        <strong>Instagram</strong> ads
+                        <strong>Single platform <br /> (iOS or Android)</strong>
                       </span>
                     </li>
                     <li>
@@ -353,11 +353,16 @@ const Seoservice = () => {
                         ></path>
                       </svg>
                     </span> */}
-                      <span>Banner & Poster</span>
+                      <span><strong>Standard UI components</strong></span>
                     </li>
                     <li>
                       <span>
-                        Proper<strong>Lead</strong>
+                        <strong>-------</strong>
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        <strong>-------</strong>
                       </span>
                     </li>
                   </ul>
@@ -398,7 +403,7 @@ const Seoservice = () => {
                       </svg>
                     </span> */}
                       <span>
-                        <strong>Besic</strong> plans
+                        <strong>Cross-platform app (iOS and Android)</strong>
                       </span>
                     </li>
                     <li>
@@ -417,7 +422,7 @@ const Seoservice = () => {
                       </svg>
                     </span> */}
                       <span>
-                        <strong>GMB</strong>
+                        <strong>Custom UI/UX design</strong>
                       </span>
                     </li>
                     <li>
@@ -435,11 +440,16 @@ const Seoservice = () => {
                         ></path>
                       </svg>
                     </span> */}
-                      <span>Web Site</span>
+                      <strong>In-app purchases</strong>
                     </li>
                     <li>
                       <span>
-                        More<strong>Leads</strong>
+                        <strong>Push notifications</strong>
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        <strong>Basic Plan</strong>
                       </span>
                     </li>
                   </ul>
@@ -456,7 +466,10 @@ const Seoservice = () => {
               <div className="plan">
                 <div className="inner">
                   <span className="pricing">
-                    <span> {/* ₹49 <small>/ m</small>{" "} */}</span>
+                    <span>
+                      {" "}
+                      {/* ₹49 <small>/ m</small>{" "} */}
+                    </span>
                   </span>
                   <p className="title">Advanced Plan</p>
                   <p className="info">plan for Large business.</p>
@@ -477,7 +490,7 @@ const Seoservice = () => {
                       </svg>
                     </span> */}
                       <span>
-                        <strong>Standeard</strong> plans
+                        <strong>Fully customized app</strong>
                       </span>
                     </li>
                     <li>
@@ -496,7 +509,7 @@ const Seoservice = () => {
                       </svg>
                     </span> */}
                       <span>
-                        Huge <strong>Leads</strong>
+                        <strong>Advanced features (AR/VR, AI integration)</strong>
                       </span>
                     </li>
                     <li>
@@ -514,11 +527,16 @@ const Seoservice = () => {
                         ></path>
                       </svg>
                     </span> */}
-                      <span>Website/Hybrid App</span>
+                      <strong>Backend infrastructure</strong>
                     </li>
                     <li>
                       <span>
-                        <strong>6 Months</strong>Free Maintainance
+                        <strong>Ongoing support</strong>
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        <strong>Standard Plan</strong>
                       </span>
                     </li>
                   </ul>

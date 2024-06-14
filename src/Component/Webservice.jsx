@@ -305,7 +305,7 @@ const Webservice = () => {
                       </svg>
                     </span> */}
                       <span>
-                        <strong>Facebook</strong> ads
+                        <strong>Single-page responsive website</strong>
                       </span>
                     </li>
                     <li>
@@ -324,7 +324,7 @@ const Webservice = () => {
                       </svg>
                     </span> */}
                       <span>
-                        <strong>Instagram</strong> ads
+                        <strong>Basic SEO</strong>
                       </span>
                     </li>
                     <li>
@@ -342,11 +342,16 @@ const Webservice = () => {
                         ></path>
                       </svg>
                     </span> */}
-                      <span>Banner & Poster</span>
+                      <span><strong>Contact form</strong></span>
                     </li>
                     <li>
                       <span>
-                        Proper<strong>Lead</strong>
+                        <strong>-------</strong>
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        <strong>-------</strong>
                       </span>
                     </li>
                   </ul>
@@ -387,7 +392,7 @@ const Webservice = () => {
                       </svg>
                     </span> */}
                       <span>
-                        <strong>Besic</strong> plans
+                        <strong>Multi-page responsive website</strong>
                       </span>
                     </li>
                     <li>
@@ -406,7 +411,7 @@ const Webservice = () => {
                       </svg>
                     </span> */}
                       <span>
-                        <strong>GMB</strong>
+                        <strong>Advanced SEO</strong>
                       </span>
                     </li>
                     <li>
@@ -424,11 +429,16 @@ const Webservice = () => {
                         ></path>
                       </svg>
                     </span> */}
-                      <span>Web Site</span>
+                      <strong>Blog integration</strong>
                     </li>
                     <li>
                       <span>
-                        More<strong>Leads</strong>
+                        <strong>Social media links</strong>
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        <strong>Basic Plan</strong>
                       </span>
                     </li>
                   </ul>
@@ -469,7 +479,7 @@ const Webservice = () => {
                       </svg>
                     </span> */}
                       <span>
-                        <strong>Standeard</strong> plans
+                        <strong>E-commerce functionality</strong>
                       </span>
                     </li>
                     <li>
@@ -488,7 +498,7 @@ const Webservice = () => {
                       </svg>
                     </span> */}
                       <span>
-                        Huge <strong>Leads</strong>
+                        <strong>Custom design</strong>
                       </span>
                     </li>
                     <li>
@@ -506,11 +516,16 @@ const Webservice = () => {
                         ></path>
                       </svg>
                     </span> */}
-                      <span>Website/Hybrid App</span>
+                      <strong>Content management system</strong>
                     </li>
                     <li>
                       <span>
-                        <strong>6 Months</strong>Free Maintainance
+                        <strong>Website analytics</strong>
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        <strong>Standard Plan</strong>
                       </span>
                     </li>
                   </ul>
