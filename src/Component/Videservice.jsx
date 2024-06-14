@@ -270,10 +270,10 @@ const Videservice = () => {
                 innovation, ensuring that we stay at the cutting edge of
                 technology.
               </p>
-              <Link to="/about">
+              {/* <Link to="/about">
                 Learn More{" "}
                 <i className="fa fa-angle-right" aria-hidden="true"></i>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
