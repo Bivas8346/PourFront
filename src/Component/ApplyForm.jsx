@@ -279,7 +279,7 @@ const ApplyForm = () => {
                 <div className="col-lg-6 col-sm-6 col-12">
                   <ReCAPTCHA
                     ref={recaptchaRef}
-                    sitekey="6LcR4_cpAAAAAAdojavXP83MWYGhbw5QC8PDmcDb"
+                    sitekey="6Leg4_cpAAAAACu1ON_TXEYMYnZJ_hiGnKZ3k_kN"
                     size="small" // or "invisible"
                     onChange={onChange}
                   />
