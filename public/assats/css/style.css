@@ -1995,7 +1995,7 @@ body {
 
 .contact-us .contact-us-content {
   border-radius: 23px;
-  padding: 60px;
+  padding: 20px;
   background-color: #fff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   margin-top: 10%;
@@ -2009,7 +2009,7 @@ body {
 
 .contact-form .section-heading {
   text-align: center;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 
 .contact-form input {
@@ -2034,10 +2034,43 @@ body {
   border: none;
   outline: none;
   padding: 0px 15px;
-  font-size: 14px;
   color: #2a2a2a;
   font-weight: 600;
   margin-bottom: 15px;
+  -webkit-appearance: none;
+}
+.contact-form select.minimal {
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 20%),
+    linear-gradient(135deg, gray 50%, transparent 20%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+.contact-form select.minimal:focus {
+  background-image:
+    linear-gradient(45deg, rgb(241, 223, 21) 50%, transparent 20%),
+    linear-gradient(135deg, transparent 50%, rgb(227, 209, 11) 20%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+  border-color: rgb(255, 231, 17);
+  outline: 0;
 }
 
 .contact-form input::placeholder {

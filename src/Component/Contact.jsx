@@ -147,7 +147,7 @@ const Contact = () => {
         </div>
       </div>
       {/* <!-- Main Contact us --> */}
-      <div className="contact-us section contact">
+      <div className="contact-us section contact"style={{marginTop:"-3%"}}>
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -158,9 +158,10 @@ const Contact = () => {
                       <div className="row">
                         <div className="col-lg-12">
                           <div className="section-heading">
-                            <h2>
-                              Contact Us &amp; Get In <span>Touch</span>
-                            </h2>
+                            <h1>
+                              Contact Us 
+                              {/* &amp; Get In <span>Touch</span> */}
+                            </h1>
                           </div>
                         </div>
                         <div className="col-lg-6 col-sm-6 col-12">
@@ -171,10 +172,10 @@ const Contact = () => {
                           />
                           <fieldset>
                             <input
-                              style={{ fontSize: "120%" }}
+                              style={{ fontSize: "100%" }}
                               type="name"
                               name="Name"
-                              placeholder="Your Name..."
+                              placeholder="Name"
                               autoComplete="on"
                               value={formData.Name}
                               onChange={handleChange}
@@ -185,11 +186,11 @@ const Contact = () => {
                         <div className="col-lg-6 col-sm-6 col-12">
                           <fieldset>
                             <input
-                              style={{ fontSize: "120%" }}
+                              style={{ fontSize: "100%" }}
                               type="text"
                               name="Email"
                               pattern="[^ @]*@[^ @]*"
-                              placeholder="Your E-mail..."
+                              placeholder="E-mail"
                               value={formData.Email}
                               onChange={handleChange}
                               required
@@ -199,10 +200,10 @@ const Contact = () => {
                         <div className="col-lg-6 col-sm-6 col-12">
                           <fieldset>
                             <input
-                              style={{ fontSize: "120%" }}
+                              style={{ fontSize: "100%" }}
                               type="phone"
                               name="PhoneNumber"
-                              placeholder="Your Phone Number..."
+                              placeholder="Phone Number"
                               autoComplete="on"
                               value={formData.PhoneNumber}
                               onChange={handleChange}
@@ -216,27 +217,28 @@ const Contact = () => {
                               placeholder="Service..."
                               name="Service"
                               autoComplete="on"
-                              style={{ fontSize: "120%" }}
+                              style={{ fontSize: "100%",paddingRight:"5%" }}
                               value={formData.Service}
                               onChange={handleChange}
+                              className="minimal"
                             >
-                              <option value>service</option>
-                              <option>Web Devlopment</option>
-                              <option>App Devlopment</option>
-                              <option>Degital marketing</option>
-                              <option>SEO Service</option>
-                              <option>Hybride App Devlopment</option>
-                              <option>Ad Service</option>
-                              <option>Vide Ad-service</option>
+                              <option>service</option>
+                              <option value>Web Devlopment</option>
+                              <option value>App Devlopment</option>
+                              <option value>Degital marketing</option>
+                              <option value>SEO Service</option>
+                              <option value>Hybride App Devlopment</option>
+                              <option value>Ad Service</option>
+                              <option value>Vide Ad-service</option>
                             </select>
                           </fieldset>
                         </div>
                         <div className="col-lg-12 col-sm12 col-12">
                           <fieldset>
                             <textarea
-                              style={{ fontSize: "120%" }}
+                              style={{ fontSize: "100%" }}
                               name="Message"
-                              placeholder="Your Message"
+                              placeholder="Message"
                               value={formData.Message}
                               onChange={handleChange}
                             ></textarea>
@@ -245,7 +247,7 @@ const Contact = () => {
                         <div className="col-lg-6 col-sm-6 col-12">
                           <ReCAPTCHA
                             ref={recaptchaRef}
-                            sitekey="6LcR4_cpAAAAAAdojavXP83MWYGhbw5QC8PDmcDb"
+                            sitekey="6Leg4_cpAAAAACu1ON_TXEYMYnZJ_hiGnKZ3k_kN"
                             size="normal"
                             onChange={onChange}
                             // 6LcVV_UpAAAAAMcDR_FpYS1HmUwIPd_1Ijd4j3zm
@@ -272,7 +274,7 @@ const Contact = () => {
                           <div className="info-item">
                             <i className="fa fa-phone"></i>
                             <h4>
-                              <Link to=" ">+91 8584858693</Link>
+                              <Link to=" ">+91 85848 58693</Link>
                             </h4>
                           </div>
                         </div>
@@ -288,7 +290,7 @@ const Contact = () => {
                           <div className="info-item">
                             <i className="fa fa-map-marker"></i>
                             <h4>
-                              <Link to=" ">Motijeel, Dumdum, Kolkata-74</Link>
+                              <Link to=" ">Dumdum, Kolkata-74</Link>
                             </h4>
                           </div>
                         </div>
