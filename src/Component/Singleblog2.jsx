@@ -8,7 +8,11 @@ const Singleblog2 = () => {
       <nav className="navbar navbar-expand-lg navbar-light gtco-main-nav">
         <div className="container">
           <Link className="navbar-brand" to="/" style={{ paddingRight: "10%" }}>
-            <img src="../assats/images/logo-6.png" className="nav-logo" alt="weblogo" />
+            <img
+              src="../assats/images/logo-6.png"
+              className="nav-logo"
+              alt="weblogo"
+            />
           </Link>
           <button
             className="navbar-toggler"
@@ -21,7 +25,11 @@ const Singleblog2 = () => {
           <div
             id="my-nav"
             className="collapse navbar-collapse"
-            style={{ paddingLeft: "20%", paddingRight: "10%",backgroundColor:"#fffeeb" }}
+            style={{
+              paddingLeft: "20%",
+              paddingRight: "10%",
+              backgroundColor: "#fffeeb",
+            }}
           >
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
@@ -166,7 +174,7 @@ const Singleblog2 = () => {
               #1. What is Lorem Ipsum?
             </h3> */}
             <p className="my-2" style={{ lineHeight: "2" }}>
-            At the heart of effective digital marketing lies a deep
+              At the heart of effective digital marketing lies a deep
               understanding of your target audience – their preferences,
               behaviors, and online journeys. By leveraging data-driven insights
               and analytics, businesses can craft personalized and highly
@@ -183,21 +191,19 @@ const Singleblog2 = () => {
             </p>
             <br />
             <p className="my-2" style={{ lineHeight: "2" }}>
-
-              Moreover,
-              digital marketing fosters two-way communication and customer
-              engagement, enabling businesses to build brand loyalty and
-              establish long-lasting relationships with their audience. Through
-              social media platforms, interactive content, and personalized
-              outreach, companies can create immersive experiences that leave a
-              lasting impression and cultivate a dedicated customer base. As
-              technology continues to evolve at a rapid pace, businesses that
-              embrace digital marketing and stay ahead of the curve will gain a
-              significant competitive advantage in the ever-changing digital
-              landscape. By combining innovative strategies, data-driven
-              decision-making, and a customer-centric approach, companies can
-              unlock new opportunities for growth, brand awareness, and customer
-              acquisition in the digital realm.
+              Moreover, digital marketing fosters two-way communication and
+              customer engagement, enabling businesses to build brand loyalty
+              and establish long-lasting relationships with their audience.
+              Through social media platforms, interactive content, and
+              personalized outreach, companies can create immersive experiences
+              that leave a lasting impression and cultivate a dedicated customer
+              base. As technology continues to evolve at a rapid pace,
+              businesses that embrace digital marketing and stay ahead of the
+              curve will gain a significant competitive advantage in the
+              ever-changing digital landscape. By combining innovative
+              strategies, data-driven decision-making, and a customer-centric
+              approach, companies can unlock new opportunities for growth, brand
+              awareness, and customer acquisition in the digital realm.
             </p>
           </div>
         </div>
@@ -301,7 +307,16 @@ const Singleblog2 = () => {
                     </li>
                     <li className="nav-item">
                       <Link className="nav-link" to="#">
-                        <i className="fa fa-twitter" aria-hidden="true"></i>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          fill="currentColor"
+                          className="bi bi-twitter-x"
+                          viewBox="0 0 16 16"
+                        >
+                          <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                        </svg>
                       </Link>
                     </li>
                     <li className="nav-item">

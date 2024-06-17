@@ -40,7 +40,11 @@ const Home = () => {
       <nav className="navbar navbar-expand-lg navbar-light  gtco-main-nav">
         <div className="container sticky">
           <Link className="navbar-brand" to="/" style={{ paddingRight: "10%" }}>
-            <img src="./assats/images/logo-6.png" alt="weblogo" className="nav-logo"/>
+            <img
+              src="./assats/images/logo-6.png"
+              alt="weblogo"
+              className="nav-logo"
+            />
           </Link>
           <button
             className="navbar-toggler"
@@ -612,7 +616,7 @@ const Home = () => {
       </div>
       {/* <!-- Number Block --> */}
       <div className="container-fluid gtco-numbers-block">
-        <div className="container" style={{marginBottom:"10%"}}>
+        <div className="container" style={{ marginBottom: "10%" }}>
           <svg width="95%" viewBox="0 0 1600 400">
             <defs>
               <linearGradient id="PSgrad_03" x1="80.279%" x2="0%" y2="0%">
@@ -890,7 +894,16 @@ const Home = () => {
                     </li>
                     <li className="nav-item">
                       <Link className="nav-link" to="#">
-                        <i className="fa fa-twitter" aria-hidden="true"></i>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          fill="currentColor"
+                          className="bi bi-twitter-x"
+                          viewBox="0 0 16 16"
+                        >
+                          <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                        </svg>
                       </Link>
                     </li>
                     <li className="nav-item">

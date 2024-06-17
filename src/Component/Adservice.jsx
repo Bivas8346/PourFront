@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import { Link, useParams } from "react-router-dom";
 
@@ -9,7 +9,11 @@ const Adservice = () => {
       <nav className="navbar navbar-expand-lg navbar-light gtco-main-nav">
         <div className="container">
           <Link className="navbar-brand" to="/" style={{ paddingRight: "10%" }}>
-            <img src="../assats/images/logo-6.png" className="nav-logo" alt="weblogo" />
+            <img
+              src="../assats/images/logo-6.png"
+              className="nav-logo"
+              alt="weblogo"
+            />
           </Link>
           <button
             className="navbar-toggler"
@@ -118,7 +122,13 @@ const Adservice = () => {
                 Technologie We Use
                 <br />
               </h2>
-              <ul style={{ fontWeight: "bolder", fontSize: "20px",backgroundColor:"#fffeeb" }}>
+              <ul
+                style={{
+                  fontWeight: "bolder",
+                  fontSize: "20px",
+                  backgroundColor: "#fffeeb",
+                }}
+              >
                 <li>TECHNOLOGY 1</li>
                 <li>TECHNOLOGY 1</li>
                 <li>TECHNOLOGY 1</li>
@@ -836,7 +846,16 @@ const Adservice = () => {
                     </li>
                     <li className="nav-item">
                       <Link className="nav-link" to="#">
-                        <i className="fa fa-twitter" aria-hidden="true"></i>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          fill="currentColor"
+                          className="bi bi-twitter-x"
+                          viewBox="0 0 16 16"
+                        >
+                          <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                        </svg>
                       </Link>
                     </li>
                     <li className="nav-item">
@@ -861,7 +880,7 @@ const Adservice = () => {
         <i className="fa fa-angle-up"></i>
       </a>
     </>
-  )
-}
+  );
+};
 
-export default Adservice
+export default Adservice;
