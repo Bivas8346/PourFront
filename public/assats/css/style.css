@@ -1803,6 +1803,10 @@ body {
 /* ::-webkit-scrollbar {
   display: none;
 } */
+.d-block{
+  padding: 15% 15% 15% 15%;
+}
+
 /* Welcome */
 
 .welcome_section {

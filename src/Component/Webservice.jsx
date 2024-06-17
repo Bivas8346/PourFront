@@ -126,7 +126,7 @@ const Webservice = () => {
       <div className="container-fluid" style={{ marginTop: "5%" }}>
         <div className="container">
           <div className="row">
-            <div className="col-lg-8 gtco-feature">
+            <div className="col-lg-7 gtco-feature">
               <h2>
                 Technologie We Use
                 <br />
@@ -143,7 +143,7 @@ const Webservice = () => {
               </ul>
             </div>
             <div
-              className="col-lg-4"
+              className="col-lg-5"
               style={{ marginTop: "5%", padding: "20px" }}
             >
               <Carousel fade>
