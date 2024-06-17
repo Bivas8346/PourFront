@@ -189,7 +189,7 @@ const Routing = () => {
           <Route path="/2ndblog" element={<Singlebol1 />} />
           <Route path="/3rdblog" element={<Singleblog2 />} />
           <Route path="/4thblog" element={<Singleblog3 />} />
-          <Route path="/5rdblog" element={<Singleblog4 />} />
+          <Route path="/5thblog" element={<Singleblog4 />} />
 
           <Route path="thank" element={<Thanks />} />
           <Route path="privecy" element={<Privecy />} />

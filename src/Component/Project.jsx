@@ -10,7 +10,11 @@ const Project = () => {
       <nav className="navbar navbar-expand-lg navbar-light gtco-main-nav">
         <div className="container">
           <Link className="navbar-brand" to="/" style={{ paddingRight: "10%" }}>
-            <img src="./assats/images/logo-6.png" className="nav-logo" alt="weblogo" />
+            <img
+              src="./assats/images/logo-6.png"
+              className="nav-logo"
+              alt="weblogo"
+            />
           </Link>
           <button
             className="navbar-toggler"
@@ -23,7 +27,11 @@ const Project = () => {
           <div
             id="my-nav"
             className="collapse navbar-collapse"
-            style={{ paddingLeft: "20%", paddingRight: "10%",backgroundColor:"#fffeeb" }}
+            style={{
+              paddingLeft: "20%",
+              paddingRight: "10%",
+              backgroundColor: "#fffeeb",
+            }}
           >
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
@@ -225,6 +233,103 @@ const Project = () => {
             </p>
             <footer>
               <Link to={`/3rdblog`} className="more-link blog-a">
+                Read More
+              </Link>
+            </footer>
+          </article>
+        </div>
+        <div className="blog-post">
+          <div className="feat-img">
+            <img
+              className="blog-img"
+              src="https://cdn.pixabay.com/photo/2021/02/26/10/47/freelance-6051357_960_720.jpg"
+              alt="blog-img"
+            />
+          </div>
+          <article className="blog-article">
+            <header className="blog-header">
+              <ul className="blog-cat">
+                <li className="blog-li">
+                  <a className="blog-a" href="#">
+                    Articles
+                  </a>
+                </li>
+                <li className="blog-li">
+                  <a className="blog-a" href="#">
+                    News
+                  </a>
+                </li>
+                <li className="blog-li">
+                  <a className="blog-a" href="#">
+                    Breaking
+                  </a>
+                </li>
+              </ul>
+              <h2 className="blog-h">
+                <Link to={`/5thblog`} className="blog-a">
+                  Amplify Your Digital Reach with Google Ads
+                </Link>
+              </h2>
+            </header>
+            <p>
+              In today's digital age, businesses of all sizes are vying for
+              online visibility and customer attention. One powerful tool that
+              can propel your brand to the forefront of your target audience is
+              Google Ads, the advertising platform offered by the world's
+              leading search engine.
+            </p>
+            <footer>
+              <Link to={`/5thblog`} className="more-link blog-a">
+                Read More
+              </Link>
+            </footer>
+          </article>
+        </div>
+        <div className="blog-post">
+          <div className="feat-img">
+            <img
+              className="blog-img"
+              src="https://cdn.pixabay.com/photo/2019/04/07/23/11/search-engine-optimization-4111000_1280.jpg"
+              alt="blog-img"
+            />
+          </div>
+          <article className="blog-article">
+            <header className="blog-header">
+              <ul className="blog-cat">
+                <li className="blog-li">
+                  <a className="blog-a" href="#">
+                    Articles
+                  </a>
+                </li>
+                <li className="blog-li">
+                  <a className="blog-a" href="#">
+                    News
+                  </a>
+                </li>
+                <li className="blog-li">
+                  <a className="blog-a" href="#">
+                    Breaking
+                  </a>
+                </li>
+              </ul>
+              <h2 className="blog-h">
+                <Link to={`/4thblog`} className="blog-a">
+                  Unlocking the Power of SEO: A Guide to Boosting Your Online
+                  Visibility
+                </Link>
+              </h2>
+            </header>
+            <p>
+              In today's digital landscape, having a strong online presence is
+              crucial for businesses of all sizes. One of the most effective
+              ways to increase your online visibility and drive targeted traffic
+              to your website is through Search Engine Optimization (SEO). SEO
+              is the practice of optimizing your website and its content to rank
+              higher in search engine results pages (SERPs) for relevant
+              keywords and phrases.
+            </p>
+            <footer>
+              <Link to={`/4thblog`} className="more-link blog-a">
                 Read More
               </Link>
             </footer>

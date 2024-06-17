@@ -8,7 +8,11 @@ const Singleblog4 = () => {
       <nav className="navbar navbar-expand-lg navbar-light gtco-main-nav">
         <div className="container">
           <Link className="navbar-brand" to="/" style={{ paddingRight: "10%" }}>
-            <img src="../assats/images/logo-6.png" className="nav-logo" alt="weblogo" />
+            <img
+              src="../assats/images/logo-6.png"
+              className="nav-logo"
+              alt="weblogo"
+            />
           </Link>
           <button
             className="navbar-toggler"
@@ -21,7 +25,11 @@ const Singleblog4 = () => {
           <div
             id="my-nav"
             className="collapse navbar-collapse"
-            style={{ paddingLeft: "20%", paddingRight: "10%",backgroundColor:"#fffeeb" }}
+            style={{
+              paddingLeft: "20%",
+              paddingRight: "10%",
+              backgroundColor: "#fffeeb",
+            }}
           >
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
@@ -62,7 +70,7 @@ const Singleblog4 = () => {
       <div className="" style={{ marginTop: "10%" }}>
         <div className="col-md-8 mx-auto">
           <h1 style={{ fontWeight: "600" }}>
-            The Best Activewear from the Nordstrom Anniversary Sale
+          Amplify Your Digital Reach with Google Ads
           </h1>
           <div className="py-3 text-dark flex items-center justify-center">
             <small className="mr-3 flex flex-row items-center">
@@ -110,7 +118,7 @@ const Singleblog4 = () => {
                   ></path>
                   <path d="M0 0h24v24H0z" fill="none"></path>
                 </svg>
-                <span className="ml-1">AliSher Azimi</span>
+                <span className="ml-1">Pour Technologies</span>
               </a>
             </small>
             <small>
@@ -130,7 +138,7 @@ const Singleblog4 = () => {
                     d="M15.4496399,8.42490555 L8.66109799,1.63636364 L1.63636364,1.63636364 L1.63636364,8.66081885 L8.42522727,15.44178 C8.57869221,15.5954158 8.78693789,15.6817418 9.00409091,15.6817418 C9.22124393,15.6817418 9.42948961,15.5954158 9.58327627,15.4414581 L15.4486339,9.57610048 C15.7651495,9.25692435 15.7649133,8.74206554 15.4496399,8.42490555 Z M16.6084423,10.7304545 L10.7406818,16.59822 C10.280287,17.0591273 9.65554997,17.3181054 9.00409091,17.3181054 C8.35263185,17.3181054 7.72789481,17.0591273 7.26815877,16.5988788 L0.239976954,9.57887876 C0.0863319284,9.4254126 0,9.21716044 0,9 L0,0.818181818 C0,0.366312477 0.366312477,0 0.818181818,0 L9,0 C9.21699531,0 9.42510306,0.0862010512 9.57854191,0.239639906 L16.6084423,7.26954545 C17.5601275,8.22691012 17.5601275,9.77308988 16.6084423,10.7304545 Z M5,6 C4.44771525,6 4,5.55228475 4,5 C4,4.44771525 4.44771525,4 5,4 C5.55228475,4 6,4.44771525 6,5 C6,5.55228475 5.55228475,6 5,6 Z"
                   ></path>
                 </svg>
-                <span className="ml-1">activewear</span>
+                <span className="ml-1">Development</span>
               </a>
             </small>
           </div>
@@ -141,7 +149,7 @@ const Singleblog4 = () => {
           style={{
             height: "400px",
             backgroundImage:
-              "url(https://images.pexels.com/photos/5120892/pexels-photo-5120892.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=625.0&sharp=10&w=1500)",
+              "url(https://cdn.pixabay.com/photo/2021/02/26/10/47/freelance-6051357_960_720.jpg)",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -150,46 +158,62 @@ const Singleblog4 = () => {
         <div className="col-lg-8 p-2 p-sm-4 mx-auto">
           <div className="text-secondary">
             <p className="my-2" style={{ lineHeight: "2" }}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              In today's digital age, businesses of all sizes are vying for
+              online visibility and customer attention. One powerful tool that
+              can propel your brand to the forefront of your target audience is
+              Google Ads, the advertising platform offered by the world's
+              leading search engine.
+              <br /> Google Ads allows you to create and run targeted
+              advertising campaigns across various Google platforms, including
+              Search, Display, Video, and more. By leveraging this robust
+              advertising solution, you can effectively reach potential
+              customers at the precise moment they are actively searching for
+              products or services related to your business. One of the key
+              advantages of Google Ads is its ability to deliver highly relevant
+              ads to users based on their search queries, interests, and online
+              behaviors. This targeted approach ensures that your ads are
+              displayed to the right audience, increasing the likelihood of
+              engagement and conversions.
             </p>
             <br />
-            <br />
+            {/* <br />
             <h3 className="font-weight-bold text-dark">
               #1. What is Lorem Ipsum?
-            </h3>
+            </h3> */}
             <p className="my-2" style={{ lineHeight: "2" }}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              With Google Ads, you have the flexibility to design campaigns
+              tailored to your specific business goals. Whether you aim to drive
+              website traffic, generate leads, or boost online sales, the
+              platform offers a wide range of ad formats and targeting options
+              to help you achieve your objectives. Another powerful aspect of
+              Google Ads is its robust analytics and reporting capabilities. The
+              platform provides detailed insights into your campaign
+              performance, allowing you to track key metrics such as
+              impressions, clicks, conversions, and cost-per-acquisition. Armed
+              with this data-driven intelligence, you can continuously refine
+              and optimize your campaigns for maximum impact and return on
+              investment (ROI).
+              <br /> Google Ads also offers advanced features like remarketing
+              and dynamic ad extensions, which can further enhance the
+              effectiveness of your campaigns. Remarketing enables you to
+              reconnect with users who have previously interacted with your
+              business, while dynamic ad extensions automatically customize your
+              ads with relevant information, such as pricing or product details,
+              based on user behavior and preferences.
             </p>
             <br />
             <p className="my-2" style={{ lineHeight: "2" }}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              Leveraging Google Ads requires a strategic approach and a deep
+              understanding of your target audience, industry, and marketing
+              objectives. However, with the right expertise and guidance, this
+              powerful advertising platform can unlock new opportunities for
+              growth, brand awareness, and customer acquisition in the digital
+              realm.
+              <br /> Embrace the potential of Google Ads and elevate your online
+              marketing efforts to new heights. By reaching the right audience
+              at the right time with compelling ad experiences, you can drive
+              tangible results and gain a competitive edge in your respective
+              market.
             </p>
           </div>
         </div>
