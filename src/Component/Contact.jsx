@@ -46,7 +46,7 @@ const Contact = () => {
     };
     axios
       .post(
-        "https://sheet.best/api/sheets/a8f6a41a-16f3-431c-9711-821664f35f7a",
+        "https://sheetdb.io/api/v1/nqny5i66t10gh",
         add
       )
       .then((res) => {
