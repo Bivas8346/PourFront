@@ -295,6 +295,16 @@ body {
     border-radius: 0% 50% 50% 50%;
   }
 }
+/* @media (min-width: 600px) {
+  .gtco-banner-area::after {
+    width: 59%;
+    height: 380px;
+    top: 2.7%;
+    rotate: 90deg;
+    left: 25.8%;
+    border-radius: 0% 50% 50% 50%;
+  }
+} */
 .gtco-banner-area::before {
   position: absolute;
   content: "";
@@ -338,7 +348,16 @@ body {
     border-radius: 0% 50% 50% 50%;
   }
 }
-
+/* @media (min-width: 600px) {
+  .gtco-banner-area::before {
+    width: 59%;
+    height: 380px;
+    top: 8%;
+    rotate: 90deg;
+    left: 25.8%;
+    border-radius: 0% 50% 50% 50%;
+  }
+} */
 .gtco-banner-area a,
 .gtco-feature a,
 .gtco-features a,
@@ -410,6 +429,11 @@ body {
     font-size: 35px;
   }
 }
+/* @media (min-width: 600px) {
+  .gtco-banner-area h1 {
+    font-size: 35px;
+  }
+} */
 .gtco-banner-area p {
   max-width: 450px;
   margin: 20px 0;
@@ -444,6 +468,18 @@ body {
     font-size: 10px;
   }
 }
+@media (max-width: 600px) {
+  .gtco-banner-area .col-md-6 .card .card-img-top {
+    margin-top: 100px;
+    font-size: 10px;
+  }
+}
+/* @media (min-width: 600px) {
+  .gtco-banner-area .col-md-6 .card .card-img-top {
+    margin-top: 100px;
+    font-size: 10px;
+  }
+} */
 /* Banner animation */
 .logobn {
   height: 5px;
@@ -717,6 +753,12 @@ body {
     margin-top: 200px;
   }
 }
+/* @media (min-width: 767px) {
+  .gtco-features svg {
+    margin: 0 auto;
+    margin-top: 200px;
+  }
+} */
 .gtco-features h2 {
   margin-top: 200px;
 }
@@ -745,12 +787,23 @@ body {
     margin-top: 50px;
   }
 }
+/* @media (min-width: 600px) {
+  .gtco-features .col-lg-8 .row .col:first-child {
+    margin-top: 50px;
+  }
+} */
 @media (max-width: 600px) {
   .gtco-features .col-lg-8 .col {
     flex: 0 0 100%;
     max-width: 100%;
   }
 }
+/* @media (min-width: 600px) {
+  .gtco-features .col-lg-8 .col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+} */
 .gtco-features .col-lg-8 .card {
   background: #fff;
   margin: 30px 5px;
@@ -863,6 +916,12 @@ body {
     font-size: 18px;
   }
 }
+/* @media (min-width: 600px) {
+  .gtco-numbers-block h5 {
+    margin: 0;
+    font-size: 18px;
+  }
+} */
 .gtco-numbers-block p {
   font-family: "Lato-Semibold";
   font-size: 24px;
@@ -1115,6 +1174,13 @@ body {
     margin: 20px 0;
   }
 }
+/* @media (min-width: 600px) {
+  .gtco-logo-area .col {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin: 20px 0;
+  }
+} */
 
 .gtco-news {
   background: #fcfcfc;
@@ -1138,6 +1204,11 @@ body {
     display: none !important;
   }
 }
+/* @media (min-width: 600px) {
+  .gtco-news .owl-carousel .owl-nav {
+    display: none !important;
+  }
+} */
 .gtco-news .owl-carousel .owl-nav .owl-prev,
 .gtco-news .owl-carousel .owl-nav .owl-next {
   font-size: 120px;
@@ -1803,7 +1874,7 @@ body {
 /* ::-webkit-scrollbar {
   display: none;
 } */
-.d-block{
+.d-block {
   padding: 15% 15% 15% 15%;
 }
 
@@ -2044,34 +2115,26 @@ body {
   -webkit-appearance: none;
 }
 .contact-form select.minimal {
-  background-image:
-    linear-gradient(45deg, transparent 50%, gray 20%),
+  background-image: linear-gradient(45deg, transparent 50%, gray 20%),
     linear-gradient(135deg, gray 50%, transparent 20%),
     linear-gradient(to right, #ccc, #ccc);
-  background-position:
-    calc(100% - 20px) calc(1em + 2px),
-    calc(100% - 15px) calc(1em + 2px),
-    calc(100% - 2.5em) 0.5em;
-  background-size:
-    5px 5px,
-    5px 5px,
-    1px 1.5em;
+  background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
   background-repeat: no-repeat;
 }
 
 .contact-form select.minimal:focus {
-  background-image:
-    linear-gradient(45deg, rgb(241, 223, 21) 50%, transparent 20%),
+  background-image: linear-gradient(
+      45deg,
+      rgb(241, 223, 21) 50%,
+      transparent 20%
+    ),
     linear-gradient(135deg, transparent 50%, rgb(227, 209, 11) 20%),
     linear-gradient(to right, #ccc, #ccc);
-  background-position:
-    calc(100% - 15px) 1em,
-    calc(100% - 20px) 1em,
+  background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em,
     calc(100% - 2.5em) 0.5em;
-  background-size:
-    5px 5px,
-    5px 5px,
-    1px 1.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
   background-repeat: no-repeat;
   border-color: rgb(255, 231, 17);
   outline: 0;
