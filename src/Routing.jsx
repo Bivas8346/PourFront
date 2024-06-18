@@ -27,10 +27,10 @@ import Adservice from "./Component/Adservice";
 // import Appservice from "./Component/Appservice";
 // import Videservice from "./Component/Videservice";
 import Moreservice from "./Component/Moreservice";
-import Singlebol1 from "./Component/Singlebol1";
-import Singleblog2 from "./Component/Singleblog2";
-import Singleblog3 from "./Component/Singleblog3";
-import Singleblog4 from "./Component/Singleblog4";
+// import Singlebol1 from "./Component/Singlebol1";
+// import Singleblog2 from "./Component/Singleblog2";
+// import Singleblog3 from "./Component/Singleblog3";
+// import Singleblog4 from "./Component/Singleblog4";
 
 let Home = React.lazy(() => {
   return new Promise((resolve) => {
@@ -113,31 +113,31 @@ let Videservice = React.lazy(() => {
 });
 
 
-// let SingleBlog = React.lazy(() => {
-//   return new Promise((resolve) => {
-//     setTimeout(() => resolve(import("./Component/SingleBlog")), 1000);
-//   });
-// });
+let Singlebol1 = React.lazy(() => {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(import("./Component/Singlebol1")), 1000);
+  });
+});
 
 
-// let SingleBlog = React.lazy(() => {
-//   return new Promise((resolve) => {
-//     setTimeout(() => resolve(import("./Component/SingleBlog")), 1000);
-//   });
-// });
+let Singleblog2 = React.lazy(() => {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(import("./Component/Singleblog2")), 1000);
+  });
+});
 
 
-// let SingleBlog = React.lazy(() => {
-//   return new Promise((resolve) => {
-//     setTimeout(() => resolve(import("./Component/SingleBlog")), 1000);
-//   });
-// });
+let Singleblog3 = React.lazy(() => {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(import("./Component/Singleblog3")), 1000);
+  });
+});
 
-// let SingleBlog = React.lazy(() => {
-//   return new Promise((resolve) => {
-//     setTimeout(() => resolve(import("./Component/SingleBlog")), 1000);
-//   });
-// });
+let Singleblog4 = React.lazy(() => {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(import("./Component/Singleblog4")), 1000);
+  });
+});
 
 
 // let SingleBlog = React.lazy(() => {
