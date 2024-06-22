@@ -53,7 +53,11 @@ const ApplyForm = () => {
       CV: formData.CV,
     };
     axios
-      .post("https://sheetdb.io/api/v1/3x4884y35a9nw", add)
+      .post("https://sheetdb.io/api/v1/3x4884y35a9nw", add,{
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      })
       .then((res) => {
         console.log(res);
         navigate("/thank");
@@ -157,7 +161,7 @@ const ApplyForm = () => {
       <div className="contact-us section" id="contact">
         <div className="container">
           <div className="contact-us-content">
-            <form className="contact-form" onSubmit={handleSubmit}>
+            <form className="contact-form" onSubmit={handleSubmit} enctype="multipart/form-data">
               <div className="row">
                 <div className="col-lg-12">
                   <div className="section-heading">

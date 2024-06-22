@@ -39,7 +39,7 @@ const Service = () => {
     };
     axios
       .post(
-        "https://sheet.best/api/sheets/a8f6a41a-16f3-431c-9711-821664f35f7a",
+        "https://sheetdb.io/api/v1/nqny5i66t10gh",
         add
       )
       .then((res) => {
@@ -172,10 +172,18 @@ const Service = () => {
                   value={formData.Message}
                   onChange={handleChange}
                 ></textarea>
-                <a type="submit" className="submit-button">
+                {/* <a type="submit" className="submit-button">
                   Submit
                   <i className="fa fa-angle-right" aria-hidden="true"></i>
-                </a>
+                </a> */}
+                <button
+                  type="submit"
+                  id="form-submit"
+                  className="submit-button"
+                >
+                  Submit
+                  <i className="fa fa-angle-right" aria-hidden="true"></i>
+                </button>
               </div>
             </form>
           </div>

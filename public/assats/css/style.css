@@ -376,6 +376,25 @@ body {
   padding-right: 5px;
   text-decoration: none !important;
 }
+.gtco-banner-area button,
+.gtco-feature button,
+.gtco-features button,
+.gtco-news .owl-carousel .card button,
+.gtco-footer .submit-button {
+  background-image: -moz-linear-gradient(0deg, #f98d56 0%, #f98d56 100%);
+  background-image: -webkit-linear-gradient(0deg, #f98d56 0%, #f98d56 100%);
+  background-image: -ms-linear-gradient(0deg, #f98d56 0%, #f98d56 100%);
+  font-size: 18px;
+  font-family: "OpenSans-Semibold";
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  padding: 5px 30px;
+  display: inline-block;
+  text-transform: uppercase;
+  padding-right: 5px;
+  text-decoration: none !important;
+}
 .gtco-banner-area a .fa,
 .gtco-feature a .fa,
 .gtco-features a .fa,
@@ -390,6 +409,21 @@ body {
   text-align: center;
   padding-top: 5px;
   margin-left: 15px;
+}
+.gtco-banner-area button .fa,
+.gtco-feature button .fa,
+.gtco-features button .fa,
+.gtco-news .owl-carousel .card button .fa,
+.gtco-footer .submit-button .fa {
+  background: #fff;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  color: #ec813a;
+  font-size: 22px;
+  text-align: center;
+  padding-top: 5px;
+  margin-left: 10px;
 }
 
 .gtco-feature h2,
@@ -442,6 +476,11 @@ body {
 .gtco-banner-area a {
   display: inline;
   padding: 10px 30px;
+  padding-right: 5px;
+}
+.gtco-banner-area button {
+  display: inline;
+  padding: 5px 30px;
   padding-right: 5px;
 }
 .gtco-banner-area .col-md-6 .card .card-img-top {

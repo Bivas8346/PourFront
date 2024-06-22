@@ -108,10 +108,14 @@ const SingleService = () => {
                   placeholder="Message"
                   name="Message"
                 ></textarea>
-                <a href="#" className="submit-button">
-                  Submit{" "}
+                <button
+                  type="submit"
+                  id="form-submit"
+                  className="submit-button"
+                >
+                  Submit
                   <i className="fa fa-angle-right" aria-hidden="true"></i>
-                </a>
+                </button>
               </div>
             </div>
           </div>
