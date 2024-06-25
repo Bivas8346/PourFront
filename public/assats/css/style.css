@@ -233,6 +233,9 @@ body {
   border-color: #fff;
   background-color: transparent;
 }
+.navbar-toggler{
+  margin-right: 15px;
+}
 @media (max-width: 991px) {
   .gtco-main-nav form a.btn-outline-dark {
     border-color: #1d3ede;
@@ -244,6 +247,7 @@ body {
 }
 @media (max-width: 600px) {
   .nav-logo {
+    padding-left: 15px;
     width: 120px;
   }
   .gtco-main-nav {
