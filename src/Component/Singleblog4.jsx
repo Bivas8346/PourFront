@@ -295,41 +295,6 @@ const Singleblog4 = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="col-6">
-                  <h4>Services</h4>
-                  <ul className="nav flex-column services-nav">
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/webservice">
-                        Web Design
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/webservice">
-                        Web Devlopment
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/seoservice">
-                        App Devlopment
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/marketingservice">
-                        SEO
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/marketingservice">
-                        Marketing
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/videoservice">
-                        Advertisement
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
                 <div className="col-12"></div>
               </div>
             </div>
@@ -346,12 +311,20 @@ const Singleblog4 = () => {
                   <h4 className="mt-5">Follow Us</h4>
                   <ul className="nav follow-us-nav">
                     <li className="nav-item">
-                      <Link className="nav-link pl-0" to="#">
+                      <Link
+                        className="nav-link pl-0"
+                        to="https://www.facebook.com/Pourtechnologies/"
+                        target="blank"
+                      >
                         <i className="fa fa-facebook" aria-hidden="true"></i>
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link className="nav-link" to="#">
+                      <Link
+                        className="nav-link"
+                        to="https://x.com/pourtech98"
+                        target="blank"
+                      >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="20"
@@ -365,8 +338,21 @@ const Singleblog4 = () => {
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link className="nav-link" to="#">
+                      <Link
+                        className="nav-link"
+                        to="https://www.linkedin.com/in/pour-technologies-814671287/"
+                        target="blank"
+                      >
                         <i className="fa fa-linkedin" aria-hidden="true"></i>
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link
+                        className="nav-link"
+                        to="https://www.instagram.com/pourtechnologies/"
+                        target="blank"
+                      >
+                        <i className="fa fa-instagram" aria-hidden="true"></i>
                       </Link>
                     </li>
                   </ul>

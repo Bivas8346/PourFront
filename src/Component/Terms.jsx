@@ -222,7 +222,6 @@ const Terms = () => {
           </div>
         </div>
       </div>
-
       {/* <!-- Footer --> */}
       <footer className="container-fluid gtco-footer">
         <div className="container">
@@ -315,12 +314,20 @@ const Terms = () => {
                   <h4 className="mt-5">Follow Us</h4>
                   <ul className="nav follow-us-nav">
                     <li className="nav-item">
-                      <Link className="nav-link pl-0" to="#">
+                      <Link
+                        className="nav-link pl-0"
+                        to="https://www.facebook.com/Pourtechnologies/"
+                        target="blank"
+                      >
                         <i className="fa fa-facebook" aria-hidden="true"></i>
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link className="nav-link" to="#">
+                      <Link
+                        className="nav-link"
+                        to="https://x.com/pourtech98"
+                        target="blank"
+                      >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="20"
@@ -334,8 +341,21 @@ const Terms = () => {
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link className="nav-link" to="#">
+                      <Link
+                        className="nav-link"
+                        to="https://www.linkedin.com/in/pour-technologies-814671287/"
+                        target="blank"
+                      >
                         <i className="fa fa-linkedin" aria-hidden="true"></i>
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link
+                        className="nav-link"
+                        to="https://www.instagram.com/pourtechnologies/"
+                        target="blank"
+                      >
+                        <i className="fa fa-instagram" aria-hidden="true"></i>
                       </Link>
                     </li>
                   </ul>
