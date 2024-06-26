@@ -767,33 +767,33 @@ const Videservice = () => {
                   <h4>Services</h4>
                   <ul className="nav flex-column services-nav">
                     <li className="nav-item">
-                      <Link className="nav-link" to="/service">
+                      <Link className="nav-link" to="/webservice">
                         Web Design
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link className="nav-link" to="/service">
-                        Graphics Design
+                      <Link className="nav-link" to="/webservice">
+                        Web Devlopment
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link className="nav-link" to="/service">
-                        App Design
+                      <Link className="nav-link" to="/seoservice">
+                        App Devlopment
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link className="nav-link" to="/service">
+                      <Link className="nav-link" to="/marketingservice">
                         SEO
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link className="nav-link" to="/service">
+                      <Link className="nav-link" to="/marketingservice">
                         Marketing
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link className="nav-link" to="/service">
-                        Analytic
+                      <Link className="nav-link" to="/videoservice">
+                        Advertisement
                       </Link>
                     </li>
                   </ul>

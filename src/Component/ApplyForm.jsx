@@ -53,7 +53,7 @@ const ApplyForm = () => {
       CV: formData.CV,
     };
     axios
-      .post("https://sheetdb.io/api/v1/3x4884y35a9nw", add,{
+      .post("https://sheetdb.io/api/v1/3x4884y35a9nw", add, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
@@ -161,7 +161,11 @@ const ApplyForm = () => {
       <div className="contact-us section" id="contact">
         <div className="container">
           <div className="contact-us-content">
-            <form className="contact-form" onSubmit={handleSubmit} enctype="multipart/form-data">
+            <form
+              className="contact-form"
+              onSubmit={handleSubmit}
+              enctype="multipart/form-data"
+            >
               <div className="row">
                 <div className="col-lg-12">
                   <div className="section-heading">
@@ -355,33 +359,33 @@ const ApplyForm = () => {
                   <h4>Services</h4>
                   <ul className="nav flex-column services-nav">
                     <li className="nav-item">
-                      <Link className="nav-link" to="/service">
+                      <Link className="nav-link" to="/webservice">
                         Web Design
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link className="nav-link" to="/service">
-                        Graphics Design
+                      <Link className="nav-link" to="/webservice">
+                        Web Devlopment
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link className="nav-link" to="/service">
-                        App Design
+                      <Link className="nav-link" to="/seoservice">
+                        App Devlopment
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link className="nav-link" to="/service">
+                      <Link className="nav-link" to="/marketingservice">
                         SEO
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link className="nav-link" to="/service">
+                      <Link className="nav-link" to="/marketingservice">
                         Marketing
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link className="nav-link" to="/service">
-                        Analytic
+                      <Link className="nav-link" to="/videoservice">
+                        Advertisement
                       </Link>
                     </li>
                   </ul>
